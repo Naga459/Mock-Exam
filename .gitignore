@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+apps/*/node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.log
+
+# Next.js
+apps/*/.next/
+apps/*/out/
+apps/*/build
+apps/*/dist
+
+# Production
+apps/*/build
+apps/*/.next
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Local env files
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo
+apps/*/.turbo
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Lock files (optional - uncomment if you want to ignore them)
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
+

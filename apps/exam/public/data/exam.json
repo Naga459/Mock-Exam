@@ -1,0 +1,8 @@
+{
+  "title": "Mock Exam",
+  "durationMinutes": 60,
+  "shuffleQuestions": false,
+  "shuffleOptions": false,
+  "passPercentage": 70
+}
+
