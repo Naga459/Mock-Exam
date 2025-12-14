@@ -1,640 +1,346 @@
 [
   {
     "id": 1,
-    "question": "You are using multiple address handling in a sales document. At which levels can you assign the address determination?",
+    "question": "In SAP Business AI, what are some safeguards for protecting customer data?",
     "options": [
-      "Address usage of the business partner",
-      "Origin and source of the partner function",
-      "Generic partner function",
-      "Partner determination procedure"
+      "Consent-based model training",
+      "Clean core maintenance",
+      "SAP-hosted AI infrastructure",
+      "Sustainability",
+      "Tenant isolation"
     ],
-    "correct_answers": ["A", "D"]
+    "correct_answers": ["A", "C", "E"]
   },
   {
     "id": 2,
-    "question": "When a user creates a sales order with reference to a quotation, a header text must be automatically copied from the sold-to party if it cannot be found in quotation...",
+    "question": "Which of the following factors are part of SAP's commitment to building and operating AI responsibly?",
     "options": [
-      "Assign an appropriate text type to the sales document type.",
-      "Include the text type with an appropriate access sequence in the text determination procedure.",
-      "Ensure that the access sequence reads the sold-to party text first.",
-      "In the access sequence, set the partner function language for this text to 'sold-to party'.",
-      "Assign the text determination procedure to the sales document type."
-    ],
-    "correct_answers": ["B", "D", "E"]
-  },
-  {
-    "id": 3,
-    "question": "To which elements do you assign a partner determination procedure?",
-    "options": [
-      "Delivery item category",
-      "Business partner category",
-      "Sales item category",
-      "Account group",
-      "Delivery type"
-    ],
-    "correct_answers": ["C", "D", "E"]
-  },
-  {
-    "id": 4,
-    "question": "Which of the following is a characteristic of decision table processing as used in SAP S/4HANA output management?",
-    "options": [
-      "Every table row is processed in sequence. In each row, every condition column cell is processed from right to left.",
-      "It is possible to maintain one condition column cell with multiple result column cells for each table row.",
-      "Every condition column is processed in sequence. In each condition column, every row is processed from top to bottom.",
-      "It is possible to evaluate the content of condition column cells by using comparison operators or value ranges."
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 5,
-    "question": "Which channels are supported by SAP S/4HANA output management?",
-    "options": ["ALE", "Fax", "E-mail", "XML", "Print"],
-    "correct_answers": ["C", "D", "E"]
-  },
-  {
-    "id": 6,
-    "question": "Texts are copied from a sold-to party to a sales order. Any later change to the sold-to party texts should not be visible in this order. Which object controls this behavior?",
-    "options": [
-      "Text determination procedure",
-      "Access sequence",
-      "Text procedure assignment",
-      "Text ID"
-    ],
-    "correct_answers": ["A"]
-  },
-   {
-    "id": 7,
-    "question": "Which of the following settings are required to be able to deliver a product?",
-    "options": [
-      "You need to set the Schedule Lines Allowed indicator in the item category.",
-      "You need to set up the item category as relevant for delivery-related billing.",
-      "You need to set up copying control in Logistics Execution System for the item category.",
-      "You need to set the Item Relevant for Delivery indicator in the item category."
-    ],
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "id": 8,
-    "question": "Which controls can you set when you configure a schedule line category?",
-    "options": [
-      "Create delivery group",
-      "Delivery relevance",
-      "Structure scope",
-      "Goods movement type"
-    ],
-    "correct_answers": ["B", "D"]
-  },
-  {
-    "id": 9,
-    "question": "You sell a product for which there is a bill of material. What must you set to ensure that the components automatically appear as sub-items in the order?",
-    "options": [
-      "The item usage during the item category determination of each sub-item",
-      "The delivery group in the item category of the sub-item",
-      "The material entry type in the sales document type",
-      "The structure scope in the item category of the main item"
-    ],
-    "correct_answers": ["D"]
-  },
-  {
-    "id": 10,
-    "question": "A reason for rejection has been set against a sales order item. Why is the net value of the item still included in the total net value of the order?",
-    "options": [
-      "The reason for rejection was not assigned to the item category.",
-      "The reason for rejection does not have the appropriate configuration to exclude item value.",
-      "The item value is used statistically hence added to the net value.",
-      "The update of the net value is not triggered after the rejection of the item."
-    ],
-    "correct_answers": ["D"]
-  },
-  {
-    "id": 11,
-    "question": "You want to determine the item category in a sales document. What do you need to consider?",
-    "options": [
-      "The customer master data",
-      "The sales organization",
-      "The higher-level item",
-      "The material master data"
-    ],
-    "correct_answers": ["C", "D"]
-  },
-  {
-    "id": 12,
-    "question": "How do you restrict the reasons for rejection for a sales document?",
-    "options": [
-      "Assign the permitted reasons for rejection to the relevant sales document type.",
-      "Assign the permitted reasons for rejection to the relevant sales item category.",
-      "Specify the permitted reasons for rejection in the relevant customer master.",
-      "Specify the permitted reasons for rejection in the customer material info record."
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 13,
-    "question": "When you create a sales order with reference to a quotation, you want to ensure the entire quotation is always included in the order. Where do you make this setting?",
-    "options": [
-      "Copying control",
-      "Order type",
-      "Order item category",
-      "Quotation type"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 14,
-    "question": "You normally include multiple sales orders in your outbound deliveries. Which sales order fields would prevent this from happening if their content was different?",
-    "options": [
-      "Route",
-      "Plant",
-      "Material group",
-      "Shipping point",
-      "Ship-to party"
-    ],
-    "correct_answers": ["A", "D", "E"]
-  },
-  {
-    "id": 15,
-    "question": "What settings should you make to ensure precise scheduling is used when the system performs delivery scheduling?",
-    "options": [
-      "Maintain the transit time in the route in hours and minutes.",
-      "Assign a shift sequence to the working times.",
-      "Assign a set of working times to the plant.",
-      "Assign a set of working times to the shipping point.",
-      "Maintain shifts defining the times for starting and ending work."
-    ],
-    "correct_answers": ["C", "D", "E"]
-  },
-   {
-    "id": 16,
-    "question": "When determining a storage location during delivery processing, the system uses a rule defined in which of the following?",
-    "options": [
-      "Outbound delivery type",
-      "Material",
-      "Outbound delivery item category",
-      "Shipping point"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 17,
-    "question": "When an outbound delivery is created for a sales order, from which object does the system determine the default delivery type to be used?",
-    "options": [
-      "Sales order item category",
-      "Shipping point",
-      "Shipping conditions",
-      "Sales order type"
-    ],
-    "correct_answers": ["D"]
-  },
-  {
-    "id": 18,
-    "question": "You want to be able to create and goods issue an outbound delivery for a stock material. What settings should you make?",
-    "options": [
-      "Define the goods movement type in the delivery item category.",
-      "Set the order item category to be relevant for delivery.",
-      "Set the schedule line category to be relevant for delivery.",
-      "Activate schedule lines allowed in the order item category.",
-      "Define the goods movement type in the schedule line category."
-    ],
-    "correct_answers": ["C", "D", "E"]
-  },
-   {
-    "id": 19,
-    "question": "Which fields are used in the determination of the shipping point?",
-    "options": [
-      "Transportation group",
-      "Plant",
-      "Shipping conditions",
-      "Sales document type",
-      "Loading group"
-    ],
-    "correct_answers": ["B", "C", "E"]
-  },
-  {
-    "id": 20,
-    "question": "Which decisions do you have to make when configuring a new delivery item category?",
-    "options": [
-      "Whether a delivery should be split by warehouse number",
-      "Whether over-delivery is allowed",
-      "Whether the route should be redetermined",
-      "Whether a storage location should be determined"
-    ],
-    "correct_answers": ["B", "D"]
-  },
-  {
-    "id": 21,
-    "question": "Which fields are used to determine the delivery item category?",
-    "options": [
-      "Item category group",
-      "Shipping point",
-      "MRP type",
-      "Higher-level item category",
-      "Delivery type"
-    ],
-    "correct_answers": ["A", "D", "E"]
-  },
-  {
-    "id": 22,
-    "question": "What are some features of the Sales Order Fulfillment Issues app?",
-    "options": [
-      "The process flow can be used to directly resolve issues as quickly as possible.",
-      "The app shows cost simulations for all possible order fulfillment scenarios.",
-      "Icons and colors are used in the app to represent different types of issues.",
-      "The app allows a user to monitor sales orders in critical stages and efficiently address issues."
-    ],
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "id": 23,
-    "question": "Which of the following is a characteristic of a service item in a sales order?",
-    "options": [
-      "The material has a specific item category group.",
-      "The item in the sales order is blocked for delivery.",
-      "The Delivering Plant field is not required.",
-      "The service item has no schedule line assigned."
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 24,
-    "question": "What are some of the prerequisites for the creation of a credit memo based on a credit memo request?",
-    "options": [
-      "The Billing Block field in the credit memo request must be empty.",
-      "Copying control must exist between the sales document and the billing document.",
-      "The billing document of the original customer invoice must be cancelled.",
-      "An appropriate reason for rejection must be assigned to the original sales order item."
-    ],
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "id": 25,
-    "question": "What are some characteristics of the process flow in SAP S/4HANA?",
-    "options": [
-      "The process flow supports direct navigation to applications that can be used to solve problems.",
-      "Issue solving is supported by a wizard based on machine learning (ML).",
-      "The status of a document is updated using artificial intelligence (AI) algorithms.",
-      "Color coding is used to indicate the status of a document."
-    ],
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "id": 26,
-    "question": "How can you enable partial deliveries for a sales order, while making sure to get as few deliveries as possible?",
-    "options": [
-      "In each order item, set Complete Delivery to required.",
-      "In the order header, set Order Combination to allowed.",
-      "In the order header, set the Complete Delivery indicator.",
-      "In each order item, set Partial Deliveries to required."
-    ],
-    "correct_answers": ["D"]
-  },
-  {
-    "id": 27,
-    "question": "When performing backorder processing, which confirmation strategies can you select?",
-    "options": [
-      "Drop",
-      "Fill",
-      "Redistribute",
-      "Gain",
-      "Obtain"
+      "Pervasive use of agile agentic AI",
+      "SAP data centers that are powered by renewable electricity only",
+      "Optimized AI model sizes and routing",
+      "Ethical AI governance",
+      "Clean core-compliant extensions and process design"
     ],
     "correct_answers": ["B", "C", "D"]
   },
   {
-    "id": 28,
-    "question": "The delivering plant should be determined automatically for a sales order item. Which master data sources can be used to achieve this?",
+    "id": 3,
+    "question": "You requested Joule to draft meeting talking points. Which way of interacting with Joule does this represent?",
     "options": [
-      "Sold-to party",
-      "Material master",
-      "Customer material info record",
-      "Ship-to party",
-      "Material determination"
-    ],
-    "correct_answers": ["A", "B", "C"]
-  },
-  {
-    "id": 29,
-    "question": "Which documents can only be created with reference to a billing document?",
-    "options": [
-      "Invoice correction request",
-      "Debit memo request",
-      "Returns order",
-      "Invoice cancellation"
-    ],
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "id": 30,
-    "question": "Which time components are used to calculate the confirmed delivery date in a sales order?",
-    "options": [
-      "Loading time of the shipping point",
-      "Transportation lead time of the forwarding agent",
-      "Transit time of the route",
-      "Pick/pack time of the warehouse number"
-    ],
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "id": 31,
-    "question": "What are the effects of posting the goods issue during a sales process?",
-    "options": [
-      "Delivery requirements in material planning are updated.",
-      "The document flow is updated.",
-      "The overall status of the delivery is set to complete.",
-      "The warehouse task status is set to complete.",
-      "The billing document can now be created."
-    ],
-    "correct_answers": ["A", "B", "E"]
-  },
-  {
-    "id": 32,
-    "question": "You want to evaluate sales discount condition records. Which tool can you use?",
-    "options": [
-      "Price lists",
-      "Pricing reports",
-      "Listing",
-      "Manage Prices - Sales app"
-    ],
-    "correct_answers": ["A", "D"]
-  },
-  {
-    "id": 33,
-    "question": "You want to change the default description of a specific condition type for selected condition records. How can you achieve this?",
-    "options": [
-      "Use the Manage Prices - Sales app.",
-      "Use the Change condition (VK12) transaction.",
-      "Use report COND_AV.",
-      "Use the Creation of Pricing Lists app."
-    ],
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "id": 34,
-    "question": "In your pricing procedure you have several condition types for a price such as PROO, PR02, PN00 and HM00. Only one of these prices is taken into account. Which setting causes this behavior?",
-    "options": [
-      "Condition function",
-      "Exclusion indicator",
-      "Condition class",
-      "Header condition"
-    ],
-    "correct_answers": ["C"]
-  },
-  {
-    "id": 35,
-    "question": "You want to use condition exclusion. For which of the following pricing elements can you set the condition exclusion indicator?",
-    "options": [
-      "Condition type",
-      "Condition type groups",
-      "Condition record",
-      "Condition category"
-    ],
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "id": 36,
-    "question": "What must every condition record contain?",
-    "options": [
-      "Scale",
-      "Quantity",
-      "Validity period",
-      "Calculation type"
-    ],
-    "correct_answers": ["C", "D"]
-  },
-   {
-    "id": 37,
-    "question": "You want to set up automatic pricing in a sales order. Which actions should you take to achieve this?",
-    "options": [
-      "Set up condition tables and assign them to the relevant access sequences.",
-      "Set up condition tables and assign them to the relevant condition types.",
-      "Set up condition types and assign them to the relevant pricing procedure.",
-      "Set up the pricing procedure and assign it to the relevant sales document type."
-    ],
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "id": 38,
-    "question": "You want to set up a discount with a scale value (condition type K029) that is based on the material group 'spare parts'. The discount should be granted for all items in a sales order that are spare parts. What do you need to set up for condition type K029 so it meets this requirement?",
-    "options": [
-      "You need to set the Condition Index indicator for condition type K029.",
-      "You need to set up condition type K029 as a group condition.",
-      "You need to set the Condition Update indicator for condition type K029.",
-      "You need to set up condition type K029 as a header condition."
-    ],
-    "correct_answers": ["B"]
-  },
-  {
-    "id": 39,
-    "question": "You maintain a sales order with several items and apply a manual freight charge. The system should automatically distribute the freight charge among the items based on the net value. What do you need to do?",
-    "options": [
-      "Set up the freight charge as a header condition.",
-      "Set up calculation type B (fixed amount) for the freight charge.",
-      "Set up condition type groups for the freight charge.",
-      "Assign a group condition routine to the freight charge."
-    ],
-    "correct_answers": ["C"]
-  },
-   {
-    "id": 40,
-    "question": "Which of the following is a prerequisite for billing?",
-    "options": [
-      "You need an order item category that is configured to be billing relevant.",
-      "You need a sales document type that is configured to be billing relevant.",
-      "You need an billing item category that is configured to be billing relevant.",
-      "You need a billing type that is configured to be billing relevant."
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 41,
-    "question": "Which of the following are characteristics of an invoice list process?",
-    "options": [
-      "You must create an invoice list at specified time intervals or on specific dates.",
-      "You must set up a periodic billing plan for the invoice list creation.",
-      "You must send the payer a single invoice list instead of the individual invoices.",
-      "You use preliminary billing documents for the invoice list creation."
-    ],
-    "correct_answers": ["A", "C"]
-  },
-  {
-    "id": 42,
-    "question": "Where do you configure the default billing type to be used for delivery-related billing?",
-    "options": [
-      "Sales document type",
-      "Delivery type",
-      "Sales document item category",
-      "Copying control"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 43,
-    "question": "What can you configure in a billing type?",
-    "options": [
-      "Billing type for cancellation",
-      "Reference mandatory indicator",
-      "Default delivery type for billing",
-      "Item number increment"
-    ],
-    "correct_answers": ["A", "D"]
-  },
-   {
-    "id": 44,
-    "question": "What are some of the differences between the Create Billing Documents (VF04) transaction and the Create Billing Documents - Billing Due List Items app?",
-    "options": [
-      "With the app, a user can set default billing blocks for sales documents.",
-      "With transaction VF04, a user can cancel a collective billing run.",
-      "With transaction VF04, a user can generate a log for the collective run.",
-      "With the app, a user can block the automatic posting of billing documents."
-    ],
-    "correct_answers": ["C", "D"]
-  },
-  {
-    "id": 45,
-    "question": "Which of the following is a use case for a billing plan type?",
-    "options": [
-      "Invoice lists",
-      "Milestone billing",
-      "Settlement management",
-      "Convergent billing"
-    ],
-    "correct_answers": ["B"]
-  },
-  {
-    "id": 46,
-    "question": "You want to use billing as part of the sales process. Which organizational units must be configured?",
-    "options": [
-      "Company code",
-      "Sales organization",
-      "Business area",
-      "Profit center"
-    ],
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "id": 50,
-    "question": "How does the system determine the warehouse number in an order-to-cash process?",
-    "options": [
-      "It is linked to a combination of plant and distribution channel.",
-      "It is linked to a combination of plant and shipping point.",
-      "It is linked to a combination of plant and storage location.",
-      "It is linked to a combination of sales area and plant."
-    ],
-    "correct_answers": ["C"]
-  },
-  {
-    "id": 51,
-    "question": "You want to process and monitor outbound deliveries. Which organizational unit supports this?",
-    "options": [
-      "Distribution channel",
-      "Warehouse number",
-      "Plant",
-      "Shipping point"
+      "Informational",
+      "Transactional",
+      "Chat talk",
+      "Be creative"
     ],
     "correct_answers": ["D"]
   },
   {
-    "id": 52,
-    "question": "Which information comes from the payer?",
+    "id": 4,
+    "question": "How can you interact with Joule and boost productivity and decision-making?",
     "options": [
-      "Invoicing list scheduling",
-      "Payment terms",
-      "Billing plan",
-      "Billing address"
+      "Informational",
+      "Conventional",
+      "Analytical",
+      "Educational",
+      "Navigational"
+    ],
+    "correct_answers": ["A", "C", "E"]
+  },
+  {
+    "id": 5,
+    "question": "Which of the following capabilities are offered by Joule for Consultants?",
+    "options": [
+      "Project lifecycle support",
+      "Code intelligence",
+      "Process automation",
+      "SAP Fiori apps smart help"
     ],
     "correct_answers": ["A", "B"]
   },
   {
-    "id": 53,
-    "question": "Which business partner categories can you use to create customer master records?",
+    "id": 6,
+    "question": "Which tool in the Integrated Toolchain is specifically intended to give organizations a consolidated view of their enterprise architecture and IT landscape?",
     "options": [
-      "Company",
-      "Group",
-      "Organization",
-      "Sold-to party"
-    ],
-    "correct_answers": ["B", "C"]
-  },
-  {
-    "id": 54,
-    "question": "Which field from the material master is used in route determination in a sales order?",
-    "options": [
-      "Weight group",
-      "Loading group",
-      "Transportation group",
-      "Material freight group"
-    ],
-    "correct_answers": ["C"]
-  },
-  {
-    "id": 55,
-    "question": "You save a sales order and receive a system message that a business partner of a specific partner function is missing. Which of the following partner functions can cause this problem?",
-    "options": [
-      "Ship-to party (SH)",
-      "Sold-to party (SP)",
-      "Invoicing party (11)",
-      "Ordering party (1)"
-    ],
-    "correct_answers": ["A", "B"]
-  },
-  {
-    "id": 56,
-    "question": "When you create a business partner, allocation of the business partner number is controlled by a number range assigned to which object?",
-    "options": [
-      "Account group",
-      "Business partner category",
-      "Business partner grouping",
-      "Business partner role"
-    ],
-    "correct_answers": ["C"]
-  },
-  {
-    "id": 57,
-    "question": "You are a consultant on an SAP S/4HANA Cloud greenfield project. As part of their clean core journey, the customer must analyze the current IT landscape to eliminate redundant systems and establish an efficient architectural design. Which of the following can you use to do the analysis?",
-    "options": [
+      "SAP Signavio",
       "SAP Cloud ALM",
-      "Lean IX",
-      "SAP Best Practices",
-      "SAP Solution Manager"
+      "SAP Joule for Developers",
+      "SAP LeanIX"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 7,
+    "question": "Your customer wants to deploy a generative AI model to summarize customer feedback across channels. Which AI Foundation component is best suited for this task?",
+    "options": [
+      "Generative AI hub",
+      "SAP Document AI",
+      "Joule Studio",
+      "SAP Knowledge Graph"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 8,
+    "question": "What enables SAP's Suite as a Service approach?",
+    "options": [
+      "Scalable intelligence",
+      "Integrated applications",
+      "Harmonized data",
+      "Coordinated automation",
+      "Embedded AI"
+    ],
+    "correct_answers": ["B", "C", "E"]
+  },
+  {
+    "id": 9,
+    "question": "What are some value propositions of SAP Document AI?",
+    "options": [
+      "Scalability and compliance",
+      "Secure and compliant frameworks",
+      "Enterprise-grade orchestration",
+      "Preconfigured content"
+    ],
+    "correct_answers": ["B", "D"]
+  },
+  {
+    "id": 10,
+    "question": "What are the main domain clusters of SAP's guiding principles for ethical AI?",
+    "options": [
+      "Executive Sponsorship",
+      "AI Ethics Steering committee",
+      "AI System definition",
+      "AI System engineering",
+      "Organizational practice"
+    ],
+    "correct_answers": ["C", "D", "E"]
+  },
+  {
+    "id": 11,
+    "question": "What is the semantic backbone of the AI Foundation that seamlessly links and contextualizes enterprise data for AI insights?",
+    "options": [
+      "SAP Document AI",
+      "SAP Knowledge Graph",
+      "Joule Studio",
+      "Document grounding"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 12,
+    "question": "You are asking Joule to create a new purchase requisition. Which interaction pattern does your request represent?",
+    "options": [
+      "Commercial",
+      "Informational",
+      "Transactional",
+      "Financial"
     ],
     "correct_answers": ["C"]
   },
   {
-    "id": 58,
-    "question": "You are a consultant on an SAP S/4HANA Cloud greenfield project. Which of the following aspects should you focus on to achieve and maintain clean core data quality?",
+    "id": 13,
+    "question": "How does Joule deliver SAP's four customer promises?",
     "options": [
-      "Stability",
-      "Accuracy",
-      "Efficiency",
-      "Timeliness"
+      "Sustainable deployment, predictive accuracy, document grounding, responsible AI",
+      "Strict data protection, unified UI, cross-application architecture, seamless integration",
+      "Analytical insights, agile implementations, secure operations, ethical guardrails",
+      "Cross-enterprise outcomes, agility for all, insights at scale, simple and secure"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 14,
+    "question": "What are some strategic benefits of generative AI for RISE customers?",
+    "options": [
+      "Accelerated migration",
+      "Improved encryption",
+      "Improved agility",
+      "Cost efficiency",
+      "Enhanced clean core"
+    ],
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "id": 15,
+    "question": "Within AI Foundation’s layered architecture, which layer provides a unified entry point for development, operations, and administration?",
+    "options": [
+      "AI Integration Layer",
+      "OS Interfaces Layer",
+      "Peripheral & Data Layer",
+      "AI Kernel Layer"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 16,
+    "question": "What are some value propositions of the generative AI hub?",
+    "options": [
+      "Secure and compliant frameworks",
+      "Preconfigured content",
+      "Enterprise-grade orchestration of models",
+      "Scalability and compliance of business documents"
     ],
     "correct_answers": ["A", "C"]
   },
   {
-    "id": 59,
-    "question": "Which of the following API types does SAP recommend to use to achieve clean core integrations?",
+    "id": 17,
+    "question": "Match the key personas of an organization to the impact of SAP Business AI on their organization.",
     "options": [
-      "OData",
-      "SOAP",
-      "RFC",
-      "IDoc"
+      "CHRO – Enhance hiring, developing employees, and streamlining HR agility",
+      "CPO – Improve sourcing, forecasting disruptions, and managing suppliers",
+      "CIO/CTO – Integrate seamlessly with current technological infrastructure securely",
+      "CFO – Improve financial efficiency, forecasting, and managing risk",
+      "COO – Improve process automation and supply chain resilience"
     ],
-    "correct_answers": ["A", "B"]
+    "correct_answers": ["A", "B", "C", "D", "E"]
   },
   {
-    "id": 60,
-    "question": "You are a consultant on an SAP S/4HANA Cloud brownfield project. In a meeting the customer decides to remodel an existing business process in accordance with clean core principles. Which of the following SAP Signavio solutions can be used for the remodeling?",
+    "id": 18,
+    "question": "Which of the following are included in SAP's Responsible AI framework?",
     "options": [
-      "SAP Signavio Process Insights",
-      "SAP Signavio Process Governance",
-      "SAP Signavio Process Manager",
-      "SAP Signavio Process Intelligence"
+      "SAP Global Human Rights commitment",
+      "Transparency and accountability",
+      "ESG reporting",
+      "Ethical governance",
+      "Human-centered design"
+    ],
+    "correct_answers": ["B", "D", "E"]
+  },
+  {
+    "id": 19,
+    "question": "Match the component on the left to the definition in the dropdown list.",
+    "options": [
+      "Joule skills – AI applications that execute single, predefined tasks independently",
+      "Joule Studio – Low-code extensibility environment within SAP Build",
+      "Joule – User interface for AI at SAP",
+      "Joule agents – AI applications that assist business users with decision support and task automation"
+    ],
+    "correct_answers": ["A", "B", "C", "D"]
+  },
+  {
+    "id": 20,
+    "question": "With respect to AI agents, which functionalities are offered by the executive dashboard in SAP LeanIX?",
+    "options": [
+      "Automation gaps",
+      "Skill shifts",
+      "Deployment opportunities",
+      "Business impact",
+      "Adoption trends"
+    ],
+    "correct_answers": ["B", "D", "E"]
+  },
+  {
+    "id": 21,
+    "question": "What are some characteristics of ready-to-use Joule Agents?",
+    "options": [
+      "They automate complex, multi-step workflows",
+      "They provide long-term memory and learning",
+      "They collaborate across business functions",
+      "They deliver contextual insights and recommendations",
+      "They guarantee accuracy and reliability"
+    ],
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "id": 22,
+    "question": "What are some benefits of AI agents?",
+    "options": [
+      "Facilitate collaboration",
+      "Replace managers",
+      "Boost productivity",
+      "Reduce costs",
+      "Ensure privacy"
+    ],
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "id": 23,
+    "question": "Which protocol enables autonomous AI agents to discover each other, delegate tasks, and collaborate across platforms?",
+    "options": [
+      "Agent-to-Orchestrator (A2O)",
+      "Model Context Protocol (MCP)",
+      "Agent Hub",
+      "Agent2Agent (A2A)"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 24,
+    "question": "What are some advantages for businesses using Joule Agents?",
+    "options": [
+      "Unrivaled process mining and applications",
+      "Unmatched extensibility and built-in security",
+      "Agile business transformation and sustainable value chains",
+      "Integration and collaboration across business functions",
+      "Harmonized data and robust process expertise"
+    ],
+    "correct_answers": ["B", "D", "E"]
+  },
+  {
+    "id": 25,
+    "question": "What are some important features of the Joule Agent architecture?",
+    "options": [
+      "Managed agent runtime",
+      "Seamless collaboration",
+      "Bi-directional connectivity",
+      "Shared agent services",
+      "Agent to agent protocol"
+    ],
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "id": 26,
+    "question": "How can SAP Knowledge Graph provide context to AI agents?",
+    "options": [
+      "By connecting data from multiple SAP applications and third-party systems",
+      "By using advanced analytics and machine learning capabilities",
+      "By validating assumptions and deriving logical conclusions from structured relationships",
+      "By disambiguating terms, linking concepts to entities, and grounding user conversations in domain-specific knowledge"
+    ],
+    "correct_answers": ["C", "D"]
+  },
+  {
+    "id": 27,
+    "question": "What types of agents does Joule integrate?",
+    "options": [
+      "Content-based agents",
+      "Product-specific agents",
+      "Retrieval-augmented agents",
+      "Code-based agents"
+    ],
+    "correct_answers": ["A", "D"]
+  },
+  {
+    "id": 28,
+    "question": "What are some of the challenges LLMs face that SAP Knowledge Graph tries to deal with?",
+    "options": [
+      "Capturing dynamic and real-time information",
+      "Generating factually incorrect or fabricated information",
+      "Overlooking relationships between entities",
+      "Providing subjective and contextual information"
     ],
     "correct_answers": ["B", "C"]
+  },
+  {
+    "id": 29,
+    "question": "What are some activities SAP recommends customers consider when integrating agent AI systems into their operations?",
+    "options": [
+      "Provide internal data for training",
+      "Set up an AI agent governance board to prevent ethical issues",
+      "Measure and evaluate AI agent performance",
+      "Maintain expert oversight over AI agent decisions",
+      "Implement change management to align teams with AI agent functions"
+    ],
+    "correct_answers": ["A", "C", "D"]
+  },
+  {
+    "id": 30,
+    "question": "Apart from SAP LeanIX, what other solutions does the AI agent hub support?",
+    "options": [
+      "SAP SuccessFactors",
+      "SAP Integrated Business Planning",
+      "SAP Signavio",
+      "SAP Ariba"
+    ],
+    "correct_answers": ["A", "C"]
   }
-
-
-
-
-
-
 ]
