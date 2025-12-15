@@ -6,9 +6,9 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "turbo run dev -- --port 3000",
     "build": "turbo run build",
-    "start": "turbo run start"
+    "start": "turbo run start -- --port 3000"
   },
   "devDependencies": {
     "turbo": "2.1.3"

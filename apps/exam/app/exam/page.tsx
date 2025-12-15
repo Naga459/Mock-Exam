@@ -40,6 +40,7 @@ export default function ExamPage() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Record<number, Set<string>>>({});
   const [flagged, setFlagged] = useState<Record<number, boolean>>({});
+  const [showAnswers, setShowAnswers] = useState<Record<number, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -58,6 +59,22 @@ export default function ExamPage() {
 
   // Confirmation modal
   const [confirmOpen, setConfirmOpen] = useState(false);
+
+  // Mobile responsive
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth < 768);
+      }
+    };
+    checkMobile();
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', checkMobile);
+      return () => window.removeEventListener('resize', checkMobile);
+    }
+  }, []);
 
   // Load exam + questions; shuffle consistently; set timer
   useEffect(() => {
@@ -217,6 +234,10 @@ export default function ExamPage() {
     setFlagged((prev) => ({ ...prev, [qid]: !prev[qid] }));
   };
 
+  const toggleShowAnswer = (qid: number) => {
+    setShowAnswers((prev) => ({ ...prev, [qid]: !prev[qid] }));
+  };
+
   const doSubmit = () => {
     // compute score
     let correct = 0;
@@ -262,6 +283,7 @@ export default function ExamPage() {
     setQuestions(reshuffled);
     setAnswers({});
     setFlagged({});
+    setShowAnswers({});
     setSubmitted(false);
     setShowSummary(false);
     setCurrentQuestion(0);
@@ -278,14 +300,15 @@ export default function ExamPage() {
   const isCorrectAnswer =
     JSON.stringify(sortedSel) === JSON.stringify(sortedCorr);
   const multiSelect = q.correct_answers.length > 1;
+  const showCurrentAnswer = showAnswers[q.id] || submitted;
 
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
+    <div style={{ maxWidth: 1100, margin: "0 auto", padding: isMobile ? 12 : 24 }}>
       {/* Header */}
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "1fr auto auto",
+          gridTemplateColumns: isMobile ? "1fr" : "1fr auto auto",
           gap: 12,
           alignItems: "center",
           marginBottom: 16,
@@ -303,7 +326,7 @@ export default function ExamPage() {
         {/* Progress */}
         <div
           style={{
-            minWidth: 260,
+            minWidth: isMobile ? "auto" : 260,
             border: "1px solid #2b3a6a",
             borderRadius: 10,
             padding: 10,
@@ -335,7 +358,7 @@ export default function ExamPage() {
         {/* Timer */}
         <div
           style={{
-            minWidth: 160,
+            minWidth: isMobile ? "auto" : 160,
             border: "1px solid #2b3a6a",
             borderRadius: 10,
             padding: "10px 14px",
@@ -359,6 +382,7 @@ export default function ExamPage() {
           gap: 10,
           justifyContent: "space-between",
           marginBottom: 12,
+          flexWrap: "wrap",
         }}
       >
         <div
@@ -437,7 +461,7 @@ export default function ExamPage() {
               <div
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "repeat(3, 1fr)",
+                  gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)",
                   gap: 12,
                   marginBottom: 16,
                 }}
@@ -506,19 +530,19 @@ export default function ExamPage() {
               <LegendBadge color="#b28800" label="Flagged" />
             </div>
 
-            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: isMobile ? 4 : 6, flexWrap: "wrap" }}>
               {questions.map((qq, idx) => {
                 const answered = (answers[qq.id]?.size || 0) > 0;
                 const sel = Array.from(answers[qq.id] || []).sort();
                 const corr = qq.correct_answers.slice().sort();
                 const correct =
-                  submitted &&
+                  (submitted || showAnswers[qq.id]) &&
                   answered &&
                   JSON.stringify(sel) === JSON.stringify(corr);
-                const incorrect = submitted && answered && !correct;
+                const incorrect = (submitted || showAnswers[qq.id]) && answered && !correct;
 
                 let bg = answered ? "#5f7fd4" : "#3a4a6a";
-                if (submitted) {
+                if (submitted || showAnswers[qq.id]) {
                   if (correct) bg = "#2b7f4a";
                   if (incorrect) bg = "#7f2b2b";
                 }
@@ -533,19 +557,20 @@ export default function ExamPage() {
                       goToQuestion(idx);
                     }}
                     style={{
-                      width: 36,
-                      height: 36,
+                      width: isMobile ? 32 : 36,
+                      height: isMobile ? 32 : 36,
                       borderRadius: 8,
                       border: isFlagged ? "2px solid #b28800" : "1px solid #2b3a6a",
                       background: bg,
                       color: "white",
                       cursor: "pointer",
                       fontWeight: 700,
+                      fontSize: isMobile ? 12 : 14,
                     }}
                     title={
                       (isFlagged ? "🚩 " : "") +
                       `Q${idx + 1}: ${answered ? "Answered" : "Unanswered"}${
-                        submitted ? correct ? " (Correct)" : incorrect ? " (Incorrect)" : "" : ""
+                        (submitted || showAnswers[qq.id]) ? correct ? " (Correct)" : incorrect ? " (Incorrect)" : "" : ""
                       }`
                     }
                   >
@@ -574,46 +599,83 @@ export default function ExamPage() {
             style={{
               display: "flex",
               justifyContent: "space-between",
-              gap: 10,
+              gap: isMobile ? 8 : 10,
               alignItems: "start",
-              marginBottom: 12,
+              marginBottom: isMobile ? 16 : 12,
+              flexDirection: isMobile ? "column" : "row",
             }}
           >
-            <div style={{ fontSize: 18, fontWeight: 700, lineHeight: 1.4, flex: 1 }}>
+            <div style={{ 
+              fontSize: isMobile ? 16 : 18, 
+              fontWeight: 700, 
+              lineHeight: isMobile ? 1.5 : 1.4, 
+              flex: 1,
+              marginBottom: isMobile ? 12 : 0
+            }}>
               {q.question}
-              <div style={{ fontSize: 12, opacity: 0.7, marginTop: 6 }}>
+              <div style={{ 
+                fontSize: isMobile ? 13 : 12, 
+                opacity: 0.7, 
+                marginTop: isMobile ? 8 : 6,
+                fontWeight: 500
+              }}>
                 {q.correct_answers.length > 1
                   ? "Select all that apply"
                   : "Select exactly one"}
               </div>
             </div>
 
-            <button
-              onClick={() => toggleFlag(q.id)}
-              style={{
-                padding: "8px 12px",
-                borderRadius: 20,
-                border: "1px solid #b28800",
-                background: flagged[q.id] ? "#b28800" : "transparent",
-                color: flagged[q.id] ? "#121a33" : "#b28800",
-                fontWeight: 700,
-                cursor: "pointer",
-              }}
-              title="Mark for review"
-            >
-              🚩 {flagged[q.id] ? "Flagged" : "Flag"}
-            </button>
+            <div style={{ 
+              display: "flex", 
+              gap: isMobile ? 6 : 8, 
+              flexWrap: "wrap",
+              width: isMobile ? "100%" : "auto",
+              justifyContent: isMobile ? "center" : "flex-start"
+            }}>
+              <button
+                onClick={() => toggleShowAnswer(q.id)}
+                style={{
+                  padding: "8px 12px",
+                  borderRadius: 20,
+                  border: "1px solid #2b7f4a",
+                  background: showAnswers[q.id] ? "#2b7f4a" : "transparent",
+                  color: showAnswers[q.id] ? "white" : "#2b7f4a",
+                  fontWeight: 700,
+                  cursor: "pointer",
+                  fontSize: isMobile ? 12 : 14,
+                }}
+                title="Show correct answer for this question"
+              >
+                💡 {isMobile ? "Answer" : showAnswers[q.id] ? "Hide Answer" : "Show Answer"}
+              </button>
+              <button
+                onClick={() => toggleFlag(q.id)}
+                style={{
+                  padding: "8px 12px",
+                  borderRadius: 20,
+                  border: "1px solid #b28800",
+                  background: flagged[q.id] ? "#b28800" : "transparent",
+                  color: flagged[q.id] ? "#121a33" : "#b28800",
+                  fontWeight: 700,
+                  cursor: "pointer",
+                  fontSize: isMobile ? 12 : 14,
+                }}
+                title="Mark for review"
+              >
+                🚩 {isMobile ? "Flag" : flagged[q.id] ? "Flagged" : "Flag"}
+              </button>
+            </div>
           </div>
 
           {/* Options */}
-          <div style={{ display: "grid", gap: 10 }}>
+          <div style={{ display: "grid", gap: isMobile ? 8 : 10 }}>
             {q.options.map((opt, i) => {
               const L = letter(i);
               const checked = !!answers[q.id]?.has(L);
               const disabled = submitted;
               const isCorrect = q.correct_answers.includes(L);
               const isWrongSel = checked && !isCorrect;
-              const showFeedback = submitted;
+              const showFeedback = showCurrentAnswer;
 
               // Use checkbox for multi, radio for single (UI only; state enforces behavior)
               const inputType = q.correct_answers.length > 1 ? "checkbox" : "radio";
@@ -623,9 +685,9 @@ export default function ExamPage() {
                   key={i}
                   style={{
                     display: "flex",
-                    alignItems: "center",
-                    gap: 10,
-                    padding: "12px 14px",
+                    alignItems: isMobile ? "flex-start" : "center",
+                    gap: isMobile ? 10 : 10,
+                    padding: isMobile ? "12px 14px" : "12px 14px",
                     borderRadius: 8,
                     border: showFeedback
                       ? isCorrect
@@ -658,7 +720,11 @@ export default function ExamPage() {
                   <span style={{ fontFamily: "ui-monospace, monospace", fontWeight: "bold" }}>
                     {L}.
                   </span>
-                  <span style={{ flex: 1 }}>{opt}</span>
+                  <span style={{ 
+                    flex: 1, 
+                    fontSize: isMobile ? 15 : 16,
+                    lineHeight: isMobile ? 1.4 : 1.2
+                  }}>{opt}</span>
                   {showFeedback && isCorrect && (
                     <span style={{ color: "#44ff44", fontWeight: "bold" }}>✓</span>
                   )}
@@ -670,15 +736,16 @@ export default function ExamPage() {
             })}
           </div>
 
-          {/* After-submit feedback for the current question */}
-          {submitted && (
+          {/* Answer feedback for the current question */}
+          {showCurrentAnswer && (
             <div
               style={{
-                marginTop: 16,
-                padding: 12,
+                marginTop: isMobile ? 20 : 16,
+                padding: isMobile ? 16 : 12,
                 background: "#0e1630",
                 borderRadius: 8,
-                fontSize: 14,
+                fontSize: isMobile ? 15 : 14,
+                lineHeight: 1.5,
               }}
             >
               <strong>Correct Answer:</strong>{" "}
@@ -703,7 +770,7 @@ export default function ExamPage() {
         <div
           style={{
             display: "flex",
-            gap: 6,
+            gap: isMobile ? 4 : 6,
             flexWrap: "wrap",
             justifyContent: "center",
             marginBottom: 16,
@@ -714,11 +781,11 @@ export default function ExamPage() {
             const sel = Array.from(answers[qq.id] || []).sort();
             const corr = qq.correct_answers.slice().sort();
             const correct =
-              submitted && answered && JSON.stringify(sel) === JSON.stringify(corr);
-            const incorrect = submitted && answered && !correct;
+              (submitted || showAnswers[qq.id]) && answered && JSON.stringify(sel) === JSON.stringify(corr);
+            const incorrect = (submitted || showAnswers[qq.id]) && answered && !correct;
 
             let bg = answered ? "#5f7fd4" : "#1a2752";
-            if (submitted) {
+            if (submitted || showAnswers[qq.id]) {
               if (correct) bg = "#2b7f4a";
               if (incorrect) bg = "#7f2b2b";
             }
@@ -730,14 +797,15 @@ export default function ExamPage() {
                 key={idx}
                 onClick={() => goToQuestion(idx)}
                 style={{
-                  width: 32,
-                  height: 32,
+                  width: isMobile ? 28 : 32,
+                  height: isMobile ? 28 : 32,
                   borderRadius: 6,
                   border: isCurrent ? "2px solid #fff" : isFlagged ? "2px solid #b28800" : "1px solid #2b3a6a",
                   background: bg,
                   color: "white",
                   cursor: "pointer",
                   fontWeight: isCurrent ? 800 : 600,
+                  fontSize: isMobile ? 12 : 14,
                 }}
                 title={(isFlagged ? "🚩 " : "") + `Go to question ${idx + 1}`}
               >
@@ -755,14 +823,15 @@ export default function ExamPage() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            gap: 16,
+            gap: isMobile ? 8 : 16,
+            flexDirection: isMobile ? "column" : "row",
           }}
         >
           <button
             onClick={prevQuestion}
             disabled={currentQuestion === 0}
             style={{
-              padding: "12px 20px",
+              padding: isMobile ? "10px 16px" : "12px 20px",
               borderRadius: 10,
               border: "1px solid #2b3a6a",
               background: currentQuestion === 0 ? "#0a1020" : "#1a2752",
@@ -770,6 +839,7 @@ export default function ExamPage() {
               cursor: currentQuestion === 0 ? "not-allowed" : "pointer",
               opacity: currentQuestion === 0 ? 0.5 : 1,
               flex: 1,
+              width: isMobile ? "100%" : "auto",
             }}
           >
             ← Previous
@@ -782,7 +852,7 @@ export default function ExamPage() {
                 : nextQuestion()
             }
             style={{
-              padding: "12px 20px",
+              padding: isMobile ? "10px 16px" : "12px 20px",
               borderRadius: 10,
               border: "1px solid #2b3a6a",
               background:
@@ -791,6 +861,7 @@ export default function ExamPage() {
               cursor: "pointer",
               flex: 1,
               fontWeight: 700,
+              width: isMobile ? "100%" : "auto",
             }}
           >
             {currentQuestion === questions.length - 1 ? "Submit" : "Next →"}
@@ -814,11 +885,13 @@ export default function ExamPage() {
         >
           <div
             style={{
-              width: 420,
+              width: isMobile ? "90vw" : 420,
+              maxWidth: isMobile ? "none" : 420,
               background: "#121a33",
               border: "1px solid #2b3a6a",
               borderRadius: 12,
-              padding: 20,
+              padding: isMobile ? 16 : 20,
+              margin: isMobile ? "0 16px" : "0",
             }}
           >
             <h3 style={{ marginTop: 0 }}>Submit Exam?</h3>
@@ -835,16 +908,23 @@ export default function ExamPage() {
                 </>
               )}
             </p>
-            <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
+            <div style={{ 
+              display: "flex", 
+              gap: isMobile ? 8 : 10, 
+              justifyContent: "flex-end",
+              flexDirection: isMobile ? "column" : "row"
+            }}>
               <button
                 onClick={() => setConfirmOpen(false)}
                 style={{
-                  padding: "10px 14px",
+                  padding: isMobile ? "12px 16px" : "10px 14px",
                   borderRadius: 10,
                   border: "1px solid #2b3a6a",
                   background: "#1a2752",
                   color: "white",
                   cursor: "pointer",
+                  width: isMobile ? "100%" : "auto",
+                  order: isMobile ? 2 : 1,
                 }}
               >
                 Review More
@@ -852,13 +932,15 @@ export default function ExamPage() {
               <button
                 onClick={confirmSubmit}
                 style={{
-                  padding: "10px 14px",
+                  padding: isMobile ? "12px 16px" : "10px 14px",
                   borderRadius: 10,
                   border: "1px solid #2b3a6a",
                   background: "#2b7f4a",
                   color: "white",
                   cursor: "pointer",
                   fontWeight: 700,
+                  width: isMobile ? "100%" : "auto",
+                  order: isMobile ? 1 : 2,
                 }}
               >
                 Yes, Submit
