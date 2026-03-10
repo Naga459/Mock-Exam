@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "Intercompany sales occurs when",
+    "options": [
+      "When Sales Organization and delivering plant in a sales transaction belong to different company codes",
+      "When two Sales Organizations belong to different company codes",
+      "When sales happens within one company code",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is not a function of the billing document in the SD process?",
+    "options": [
+      "Billing creates billing document for orders and deliveries",
+      "Billing updates the document flow and billing status",
+      "Billing does not update the credit account",
+      "Billing creates documents in FI and forwards data to profitability analysis"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 3,
+    "question": "Customer master data consists of the following tabs",
+    "options": [
+      "Purchase data",
+      "General data",
+      "Company code data",
+      "Sales area data"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 4,
+    "question": "Availability check ensures that",
+    "options": [
+      "Sufficient stock is available in the delivery plant to fulfill the customer requirement",
+      "Sales order is not blocked for delivery",
+      "Sales order is not blocked for billing",
+      "All of the options"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 5,
+    "question": "Following is the organizational structure element",
+    "options": [
+      "Customer master data",
+      "Material master data",
+      "Plant",
+      "Customer material info record"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 6,
+    "question": "The posting status of the accounting document can be seen on which level of the billing document",
+    "options": [
+      "Header",
+      "Item",
+      "Header and item",
+      "None"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 7,
+    "question": "Packing relevance is set in",
+    "options": [
+      "Sales document type",
+      "Delivery document type",
+      "Item category",
+      "User role"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 8,
+    "question": "Condition type can be set as manual, required, statistical?",
+    "options": [
+      "In pricing procedure",
+      "In access sequence",
+      "In condition type configuration",
+      "All of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 9,
+    "question": "What are the parameters that control the scope of availability check to be performed?",
+    "options": [
+      "Checking group",
+      "Checking rule",
+      "Checking group + checking rule",
+      "Checking group or checking rule"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 10,
+    "question": "What are the types of contracts in SAP?",
+    "options": [
+      "Value, Quantity, Master",
+      "Value, Header, Item",
+      "Quantity, Release, Full value",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 11,
+    "question": "Which of the following statement is incorrect?",
+    "options": [
+      "When you cancel a document, the system copies the data from the reference document.",
+      "When a billing document is cancelled, it resets the document status.",
+      "When a billing document is cancelled, it does not update the document flow.",
+      "The cancellation document will contain the referenced document number and the original document will have a reference to the cancellation document."
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 12,
+    "question": "Which consignment process is relevant for billing?",
+    "options": [
+      "Consignment fill-up",
+      "Consignment issue",
+      "Consignment pick-up",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 13,
+    "question": "Billing plan can be assigned to?",
+    "options": [
+      "Sales document level",
+      "Schedule line item category level",
+      "Item category level",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 14,
+    "question": "Picking is carried out from?",
+    "options": [
+      "Shipping point",
+      "Sales office",
+      "Division",
+      "Storage location"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 15,
+    "question": "In T-code VK11",
+    "options": [
+      "Pricing condition records are maintained",
+      "Material condition records are maintained",
+      "Customer block condition records are maintained",
+      "None of the above choices"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 16,
+    "question": "Sales documents created with respect to contracts for supplying to customers are called",
+    "options": [
+      "Release order",
+      "Contract release",
+      "Rush order",
+      "Consignment"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 17,
+    "question": "In a field catalog",
+    "options": [
+      "New fields can be added through ABAP help",
+      "New fields can be added",
+      "New fields cannot be added",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 18,
+    "question": "Transportation group is maintained in",
+    "options": [
+      "Material master sales/general/plant data",
+      "Material master sales view",
+      "Customer master sales area data",
+      "Customer material info record"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 19,
+    "question": "Rebate process refers to",
+    "options": [
+      "Sales process between two company codes",
+      "Normal discount process",
+      "Retroactive discount",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 20,
+    "question": "Route is determined based on",
+    "options": [
+      "Departure zone",
+      "Shipping condition",
+      "Transportation zone and transportation group",
+      "All of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 21,
+    "question": "List of materials that you can substitute to buy the material you want is called",
+    "options": [
+      "Material listing",
+      "Material determination",
+      "Material exclusion",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 22,
+    "question": "Modes of shipment creation are",
+    "options": [
+      "Manually",
+      "Collectively",
+      "Externally",
+      "All of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 23,
+    "question": "The following is the correct sequence for POD (Proof of Delivery)",
+    "options": [
+      "Order → Delivery → PGI → POD",
+      "Order → Delivery → POD → PGI",
+      "Order → Delivery → Invoice → POD",
+      "Both a & b"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 24,
+    "question": "Bottleneck material, export papers are standard examples of",
+    "options": [
+      "Delivery blocking reasons",
+      "Billing block reasons",
+      "Item categories",
+      "Material types"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 25,
+    "question": "POD relevance check is done for the following to make it POD relevant",
+    "options": [
+      "Sold-to",
+      "Ship-to",
+      "Bill-to",
+      "Vendor"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 26,
+    "question": "Identify the incorrect statement",
+    "options": [
+      "A route is a transport channel or a path for the delivery between delivery plant and customer ship-to party",
+      "Route is determined in the sales order at the item level through route determination configuration",
+      "The route can be manually changed in the sales order even though it is proposed by the system",
+      "The route can be manually changed in the billing document even though it is proposed by the system"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 27,
+    "question": "Combining deliveries for billing is not possible when",
+    "options": [
+      "Different ship-to",
+      "Different payer",
+      "Different payment terms",
+      "Both b & c"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 28,
+    "question": "Sales order can have",
+    "options": [
+      "Single delivery",
+      "Multiple delivery",
+      "Partial delivery",
+      "All of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 29,
+    "question": "Standard material type for packaging material",
+    "options": [
+      "FERP",
+      "VERP",
+      "FWEI",
+      "FERT"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 30,
+    "question": "What pricing element is used to control pricing so that you can specify that a customer-specific price is used in automatic pricing?",
+    "options": [
+      "Access sequence",
+      "Condition type",
+      "Condition table",
+      "Item condition"
+    ],
+    "correct_answers": ["A"]
+  }
+]

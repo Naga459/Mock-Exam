@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sap-ai",
+    "name": "SAP Business AI & Joule",
+    "description": "Covers SAP Business AI, Joule, AI Foundation, Agentic AI and responsible AI principles.",
+    "file": "questions.json",
+    "questionCount": 30,
+    "badge": "AI"
+  },
+  {
+    "id": "sap-sd-1",
+    "name": " Infosys SAP SD Module  1",
+    "description": "SAP Sales & Distribution fundamentals — contracts, billing plans, pricing, availability check and more.",
+    "file": "TestQuestionsModule1.json",
+    "questionCount": 50,
+    "badge": "SD"
+  },
+  {
+    "id": "sap-sd-2",
+    "name": "Infosys SAP SD Module 2",
+    "description": "Advanced SAP SD topics — intercompany sales, consignment, route determination, rebates and POD.",
+    "file": "TestQuestionsModule2.json",
+    "questionCount": 30,
+    "badge": "SD"
+  },
+  {
+    "id": "sap-sd-3",
+    "name": "Infosys SAP SD Module 3",
+    "description": "SAP SD organizational structures, billing plans, availability check scope and shipment creation.",
+    "file": "TestQuestionsModule3.json",
+    "questionCount": 31,
+    "badge": "SD"
+  }
+]

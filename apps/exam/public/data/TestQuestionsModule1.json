@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "question": "What are the types of value contract in SAP?",
+    "options": [
+      "Standard material",
+      "Low value, high value",
+      "No value, full value",
+      "None of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 2,
+    "question": "How many types of availability check exist?",
+    "options": [
+      "Based on ATP logic",
+      "Product allocation",
+      "Planned independent requirements",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 3,
+    "question": "Text determination for sales document header will be assigned to?",
+    "options": [
+      "Billing type",
+      "Sales document type",
+      "Sales document category",
+      "All of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 4,
+    "question": "Which of the following statements is true regarding billing plan?",
+    "options": [
+      "Billing plan cannot be blocked for billing",
+      "Milestone billing plan is used for project engineering and construction where the billing dates are linked to project milestones",
+      "Periodic billing plan is used for contracts where billing occurs at regular intervals",
+      "Document flow is updated during billing; subsequent billing does not update the document flow"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 5,
+    "question": "Availability check will not be carried out when?",
+    "options": [
+      "Plant is not determined in the sales order item",
+      "Route is not determined in the sales order",
+      "Sales order is incomplete",
+      "All of the options"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 6,
+    "question": "Packing can be?",
+    "options": [
+      "Single level",
+      "Dangerous",
+      "Multilevel",
+      "Both a & c"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 7,
+    "question": "Where does the physical stock exist in case of consignment pickup process?",
+    "options": [
+      "Customer",
+      "Plant",
+      "Vendor",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 8,
+    "question": "Shipment as a function is not used for?",
+    "options": [
+      "Allocation of planning dates",
+      "Creation of shipping units (Box, etc.)",
+      "Grouping of multiple deliveries into one document",
+      "Creation of invoice"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 9,
+    "question": "Which is not true with respect to an ERP system?",
+    "options": [
+      "Lack of timely information",
+      "Integrated database",
+      "Consistency and no duplication of data",
+      "Modular system"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 10,
+    "question": "Which availability check is carried out in quotation?",
+    "options": [
+      "ATP logic",
+      "Product allocation",
+      "Planned",
+      "No check"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 11,
+    "question": "Storage location determination in order takes place based on:",
+    "options": [
+      "Ship-to party",
+      "Plant data",
+      "Material master data",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 12,
+    "question": "Shipment function in SAP includes:",
+    "options": [
+      "Operational",
+      "Mandatory",
+      "None of the above",
+      "All of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 13,
+    "question": "FTL is the strategy group saving the cash sales order document automatically creates:",
+    "options": [
+      "Sales order",
+      "Delivery",
+      "Billing",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 14,
+    "question": "Condition exclusion indicator can be set at?",
+    "options": [
+      "Condition record",
+      "Condition type",
+      "Both of the above",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 15,
+    "question": "Header condition can be distributed?",
+    "options": [
+      "Equally across all the items in the order",
+      "Pro-rata across all the items in the order",
+      "Both of the above",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 16,
+    "question": "Picking process is",
+    "options": [
+      "Mandatory",
+      "Can be optional",
+      "Not at all required",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 17,
+    "question": "Rebate is settled using",
+    "options": [
+      "Sales order",
+      "Delivery",
+      "Contract",
+      "Credit memo"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 18,
+    "question": "Shipment is created with",
+    "options": [
+      "Shipping point",
+      "Loading point",
+      "Transportation planning point",
+      "All of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 19,
+    "question": "Pricing procedure can be?",
+    "options": [
+      "Manual",
+      "Statistical",
+      "Automatic",
+      "Mandatory"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 20,
+    "question": "Following assignments are not true?",
+    "options": [
+      "Division is assigned to Sales Organization",
+      "Sales office is assigned to Sales Area",
+      "Sales group is assigned to Sales Area",
+      "Sales group is assigned to Sales office"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 21,
+    "question": "Which of the following statement is true?",
+    "options": [
+      "SAP does not support multiple database systems",
+      "Presentation server handles application processing",
+      "For a single R/3 system there may be multiple application servers in order to balance the load",
+      "Application server in R/3 system supports user access"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 22,
+    "question": "Sales area details in Sales Order are available at",
+    "options": [
+      "Header data",
+      "Item data",
+      "Both header & item data",
+      "Schedule line data"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 23,
+    "question": "Billing plan can be of following types",
+    "options": [
+      "Periodic and milestone billing",
+      "Partial and full billing",
+      "Periodic and seasonal billing",
+      "Milestone and piecemeal billing"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 24,
+    "question": "If you set a deletion indicator while creating a condition record, what will be the behavior of the condition?",
+    "options": [
+      "Deletion indicator both will check in the condition record and master",
+      "The condition record will remain in the system but will not be used",
+      "Condition will be deleted",
+      "Both A & B"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 25,
+    "question": "Header condition can be distributed",
+    "options": [
+      "Equally across all the items in the order",
+      "Pro-rata across all the items in the order",
+      "Both the above",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 26,
+    "question": "Pricing procedure is determined based on",
+    "options": [
+      "Sales area",
+      "Customer and document pricing procedure",
+      "Sales area, item category and document pricing procedure",
+      "Sales area, customer pricing procedure and document pricing procedure"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 27,
+    "question": "TPL in the billing document when it is stored in the item category group is determined by",
+    "options": [
+      "Shipping conditions",
+      "Material master",
+      "Customer master",
+      "Partner function"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 28,
+    "question": "Which of the following is false about Header condition?",
+    "options": [
+      "It is applied at the header",
+      "It is applied at the header and item level",
+      "It is automatically determined in the order",
+      "It is manual at the header"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 29,
+    "question": "Texts can be stored",
+    "options": [
+      "At header & item level",
+      "In any language",
+      "In sales order / purchase order",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 30,
+    "question": "Importance of multiple issuing field in the output type",
+    "options": [
+      "To process output",
+      "Repeat output",
+      "To view the process log",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 31,
+    "question": "Pricing relevance of the item in a document is controlled by",
+    "options": [
+      "Item category",
+      "Customer pricing procedure",
+      "Document pricing procedure",
+      "Sales area"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 32,
+    "question": "Automatic delivery while saving the sales order is created in",
+    "options": [
+      "Rush order",
+      "Consignment order",
+      "Return order",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 33,
+    "question": "Identify the correct statement",
+    "options": [
+      "The delivery quantity and picked quantity in the outbound delivery must not be equal",
+      "Packing is a mandatory step",
+      "Picking can be done automatically or manually",
+      "Picking happens after post goods issue"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 34,
+    "question": "The standard delivery unit order reference has the document type of",
+    "options": [
+      "LF",
+      "BV",
+      "LS",
+      "LO"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 35,
+    "question": "Following are true with respect to SAP HANA: 1. Real-time analytics  2. New business models  3. Faster data processing  4. Reduced data redundancy",
+    "options": [
+      "1, 2, 3",
+      "1, 2, 4",
+      "2, 3, 4",
+      "Only 2"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 36,
+    "question": "Which of the following is not an example of a billing document type?",
+    "options": [
+      "Invoice, Proforma and Invoice bills",
+      "Debit memo, Credit memo and Cancellation",
+      "Return, External transactions",
+      "Intercompany and Delivery billing"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 37,
+    "question": "Revenue Account determination uses the following criteria to determine the general ledger account. Select the correct answer",
+    "options": [
+      "Chart of accounts, Sales area, Account assignment of the customer, Account assignment of the material, Account key",
+      "Chart of accounts, Sales area, Account assignment of the customer, Account assignment of the material, Account number",
+      "Chart of accounts, Sales organization, Account assignment of the customer, Account assignment for the material, Account key",
+      "Chart of accounts, Division, Account assignment of the customer, Account assignment of the material, Account number"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 38,
+    "question": "Following are the commonly used business partners. Select the incorrect",
+    "options": [
+      "Sold-from party",
+      "Sold-to party",
+      "Ship-to party",
+      "Bill-to party"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 39,
+    "question": "On which kind of contracts you can have different validity dates in header and item?",
+    "options": [
+      "Standard value contract",
+      "Material related value contract",
+      "Quantity contract",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 40,
+    "question": "The highest level organization unit is",
+    "options": [
+      "Company code",
+      "Sales organization",
+      "Client",
+      "Plant"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 41,
+    "question": "During availability check",
+    "options": [
+      "First backward scheduling happens and if not successful forward scheduling happens",
+      "First forward scheduling happens and if not successful backward scheduling happens",
+      "Only backward scheduling happens",
+      "Only forward scheduling happens"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 42,
+    "question": "Which is the partner type for customer",
+    "options": [
+      "KU",
+      "LI",
+      "VU",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 43,
+    "question": "Which of the following are true about release procedure",
+    "options": [
+      "Release procedure helps us to create condition records purely for planning purpose",
+      "Release procedure is used when a condition table is created by selecting the fields",
+      "Released and blocked are two predefined status in release procedure / status check box",
+      "All of the above choices"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 44,
+    "question": "Delivery document consists of",
+    "options": [
+      "Item level details",
+      "Header level details",
+      "Both a & b",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 45,
+    "question": "Automatic substitution of material in sales order is possible through",
+    "options": [
+      "Customer–Material Info Record",
+      "Material Determination",
+      "Availability Check",
+      "All of the options"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 46,
+    "question": "Alternate calculation type can be used only: 1. To perform special calculations different from standard behavior  2. If alternate condition base value is used  3. If account posting is done  4. If requirement routine is used",
+    "options": [
+      "To perform special calculations different from standard behavior",
+      "If alternate condition base value is used",
+      "If account posting is done",
+      "If requirement routine is used"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 47,
+    "question": "Which of the following is an example of outline agreement?",
+    "options": [
+      "Consignment order",
+      "Debit memo request",
+      "Scheduling agreement",
+      "Release order"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 48,
+    "question": "Which of the following are price-relevant master data fields from the customer master?",
+    "options": [
+      "Customer pricing procedure, Price list, Price group and Tax classification",
+      "Customer pricing procedure, Price list, Price group and Shipping conditions",
+      "Customer pricing procedure, Price list, Price group and Payment terms",
+      "Sales area, Price list group and Tax classification"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 49,
+    "question": "Determination of condition record in a particular access sequence can also be controlled with",
+    "options": [
+      "Requirements",
+      "Alternate calculation type",
+      "Alternate condition base value",
+      "Subtotal"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 50,
+    "question": "Statistical Conditioning",
+    "options": [
+      "Not relevant for account posting",
+      "Should have alternate condition percentage",
+      "Should have alternate calculation type",
+      "Relevant for account posting"
+    ],
+    "correct_answers": ["A"]
+  }
+]

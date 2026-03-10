@@ -81,9 +81,11 @@ export default function ExamPage() {
     let mounted = true;
     (async () => {
       try {
+        const params = new URLSearchParams(window.location.search);
+        const moduleFile = params.get("module") || "questions.json";
         const [e, q] = await Promise.all([
           fetch("/data/exam.json").then((r) => r.json()),
-          fetch("/data/questions.json").then((r) => r.json()),
+          fetch(`/data/${moduleFile}`).then((r) => r.json()),
         ]);
         if (!mounted) return;
 

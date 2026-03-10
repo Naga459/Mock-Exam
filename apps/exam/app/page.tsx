@@ -19,7 +19,7 @@ export default function LoginPage() {
     const match = users.find(u => u.username === username && u.password === password);
     if (match) {
       localStorage.setItem("mockexam_user", JSON.stringify(match));
-      window.location.href = "/exam";
+      window.location.href = "/modules";
     } else {
       setError("Invalid credentials");
     }
