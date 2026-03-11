@@ -41,7 +41,7 @@
       "Periodic billing plan is used for contracts where billing occurs at regular intervals",
       "Document flow is updated during billing; subsequent billing does not update the document flow"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": ["B","C"]
   },
   {
     "id": 5,

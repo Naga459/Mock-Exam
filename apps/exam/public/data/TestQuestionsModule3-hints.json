@@ -4,8 +4,8 @@
     "explanation": "The Sales Organization is responsible for distributing goods and services and managing legal sales relationships. Negotiating terms of sale is a task performed by sales staff or account managers, not by the Sales Organization as an organizational unit."
   },
   "2": {
-    "hint": "SAP's three conceptual areas are Presentation, Application, and Basis — identify which option does not match any of these.",
-    "explanation": "The three SAP conceptual areas are the Presentation Server (user interface), Application Area (business logic), and Basis Server (technical foundation). 'SAP Development Area' is not one of the three conceptual areas — development tools like ABAP Workbench are part of the Basis/application environment but not a standalone conceptual area."
+    "hint": "SAP architecture has three conceptual layers: Presentation, Application, and Database/Basis — identify which option is not one of these.",
+    "explanation": "SAP system architecture is divided into three conceptual layers: Presentation layer (user interface), Application layer (business logic processing), and Database layer (data storage). The SAP Development Area is not a conceptual architecture layer; it only refers to development tools like ABAP Workbench used within the system."
   },
   "3": {
     "hint": "Think about where reference document numbers (delivery, sales order) are visible in the billing document structure.",
@@ -13,7 +13,7 @@
   },
   "4": {
     "hint": "Quotations are non-binding proposals — consider whether the system commits to stock allocation at this stage.",
-    "explanation": "No availability check is performed for quotations in SAP. Since a quotation is only a price proposal to the customer without a confirmed order, the system does not run ATP checks or allocate stock at this stage."
+    "explanation": "In SAP SD, no availability check is normally performed for quotations because a quotation is only a price proposal and does not create a stock commitment. ATP checks are typically executed when a sales order is created."
   },
   "5": {
     "hint": "Think about whether output in SAP is purely rule-driven or if users can also intervene manually.",
@@ -21,10 +21,10 @@
   },
   "6": {
     "hint": "Consider which physical product characteristics can be used as a basis for calculating pricing conditions.",
-    "explanation": "In SAP SD pricing, condition types can use physical product characteristics as the calculation base. Gross weight, net weight, and volume are all valid bases for pricing conditions such as freight charges. All three options are therefore correct."
+    "explanation": "In SAP SD pricing, condition types can use different calculation bases such as gross weight, net weight, or volume depending on configuration. These attributes are often used for freight or logistics-related pricing conditions."
   },
   "7": {
-    "hint": "Think about the relationship between a condition type and the tables it searches through — can it search multiple tables?",
+    "hint": "A condition type uses an access sequence to search condition tables — consider whether multiple tables can be used.",
     "explanation": "A condition type is assigned to one access sequence, and that access sequence can contain multiple condition tables (access steps). Through the access sequence, a condition type can relate to multiple condition tables during condition record determination."
   },
   "8": {
@@ -32,8 +32,8 @@
     "explanation": "Billing plans are configured and maintained in the sales document (order or contract), not in the billing document schedule line. The billing document schedule line does not exist as a place to maintain billing plans; that concept belongs to sales order scheduling."
   },
   "9": {
-    "hint": "Review SAP SD organizational hierarchy — Division does not attach directly to one unit, it forms part of a three-element combination.",
-    "explanation": "Division is not directly assigned to Sales Organization. Instead, Sales Organization, Distribution Channel, and Division together form a Sales Area. Division is part of the sales area combination, not a direct child assignment of sales organization."
+    "hint": "Check which organizational units are directly assigned and which are only part of the Sales Area combination.",
+    "explanation": "A Division is assigned to a Sales Organization, and together with the Distribution Channel, it forms the Sales Area, which is used for sales processing."
   },
   "10": {
     "hint": "Think about all the ways ERP systems improve business operations — consider whether all four listed benefits are genuine ERP advantages.",
@@ -69,11 +69,11 @@
   },
   "18": {
     "hint": "The customer-material info record stores customer-specific data for a material — identify which statement misrepresents its purpose.",
-    "explanation": "The customer-material info record is created for a specific customer/material combination in a sales area to store customer-specific data such as the customer's own material number or delivery tolerances. It is not created simply because 'a customer specifically manages a sale' — that phrasing is vague and incorrect."
+    "explanation": "A Customer-Material Info Record is created for a specific customer–material combination within a sales area to store customer-specific data (like customer material number, delivery tolerances, texts, etc.), so the statement saying it is created simply because a customer manages a sale is incorrect."
   },
   "19": {
-    "hint": "Focus on what the SAP logon client enables — multiple data environments, cost sharing, and scaling — eliminate the incorrect statement.",
-    "explanation": "The SAP logon client enables: (1) maintaining multiple independent data sets in one R/3 system, (3) supporting more users as the customer base grows, and (4) saving costs through shared hardware and software. Statement 2 is a duplicate/incorrect variation of statement 3 and is not a separate distinct benefit."
+    "hint": "Think about the purpose of SAP Clients: they allow multiple independent data environments within one system and help organizations reduce costs by sharing the same hardware and software.",
+    "explanation": "An SAP client allows multiple independent data environments within the same SAP system and reduces costs by sharing hardware and software resources, while the statement about increasing the number of systems as customers increase is not a direct function of the client concept."
   },
   "20": {
     "hint": "Remember the correct sequence of warehouse operations — picking must be completed before goods can be issued.",
@@ -96,8 +96,8 @@
     "explanation": "OR is the standard SAP order type for the Standard Order, which is the most commonly used order type in the order-to-cash process. RO is Rush Order, BV is Cash Sales, and RE is Return Order."
   },
   "25": {
-    "hint": "Think about which partner function codes are authorized to create sales orders in a cash sales account context.",
-    "explanation": "Both the Sold-to party (AG) and the Sold-to party for reference (AA) are authorized to create sales orders for cash accounts in SAP. The reference code allows a reference sold-to party to place orders on behalf of a cash account customer."
+    "hint": "In SAP cash sales scenarios, consider which partner functions are allowed to create a sales order for a cash customer.",
+    "explanation": "In SAP SD cash sales, the Sold-to Party (AG) represents the customer creating the sales order, while AA (Sold-to party for reference) is used only for reference purposes and is not a standard partner for creating cash sales orders."
   },
   "26": {
     "hint": "HB00 is a well-known SAP condition type — verify what level it applies at (header or item).",

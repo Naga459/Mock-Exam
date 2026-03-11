@@ -5,15 +5,15 @@
   },
   "2": {
     "hint": "Recall all three availability check methods available in SAP SD.",
-    "explanation": "SAP supports three types of availability checks: ATP (Available-to-Promise) logic, Product Allocation, and Planned Independent Requirements. Since all three are valid, the answer is 'All of the above'."
+    "explanation": "In SAP SD, availability check ensures that the requested quantity can be delivered on the required date. The main methods used for availability check are ATP (Available-to-Promise), which checks stock and future receipts, and Product Allocation, which controls distribution of limited stock among customers. Since both methods are used for availability control, the correct answer is 'Both A and B'."
   },
   "3": {
     "hint": "Text determination configuration links text to a specific document structure element — think about what controls the header.",
     "explanation": "Text determination for a sales document header is assigned to the Sales Document Type in configuration. This allows different document types (e.g., standard order vs. rush order) to have different text determination procedures."
   },
   "4": {
-    "hint": "Recall the specific use case for milestone billing and eliminate options with clear factual errors.",
-    "explanation": "Milestone billing plan is used in project or construction scenarios where billing is triggered by the completion of defined project milestones. Option A is false (billing plans can be blocked), and option D is false (subsequent billing does update document flow)."
+    "hint": "Recall the two common SAP billing plan types: Milestone billing (used in project-based scenarios) and Periodic billing (used for recurring contract billing).",
+    "explanation": "SAP SD supports two main billing plan types: Milestone Billing and Periodic Billing. Milestone billing is used in project-based scenarios such as engineering and construction where billing is triggered by project milestones. Periodic billing is used for contracts like rental or service agreements where billing occurs at regular intervals. Option A is false because billing plans can be blocked, and option D is false because subsequent billing updates the document flow."
   },
   "5": {
     "hint": "Think about what the system needs as a minimum prerequisite to run an availability check at the item level.",
@@ -29,7 +29,7 @@
   },
   "8": {
     "hint": "Shipment is a logistics execution document — identify which option belongs to billing rather than shipping.",
-    "explanation": "Shipments in SAP handle transport planning, creation of shipping units, grouping of deliveries, and allocation of dates. Invoice creation is a billing function and is not part of the shipment document process."
+    "explanation": "Shipments in SAP are part of Logistics Execution and are used for transport planning, scheduling, and grouping deliveries for transportation. Invoice creation belongs to the billing process and is not part of shipment processing."
   },
   "9": {
     "hint": "ERP systems are built around integration and real-time data — find the option that directly contradicts this purpose.",
@@ -41,15 +41,15 @@
   },
   "11": {
     "hint": "Think about which master data object contains shipping and storage location information used during order processing.",
-    "explanation": "Storage location determination during sales order processing is based on material master data. The material master's plant-storage location data provides the default storage location used in outbound delivery."
+    "explanation": "Storage location determination during delivery processing is based on picking location determination rules. The system uses Plant and Shipping Point along with the Storage Condition maintained in the Material Master to determine the appropriate storage location."
   },
   "12": {
-    "hint": "Consider the classification of shipment activities in SAP logistics — what category do they fall under?",
-    "explanation": "Shipment functions in SAP are classified as operational activities. They handle the physical execution of transportation, including grouping deliveries, planning routes, and managing shipping units at an operational level."
+    "hint": "Shipment processing in SAP is part of logistics execution and supports transportation activities such as grouping deliveries and planning routes",
+    "explanation": "Shipment processing in SAP is part of Logistics Execution and supports operational transportation activities such as grouping deliveries into shipments, planning routes, and managing transportation execution."
   },
   "13": {
     "hint": "In cash sales, the process is condensed — what is the final document automatically triggered when the order is saved?",
-    "explanation": "In a cash sales process, when the order is saved, SAP automatically creates a delivery and then a billing document. The billing (invoice) is immediately generated because payment is expected at the point of sale."
+    "explanation": "In SAP SD cash sales processing, when the sales order is saved the system automatically creates a delivery and immediately generates a billing document (invoice). Since payment is expected at the point of sale, the billing document is created instantly."
   },
   "14": {
     "hint": "Condition exclusion is a flexible feature — think about where in the pricing configuration it can be activated.",
@@ -61,7 +61,7 @@
   },
   "16": {
     "hint": "Think about whether the picking step is always required in the delivery process or if it can be bypassed.",
-    "explanation": "Picking is not always mandatory in SAP. It can be configured as optional depending on the warehouse management setup. For instance, some scenarios use automatic transfer orders or bypass picking entirely based on storage type configuration."
+    "explanation": "In SAP delivery processing, picking is not always mandatory. Depending on the configuration of the item category and delivery settings, the picking step can be optional or automatically completed."
   },
   "17": {
     "hint": "Rebates involve a financial settlement at the end of a rebate agreement — what financial document is used for this?",
@@ -125,7 +125,7 @@
   },
   "32": {
     "hint": "Think about which order types in SAP trigger automatic delivery creation at the time of order save.",
-    "explanation": "Rush orders, consignment fill-up orders, and return orders can all be configured to automatically create delivery documents upon saving the sales order. This automation accelerates the logistics process for time-sensitive transactions."
+    "explanation": "In SAP SD, a Rush Order automatically creates a delivery document when the sales order is saved, enabling immediate goods issue for urgent deliveries. Consignment and return orders follow different logistics processes and do not automatically create delivery at order save."
   },
   "33": {
     "hint": "Review the delivery process flow — picking happens before goods issue, and it can be done in different ways.",
@@ -145,7 +145,7 @@
   },
   "37": {
     "hint": "Focus on the exact combination of criteria SAP uses for revenue account determination — note the difference between 'account key' and 'account number'.",
-    "explanation": "Revenue account determination in SAP uses: Chart of Accounts, Sales Area, Account Assignment Group of Customer, Account Assignment Group of Material, and Account Key. It uses 'Account Key' (not 'Account Number' or 'Sales Organization' or 'Division' alone)."
+    "explanation": "Revenue account determination in SAP uses Chart of Accounts, Sales Organization, Account Assignment Group of Customer, Account Assignment Group of Material, and Account Key to determine the correct G/L account during billing."
   },
   "38": {
     "hint": "Think about the standard SAP partner functions for customers — identify the one that does not exist in standard SAP.",
@@ -165,7 +165,7 @@
   },
   "42": {
     "hint": "Recall the standard account group codes in SAP — KU is associated with a specific business partner category.",
-    "explanation": "KU is the standard account group code for customers in SAP. LI is used for vendors/suppliers. When creating a customer master record, the account group KU is used for standard sold-to party customers."
+    "explanation": "KU is the standard partner type for customers in SAP. LI represents vendors/suppliers. Therefore, KU is used to identify customer partner records in SAP SD."
   },
   "43": {
     "hint": "Focus on the predefined statuses in the release procedure — there are only two fixed statuses available.",
@@ -185,11 +185,11 @@
   },
   "47": {
     "hint": "Outline agreements are long-term purchasing/sales arrangements — identify which option fits this category.",
-    "explanation": "Scheduling Agreements are a type of outline agreement in SAP SD, used for long-term delivery schedules with a customer. Contracts (quantity and value) are also outline agreements. Consignment orders, debit memo requests, and release orders are not outline agreements."
+    "explanation": "Scheduling Agreements are outline agreements in SAP SD used for long-term delivery schedules with customers. Contracts and scheduling agreements are outline agreements, while consignment orders and debit memo requests are not."
   },
   "48": {
     "hint": "From the customer master, identify which fields are specifically used as key fields in condition record determination for pricing.",
-    "explanation": "The price-relevant fields from the customer master used in condition record determination are: Customer Pricing Procedure, Price List, Price Group, and Tax Classification. Shipping conditions and payment terms are not used as pricing determination keys."
+    "explanation": "Customer Pricing Procedure, Price List, and Price Group from the customer master are used in pricing determination. Tax Classification is primarily used in tax determination rather than standard pricing conditions."
   },
   "49": {
     "hint": "Think about what controls whether a specific condition table within an access sequence is even searched.",
