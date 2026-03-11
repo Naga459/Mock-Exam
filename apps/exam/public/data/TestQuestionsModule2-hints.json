@@ -1,0 +1,122 @@
+{
+  "1": {
+    "hint": "Think about whether the selling side and the delivering side belong to the same or different company codes.",
+    "explanation": "Intercompany sales happens when the sales organization and the delivering plant are assigned to different company codes. That is the standard SAP SD intercompany scenario."
+  },
+  "2": {
+    "hint": "Separate the billing process from the billing document’s business effects.",
+    "explanation": "The billing document updates document flow and billing status, creates accounting entries, and can pass data to profitability analysis. 'Creating a billing document for orders and deliveries' describes the billing process, not a function of the billing document itself."
+  },
+  "3": {
+    "hint": "Recall the three standard views in customer master.",
+    "explanation": "Customer master data is organized into General Data, Company Code Data, and Sales Area Data. Purchase data does not belong to the customer master in SD."
+  },
+  "4": {
+    "hint": "Availability check is about confirming whether demand can be met from stock.",
+    "explanation": "Availability check ensures that sufficient stock is available in the delivering plant to fulfill the customer requirement. It is not about billing or delivery blocks."
+  },
+  "5": {
+    "hint": "Look for an enterprise structure unit, not a master data object.",
+    "explanation": "Plant is an organizational structure element in SAP. Customer master, material master, and customer-material info record are master data objects."
+  },
+  "6": {
+    "hint": "Think about where document-wide accounting status is shown.",
+    "explanation": "The posting status of the accounting document is shown at the header level of the billing document because it applies to the billing document as a whole."
+  },
+  "7": {
+    "hint": "Packing relevance is controlled where item behavior is defined for delivery processing.",
+    "explanation": "Packing relevance is set in the item category. Item category controls whether an item is relevant for picking, packing, billing, and similar logistics functions."
+  },
+  "8": {
+    "hint": "Ask where condition behavior is controlled during pricing execution.",
+    "explanation": "Manual, required, and statistical behavior is controlled in the pricing procedure for the condition line. That is where you define how a condition type behaves within pricing."
+  },
+  "9": {
+    "hint": "Availability scope depends on two parameters working together.",
+    "explanation": "The scope of the availability check is controlled by the checking group and the checking rule together. One comes from master data and the other from the business transaction."
+  },
+  "10": {
+    "hint": "Think of standard outline agreement contract types in SAP SD.",
+    "explanation": "SAP SD standard contract types include value contracts, quantity contracts, and master contracts. These are the common contract categories."
+  },
+  "11": {
+    "hint": "Look for the statement that contradicts how billing cancellation updates references.",
+    "explanation": "The incorrect statement is that cancellation does not update document flow. In SAP, cancellation documents do update document flow and cross-reference the original billing document."
+  },
+  "12": {
+    "hint": "Billing in consignment occurs when the customer actually takes ownership of the goods.",
+    "explanation": "Consignment issue is the billing-relevant consignment process. Fill-up and pickup move stock, but issue is the step where goods are consumed by the customer and billed."
+  },
+  "13": {
+    "hint": "Billing plan assignment is controlled in configuration for the sales document item.",
+    "explanation": "Billing plans are assigned at item category level. The item category determines whether periodic or milestone billing can be used for that item."
+  },
+  "14": {
+    "hint": "Picking happens from the place where stock is physically stored.",
+    "explanation": "Picking is carried out from the storage location. The shipping point coordinates shipping activities, but the actual stock is picked from storage."
+  },
+  "15": {
+    "hint": "VK11 is one of the most common SD pricing transactions.",
+    "explanation": "VK11 is used to create pricing condition records. It is a standard transaction for maintaining SD pricing conditions."
+  },
+  "16": {
+    "hint": "Contracts are followed by documents that consume the agreed quantity or value.",
+    "explanation": "Sales documents created with reference to contracts are called release orders. They draw down the value or quantity agreed in the contract."
+  },
+  "17": {
+    "hint": "Field catalog enhancement is possible, but usually not by pure configuration alone.",
+    "explanation": "New fields can be added to the field catalog through ABAP enhancement or technical development. Standard configuration alone does not automatically add new technical fields."
+  },
+  "18": {
+    "hint": "Transportation group is a logistics attribute of the material.",
+    "explanation": "Transportation group is maintained in the material master under Sales: General/Plant Data. It is used in route determination."
+  },
+  "19": {
+    "hint": "Rebate is not a normal immediate discount; it is calculated afterward.",
+    "explanation": "Rebate process refers to a retroactive discount. It is typically settled later based on accumulated sales volume or value over a period."
+  },
+  "20": {
+    "hint": "Route determination uses multiple shipping and transport factors together.",
+    "explanation": "Route is determined based on shipping condition, transportation zone, and transportation group, along with departure information. So the complete answer is all of the above."
+  },
+  "21": {
+    "hint": "Substitution and allowed-material listing are different concepts.",
+    "explanation": "The list of substitute materials is handled through material determination. Material listing controls what materials are allowed, while material determination handles substitution."
+  },
+  "22": {
+    "hint": "Shipment documents can be created in more than one operational mode.",
+    "explanation": "Shipment creation can be done manually, collectively, and externally. SAP supports all these shipment creation methods."
+  },
+  "23": {
+    "hint": "Proof of Delivery comes after goods issue in the normal logistics flow.",
+    "explanation": "The correct sequence is Order → Delivery → PGI → POD. Goods must first be issued before delivery can be proven at customer side."
+  },
+  "24": {
+    "hint": "Think about issues that prevent delivery from proceeding, not billing from posting.",
+    "explanation": "Bottleneck material and export papers are classic delivery blocking reasons. They stop delivery processing until the issue is resolved."
+  },
+  "25": {
+    "hint": "POD relevance is usually checked against the receiving customer role.",
+    "explanation": "POD relevance is typically determined for the ship-to party, because Proof of Delivery concerns the party actually receiving the goods."
+  },
+  "26": {
+    "hint": "Find the statement that places route control in the wrong document stage.",
+    "explanation": "The incorrect statement is that the route can be manually changed in the billing document. Route is relevant in sales and delivery processing, not billing."
+  },
+  "27": {
+    "hint": "Invoice combination requires billing-relevant header data to match.",
+    "explanation": "Combining deliveries for billing is not possible when billing split criteria differ, such as payer or payment terms. Different ship-to alone does not necessarily prevent billing combination."
+  },
+  "28": {
+    "hint": "A sales order may be fulfilled in one shipment or several, depending on settings and stock.",
+    "explanation": "A sales order can have single delivery, multiple deliveries, or partial deliveries. SAP supports all these delivery scenarios."
+  },
+  "29": {
+    "hint": "Recall the standard SAP material type code for packaging materials.",
+    "explanation": "VERP is the standard SAP material type for packaging materials. FERT is finished goods, not packaging."
+  },
+  "30": {
+    "hint": "Customer-specific prices are found through the pricing search path.",
+    "explanation": "Access sequence controls how the system searches condition tables and finds customer-specific price records during automatic pricing."
+  }
+}

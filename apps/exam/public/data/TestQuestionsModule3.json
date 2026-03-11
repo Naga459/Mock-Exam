@@ -1,341 +1,344 @@
-[
-  {
-    "id": 1,
-    "question": "Primary functions of the Sales Organization (mark the incorrect)",
-    "options": [
-      "Sales organization - Negotiates terms of sale",
-      "Sales organization - Responsible for distributing goods and services"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 2,
-    "question": "Following is not a SAP conceptual area?",
-    "options": [
-      "SAP Presentation Server",
-      "SAP Application Area",
-      "SAP Basis Server",
-      "SAP Development Area"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 3,
-    "question": "The system shows delivery number and sales order number at which level of the billing document",
-    "options": [
-      "Header",
-      "Item",
-      "Header and Item level",
-      "None"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 4,
-    "question": "What type of standard availability check is carried out in quotation?",
-    "options": [
-      "ATP logic",
-      "Product allocation",
-      "Planned Independent Requirement",
-      "No check"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 5,
-    "question": "Output determination can be determined / proposed for sales document",
-    "options": [
-      "Automatically",
-      "Manually",
-      "Both of the above",
-      "None of the above"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 6,
-    "question": "We can have base price element based on the basis of",
-    "options": [
-      "Gross weight",
-      "Net weight",
-      "Volume",
-      "All of the above"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 7,
-    "question": "Condition type is related to",
-    "options": [
-      "Multiple access sequence",
-      "Single access sequence",
-      "Multiple condition tables",
-      "One pricing procedure"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 8,
-    "question": "Which of the following is incorrect?",
-    "options": [
-      "In order to process the sales document in a phased manner, a billing plan is created with periodic billing",
-      "Billing plan is scheduled for individual billing dates for each item in the sales order or contract",
-      "Periodic billing is used primarily for rental or service agreements when the client is billed a fixed amount",
-      "Billing plan can be maintained in the billing document schedule line"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 9,
-    "question": "Following assignments are not true",
-    "options": [
-      "Division is assigned to Sales Organization",
-      "Sales office is assigned to Sales area",
-      "Sales person is the sales representative staff who belongs to the sales group",
-      "Sales group is assigned to Sales area"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 10,
-    "question": "ERP helps organization to optimize business process through: 1. Central database  2. Best business practices  3. Transparency  4. Real-time data",
-    "options": [
-      "1, 2, 3, 4",
-      "1, 3 & 4",
-      "Only 4",
-      "2, 3, 4"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 11,
-    "question": "Billing plan can be the following 2 types",
-    "options": [
-      "Periodic and milestone billing",
-      "Partial and full billing",
-      "Periodic and seasonal billing",
-      "Milestone and piecemeal billing"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 12,
-    "question": "Identify the correct statement",
-    "options": [
-      "A shipment can only be created if the route has been determined in the delivery",
-      "A shipment can only be created after PGI of its delivery",
-      "A shipment always uses shipping for transportation",
-      "A group of shipments is called delivery"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 13,
-    "question": "Sales area is the combination of the following",
-    "options": [
-      "Sales organization + Division + Sales office",
-      "Sales organization + Distribution channel + Division",
-      "Both the above",
-      "None of the above"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 14,
-    "question": "Scope of availability check can include which of the following",
-    "options": [
-      "Purchase requisitions & purchase orders",
-      "Sales requirements and deliveries",
-      "Replenishment lead time",
-      "All of the above"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 15,
-    "question": "Following are the organizational units in SD module",
-    "options": [
-      "Sales organization",
-      "Distribution partner",
-      "Material group",
-      "Material type"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 16,
-    "question": "Type of sales order is differentiated by",
-    "options": [
-      "Sales order type",
-      "Sales area",
-      "Sold-to party",
-      "Material"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 17,
-    "question": "Each delivery appears as",
-    "options": [
-      "A line item in the shipment",
-      "Header in the shipment",
-      "Schedule line in the shipment",
-      "None of the above"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 18,
-    "question": "The statement related to customer material info record is incorrect",
-    "options": [
-      "Customer material info record is created if a customer specifically manages a sale",
-      "The data in the customer material information record has priority over customer and the material master",
-      "The record is defined for customer / material combination in the sales area",
-      "Customer material info record can include customer-specific text"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 19,
-    "question": "The logon client in the SAP system controls the following: 1. Enables to maintain multiple independent sets of data within the R/3 system  2. The number of systems as customers increases  3. The number of systems as customers base increases  4. Costs are saved by sharing software and hardware",
-    "options": [
-      "1, 2 & 3",
-      "1 & 3",
-      "1, 3 & 4",
-      "1, 2 & 4"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 20,
-    "question": "Identify the incorrect statement",
-    "options": [
-      "In using WM (Lean or Fixed), the picking process is initiated by creating the transfer order",
-      "Warehouse Management (WM) is fully integrated with SD and can be used to manage the picking process",
-      "Picking can be done via single or via picks",
-      "Picking happens after post goods issue"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 21,
-    "question": "Billing plan can be maintained at",
-    "options": [
-      "Header level",
-      "Item level",
-      "Schedule line level",
-      "Header & item level"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 22,
-    "question": "Item category is proposed in the delivery",
-    "options": [
-      "Manually which items are manually entered on the delivery",
-      "Via goods copied directly from the sales order by copy control settings",
-      "Via item category determination (when copy control is not enabled)",
-      "Via partner determination"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 23,
-    "question": "An effective way to reduce unnecessary costs through",
-    "options": [
-      "Consignment sales process",
-      "Third party sales process",
-      "Normal sales process",
-      "All of the above"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 24,
-    "question": "Sales order type OR refers to",
-    "options": [
-      "Standard order",
-      "Rush order",
-      "Cash sales order",
-      "All of the above"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 25,
-    "question": "Authorized partner for creating sales order with respect to cash account can be",
-    "options": [
-      "Sold-to (AG)",
-      "Sold-to party for reference code (AA)",
-      "Both",
-      "None"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 26,
-    "question": "Which of the following statements is false?",
-    "options": [
-      "Header conditions are valid for all items",
-      "Header conditions must be entered manually during order processing",
-      "Automatic pricing document takes header conditions into account",
-      "HB00 is an example of an item pricing condition type"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 27,
-    "question": "Following is the proprietary SAP implementation methodology",
-    "options": [
-      "SAP Solution Manager",
-      "SAP Solution Set",
-      "SAP ASAP",
-      "SAP NetWeaver"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 28,
-    "question": "Condition record for a supplementary condition can be maintained through",
-    "options": [
-      "The parent condition record",
-      "Determined automatically in the procedure",
-      "By manually entered in a document",
-      "By maintained in a procedure and assigned to condition type"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 29,
-    "question": "Split delivery happens due to?",
-    "options": [
-      "Different shipping point, delivery schedule, capacity issues",
-      "Packing issue",
-      "Driver not knowing the route",
-      "Both b & c"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 30,
-    "question": "Which of the following is not a customer master data?",
-    "options": [
-      "Sales area data",
-      "Company code data",
-      "General data",
-      "Export data"
-    ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 31,
-    "question": "In availability check what enterprise structure does the system use?",
-    "options": [
-      "Shipping point",
-      "Plant",
-      "Company code",
-      "Sales organization"
-    ],
-    "correct_answers": ["A"]
-  }
-]
+{
+  "module": "SAP SD",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Primary functions of the Sales Organization (mark the incorrect)",
+      "options": {
+        "A": "Sales organization - Negotiates terms of sale",
+        "B": "Sales organization - Responsible for distributing goods and services"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 2,
+      "question": "Following is not a SAP conceptual area?",
+      "options": {
+        "A": "SAP Presentation Server",
+        "B": "SAP Application Area",
+        "C": "SAP Basis Server",
+        "D": "SAP Development Area"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 3,
+      "question": "The system shows delivery number and sales order number at which level of the billing document",
+      "options": {
+        "A": "Header",
+        "B": "Item",
+        "C": "Header and Item level",
+        "D": "None"
+      },
+      "correct_answers": ["B"]
+    },
+    {
+      "id": 4,
+      "question": "What type of standard availability check is carried out in quotation?",
+      "options": {
+        "A": "ATP logic",
+        "B": "Product allocation",
+        "C": "Planned Independent Requirement",
+        "D": "No check"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 5,
+      "question": "Output determination can be determined / proposed for sales document",
+      "options": {
+        "A": "Automatically",
+        "B": "Manually",
+        "C": "Both of the above",
+        "D": "None of the above"
+      },
+      "correct_answers": ["C"]
+    },
+    {
+      "id": 6,
+      "question": "We can have base price element based on the basis of",
+      "options": {
+        "A": "Gross weight",
+        "B": "Net weight",
+        "C": "Volume",
+        "D": "All of the above"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 7,
+      "question": "Condition type is related to",
+      "options": {
+        "A": "Multiple access sequence",
+        "B": "Single access sequence",
+        "C": "Multiple condition tables",
+        "D": "One pricing procedure"
+      },
+      "correct_answers": ["C"]
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is incorrect?",
+      "options": {
+        "A": "In order to process the sales document in a phased manner, a billing plan is created with periodic billing",
+        "B": "Billing plan is scheduled for individual billing dates for each item in the sales order or contract",
+        "C": "Periodic billing is used primarily for rental or service agreements when the client is billed a fixed amount",
+        "D": "Billing plan can be maintained in the billing document schedule line"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 9,
+      "question": "Following assignments are not true",
+      "options": {
+        "A": "Division is assigned to Sales Organization",
+        "B": "Sales office is assigned to Sales area",
+        "C": "Sales person is the sales representative staff who belongs to the sales group",
+        "D": "Sales group is assigned to Sales area"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 10,
+      "question": "ERP helps organization to optimize business process through: 1. Central database  2. Best business practices  3. Transparency  4. Real-time data",
+      "options": {
+        "A": "1, 2, 3, 4",
+        "B": "1, 3 & 4",
+        "C": "Only 4",
+        "D": "2, 3, 4"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 11,
+      "question": "Billing plan can be the following 2 types",
+      "options": {
+        "A": "Periodic and milestone billing",
+        "B": "Partial and full billing",
+        "C": "Periodic and seasonal billing",
+        "D": "Milestone and piecemeal billing"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 12,
+      "question": "Identify the correct statement",
+      "options": {
+        "A": "A shipment can only be created if the route has been determined in the delivery",
+        "B": "A shipment can only be created after PGI of its delivery",
+        "C": "A shipment always uses shipping for transportation",
+        "D": "A group of shipments is called delivery"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 13,
+      "question": "Sales area is the combination of the following",
+      "options": {
+        "A": "Sales organization + Division + Sales office",
+        "B": "Sales organization + Distribution channel + Division",
+        "C": "Both the above",
+        "D": "None of the above"
+      },
+      "correct_answers": ["B"]
+    },
+    {
+      "id": 14,
+      "question": "Scope of availability check can include which of the following",
+      "options": {
+        "A": "Purchase requisitions & purchase orders",
+        "B": "Sales requirements and deliveries",
+        "C": "Replenishment lead time",
+        "D": "All of the above"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 15,
+      "question": "Following are the organizational units in SD module",
+      "options": {
+        "A": "Sales organization",
+        "B": "Distribution partner",
+        "C": "Material group",
+        "D": "Material type"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 16,
+      "question": "Type of sales order is differentiated by",
+      "options": {
+        "A": "Sales order type",
+        "B": "Sales area",
+        "C": "Sold-to party",
+        "D": "Material"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 17,
+      "question": "Each delivery appears as",
+      "options": {
+        "A": "A line item in the shipment",
+        "B": "Header in the shipment",
+        "C": "Schedule line in the shipment",
+        "D": "None of the above"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 18,
+      "question": "The statement related to customer material info record is incorrect",
+      "options": {
+        "A": "Customer material info record is created if a customer specifically manages a sale",
+        "B": "The data in the customer material information record has priority over customer and the material master",
+        "C": "The record is defined for customer / material combination in the sales area",
+        "D": "Customer material info record can include customer-specific text"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 19,
+      "question": "The logon client in the SAP system controls the following: 1. Enables to maintain multiple independent sets of data within the R/3 system  2. The number of systems as customers increases  3. The number of systems as customers base increases  4. Costs are saved by sharing software and hardware",
+      "options": {
+        "A": "1, 2 & 3",
+        "B": "1 & 3",
+        "C": "1, 3 & 4",
+        "D": "1, 2 & 4"
+      },
+      "correct_answers": ["C"]
+    },
+    {
+      "id": 20,
+      "question": "Identify the incorrect statement",
+      "options": {
+        "A": "In using WM (Lean or Fixed), the picking process is initiated by creating the transfer order",
+        "B": "Warehouse Management (WM) is fully integrated with SD and can be used to manage the picking process",
+        "C": "Picking can be done via single or via picks",
+        "D": "Picking happens after post goods issue"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 21,
+      "question": "Billing plan can be maintained at",
+      "options": {
+        "A": "Header level",
+        "B": "Item level",
+        "C": "Schedule line level",
+        "D": "Header & item level"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 22,
+      "question": "Item category is proposed in the delivery",
+      "options": {
+        "A": "Manually which items are manually entered on the delivery",
+        "B": "Via goods copied directly from the sales order by copy control settings",
+        "C": "Via item category determination (when copy control is not enabled)",
+        "D": "Via partner determination"
+      },
+      "correct_answers": ["B"]
+    },
+    {
+      "id": 23,
+      "question": "An effective way to reduce unnecessary costs through",
+      "options": {
+        "A": "Consignment sales process",
+        "B": "Third party sales process",
+        "C": "Normal sales process",
+        "D": "All of the above"
+      },
+      "correct_answers": ["B"]
+    },
+    {
+      "id": 24,
+      "question": "Sales order type OR refers to",
+      "options": {
+        "A": "Standard order",
+        "B": "Rush order",
+        "C": "Cash sales order",
+        "D": "All of the above"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 25,
+      "question": "Authorized partner for creating sales order with respect to cash account can be",
+      "options": {
+        "A": "Sold-to (AG)",
+        "B": "Sold-to party for reference code (AA)",
+        "C": "Both",
+        "D": "None"
+      },
+      "correct_answers": ["C"]
+    },
+    {
+      "id": 26,
+      "question": "Which of the following statements is false?",
+      "options": {
+        "A": "Header conditions are valid for all items",
+        "B": "Header conditions must be entered manually during order processing",
+        "C": "Automatic pricing document takes header conditions into account",
+        "D": "HB00 is an example of an item pricing condition type"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 27,
+      "question": "Following is the proprietary SAP implementation methodology",
+      "options": {
+        "A": "SAP Solution Manager",
+        "B": "SAP Solution Set",
+        "C": "SAP ASAP",
+        "D": "SAP NetWeaver"
+      },
+      "correct_answers": ["C"]
+    },
+    {
+      "id": 28,
+      "question": "Condition record for a supplementary condition can be maintained through",
+      "options": {
+        "A": "The parent condition record",
+        "B": "Determined automatically in the procedure",
+        "C": "By manually entered in a document",
+        "D": "By maintained in a procedure and assigned to condition type"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 29,
+      "question": "Split delivery happens due to?",
+      "options": {
+        "A": "Different shipping point, delivery schedule, capacity issues",
+        "B": "Packing issue",
+        "C": "Driver not knowing the route",
+        "D": "Both b & c"
+      },
+      "correct_answers": ["A"]
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is not a customer master data?",
+      "options": {
+        "A": "Sales area data",
+        "B": "Company code data",
+        "C": "General data",
+        "D": "Export data"
+      },
+      "correct_answers": ["D"]
+    },
+    {
+      "id": 31,
+      "question": "In availability check what enterprise structure does the system use?",
+      "options": {
+        "A": "Shipping point",
+        "B": "Plant",
+        "C": "Company code",
+        "D": "Sales organization"
+      },
+      "correct_answers": ["B"]
+    }
+  ]
+}

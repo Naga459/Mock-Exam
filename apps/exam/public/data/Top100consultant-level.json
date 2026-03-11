@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "question": "Which combination is used in standard SAP SD item category determination?",
+    "options": [
+      "Sales document type, item category group, usage, higher-level item category",
+      "Sales organization, distribution channel, division, plant",
+      "Customer pricing procedure, document pricing procedure, account key, chart of accounts",
+      "Shipping condition, loading group, plant, route"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Schedule line category is determined primarily from which combination?",
+    "options": [
+      "Item category and movement type",
+      "Item category and MRP type",
+      "Sales document type and shipping point",
+      "Material type and division"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Which transaction is used for revenue account determination in SAP SD?",
+    "options": [
+      "OVX5",
+      "OBYC",
+      "VKOA",
+      "OVZ1"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Which table stores document flow information in SAP SD?",
+    "options": [
+      "VBAK",
+      "VBAP",
+      "VBFA",
+      "VBRK"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which movement type is normally posted during Post Goods Issue for an outbound delivery?",
+    "options": [
+      "101",
+      "311",
+      "261",
+      "601"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Which table stores sales order header data?",
+    "options": [
+      "VBAK",
+      "VBAP",
+      "LIKP",
+      "VBRP"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Which table stores sales order item data?",
+    "options": [
+      "VBRP",
+      "VBAP",
+      "VBAK",
+      "LIPS"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Which table stores delivery header data?",
+    "options": [
+      "LIPS",
+      "VBKD",
+      "LIKP",
+      "VBUK"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Which table stores billing header data?",
+    "options": [
+      "VBRP",
+      "VBAK",
+      "VBKD",
+      "VBRK"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Pricing procedure determination in standard SAP depends on:",
+    "options": [
+      "Sales area, customer pricing procedure, document pricing procedure",
+      "Plant, shipping point, item category",
+      "Sales office, sales group, division",
+      "Company code, chart of accounts, account key"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Which element defines the search strategy for condition records?",
+    "options": [
+      "Pricing procedure",
+      "Access sequence",
+      "Condition table",
+      "Condition category"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Which condition type usually represents base price in standard SD?",
+    "options": [
+      "K004",
+      "MWST",
+      "PR00",
+      "KF00"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Which standard condition type is typically used for output tax in SD?",
+    "options": [
+      "PR00",
+      "K004",
+      "KF00",
+      "MWST"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Shipping point determination is based on which combination?",
+    "options": [
+      "Shipping conditions, loading group, plant",
+      "Sales organization, division, plant",
+      "Route, shipping conditions, sales office",
+      "Company code, storage location, shipping conditions"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Route determination in SD normally considers which of the following?",
+    "options": [
+      "Shipping condition, transportation group, delivering plant",
+      "Customer pricing procedure, plant, route schedule",
+      "Division, sales office, shipping point",
+      "Storage location, loading group, shipping condition"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Which configuration object controls whether an item is relevant for delivery?",
+    "options": [
+      "Sales document type",
+      "Item category",
+      "Schedule line category",
+      "Copy control"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Which configuration object primarily controls movement type and transfer of requirements?",
+    "options": [
+      "Delivery type",
+      "Item category",
+      "Schedule line category",
+      "Requirement class"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Which partner function is responsible for receiving goods?",
+    "options": [
+      "Sold-to party",
+      "Bill-to party",
+      "Ship-to party",
+      "Payer"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Which partner function is responsible for payment?",
+    "options": [
+      "Payer",
+      "Bill-to party",
+      "Ship-to party",
+      "Sold-to party"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 20,
+    "question": "In third-party sales, goods are usually delivered by:",
+    "options": [
+      "The selling company from its own warehouse",
+      "The vendor directly to the customer",
+      "The customer after pickup from plant",
+      "An intercompany supplying plant only"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 21,
+    "question": "In consignment fill-up, stock is moved to:",
+    "options": [
+      "Customer consignment stock",
+      "Unrestricted use stock in plant",
+      "Blocked stock in warehouse",
+      "Vendor consignment stock"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 22,
+    "question": "Which process is used when the customer consumes stock that is already stored at the customer site?",
+    "options": [
+      "Consignment return",
+      "Consignment issue",
+      "Consignment fill-up",
+      "Third-party order"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Which transaction is used to maintain customer credit limits in classic credit management?",
+    "options": [
+      "XD02",
+      "VA02",
+      "FD32",
+      "VK11"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 24,
+    "question": "What does ATP stand for in SAP SD?",
+    "options": [
+      "Actual Transfer of Product",
+      "Available Transfer Procedure",
+      "Actual to Promise",
+      "Available to Promise"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 25,
+    "question": "If backward scheduling cannot meet the requested delivery date, what happens next in standard ATP scheduling?",
+    "options": [
+      "Forward scheduling is performed",
+      "The system blocks the order automatically",
+      "The system creates a return order",
+      "No scheduling is performed"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Which transaction creates a sales order?",
+    "options": [
+      "VF01",
+      "VA01",
+      "VL01N",
+      "VK11"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Which transaction creates an outbound delivery?",
+    "options": [
+      "VA01",
+      "VF01",
+      "VL01N",
+      "VL03N"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Which transaction creates a billing document?",
+    "options": [
+      "VA01",
+      "VL02N",
+      "VF03",
+      "VF01"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Which transaction is used to create a condition record?",
+    "options": [
+      "VK11",
+      "VK12",
+      "VA01",
+      "XD01"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Which transaction is used to change a condition record?",
+    "options": [
+      "VK13",
+      "VK12",
+      "VF02",
+      "OVKK"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 31,
+    "question": "Which transaction is used to display a condition record?",
+    "options": [
+      "VK11",
+      "VK12",
+      "VK13",
+      "V/06"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Which transaction is used to display a sales order?",
+    "options": [
+      "VA01",
+      "VA02",
+      "VL03N",
+      "VA03"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Which transaction is used to change an outbound delivery?",
+    "options": [
+      "VL02N",
+      "VL01N",
+      "VF02",
+      "VA02"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Which transaction is used to display a billing document?",
+    "options": [
+      "VF02",
+      "VF03",
+      "VA03",
+      "VK13"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Which table stores customer general master data?",
+    "options": [
+      "KNVV",
+      "KNA1",
+      "KNVP",
+      "VBAK"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Which table stores customer sales area data?",
+    "options": [
+      "KNA1",
+      "KNVP",
+      "KNVV",
+      "VBKD"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Which table stores partner functions in customer master?",
+    "options": [
+      "KNVV",
+      "KNA1",
+      "VBPA",
+      "KNVP"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Which table stores general material master data?",
+    "options": [
+      "MARA",
+      "MVKE",
+      "MAKT",
+      "MARC"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Which table stores sales data for a material in SD?",
+    "options": [
+      "MARA",
+      "MVKE",
+      "MARC",
+      "MAKT"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Which table stores material descriptions?",
+    "options": [
+      "MARC",
+      "MVKE",
+      "MAKT",
+      "MARA"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Which standard billing type is typically used for an invoice?",
+    "options": [
+      "G2",
+      "L2",
+      "RE",
+      "F2"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Which sales document type is normally used for a standard order?",
+    "options": [
+      "OR",
+      "RE",
+      "CS",
+      "FD"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Which document type is commonly used for returns orders?",
+    "options": [
+      "OR",
+      "RE",
+      "LF",
+      "F2"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Which document category represents an outbound delivery in standard SAP?",
+    "options": [
+      "C",
+      "J",
+      "M",
+      "V"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "What is the main purpose of copy control in SD?",
+    "options": [
+      "To define how data is transferred between related documents",
+      "To determine pricing procedure automatically",
+      "To assign shipping points to plants",
+      "To maintain customer hierarchies"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Copy control between sales document to sales document is maintained at which level?",
+    "options": [
+      "Header, item, schedule line",
+      "Header, item",
+      "Header only",
+      "Item only"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Which routine can be assigned in copy control to control whether an item should be copied?",
+    "options": [
+      "Account key",
+      "Requirement routine",
+      "Output type",
+      "Partner procedure"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Which SD function is used to determine whether outputs such as print or email are triggered?",
+    "options": [
+      "Text determination",
+      "Output determination",
+      "Material determination",
+      "Partner determination"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Which procedure is assigned to a sales document type for automatic text proposal?",
+    "options": [
+      "Text determination procedure",
+      "Pricing procedure",
+      "Output procedure",
+      "Partner procedure"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 50,
+    "question": "Which procedure defines mandatory and optional partner roles in sales documents?",
+    "options": [
+      "Text procedure",
+      "Partner determination procedure",
+      "Output determination procedure",
+      "Account determination procedure"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 51,
+    "question": "Which object in pricing is used to store field combinations used for condition maintenance?",
+    "options": [
+      "Condition table",
+      "Access sequence",
+      "Pricing procedure",
+      "Condition class"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 52,
+    "question": "Which field in a condition type marks it as statistical so it does not post to accounting?",
+    "options": [
+      "Manual entries",
+      "Statistical",
+      "Scales",
+      "Condition class"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 53,
+    "question": "Which pricing element can be used to perform a custom formula for calculating the condition value?",
+    "options": [
+      "Requirement routine",
+      "Subtotal",
+      "Alternate calculation type",
+      "Condition exclusion"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Which pricing element is used to derive a custom condition base value?",
+    "options": [
+      "Account key",
+      "Subtotal",
+      "Requirement routine",
+      "Alternate condition base value"
+    ],
+    "correct_answers": [
+      "D"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Condition exclusion is used in pricing to:",
+    "options": [
+      "Prevent certain conditions from being applied together",
+      "Delete all condition records permanently",
+      "Stop account determination",
+      "Block copy control"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 56,
+    "question": "Header conditions in a sales order can be distributed:",
+    "options": [
+      "Only equally",
+      "Equally or pro-rata",
+      "Only manually at item level",
+      "Only through copy control"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Which standard condition type is usually used for freight in pricing examples?",
+    "options": [
+      "MWST",
+      "K004",
+      "KF00",
+      "PR00"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 58,
+    "question": "Which pricing object determines the sequence of condition types used to calculate price?",
+    "options": [
+      "Condition table",
+      "Pricing procedure",
+      "Access sequence",
+      "Output procedure"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Which of the following is a standard prerequisite for pricing procedure determination?",
+    "options": [
+      "Customer pricing procedure",
+      "Movement type",
+      "Shipping point",
+      "Storage location"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Document pricing procedure is generally maintained in:",
+    "options": [
+      "Customer master",
+      "Sales document type",
+      "Condition type",
+      "Plant"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "Customer pricing procedure is generally maintained in:",
+    "options": [
+      "Material master",
+      "Shipping point",
+      "Customer master sales area data",
+      "Sales document type"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 62,
+    "question": "Which object determines whether the system should transfer requirements to MRP?",
+    "options": [
+      "Item category",
+      "Requirement class only",
+      "Schedule line category",
+      "Copy control routine"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 63,
+    "question": "Which process is most directly responsible for reducing stock in Inventory Management?",
+    "options": [
+      "Billing",
+      "Post Goods Issue",
+      "Sales order save",
+      "Shipment completion"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 64,
+    "question": "Which document usually creates the accounting document in FI during the order-to-cash cycle?",
+    "options": [
+      "Billing document",
+      "Sales order",
+      "Delivery",
+      "Shipment"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 65,
+    "question": "Which organizational unit is the highest in SAP?",
+    "options": [
+      "Company code",
+      "Sales organization",
+      "Client",
+      "Plant"
+    ],
+    "correct_answers": [
+      "C"
+    ]
+  },
+  {
+    "id": 66,
+    "question": "Which organizational unit represents the legal entity for accounting?",
+    "options": [
+      "Sales organization",
+      "Company code",
+      "Plant",
+      "Division"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 67,
+    "question": "A sales area consists of:",
+    "options": [
+      "Sales organization, distribution channel, division",
+      "Company code, plant, storage location",
+      "Plant, shipping point, route",
+      "Sales office, sales group, division"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 68,
+    "question": "Which organizational unit can be assigned to more than one company code in standard SD-MM integration scenarios?",
+    "options": [
+      "Storage location",
+      "Plant",
+      "Shipping point",
+      "Sales group"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 69,
+    "question": "Which object is used to group deliveries into a shipment?",
+    "options": [
+      "Shipping point",
+      "Transportation planning point",
+      "Sales office",
+      "Loading group"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 70,
+    "question": "Which process is used to propose free items based on a qualifying material quantity or value?",
+    "options": [
+      "Rebate processing",
+      "Free goods determination",
+      "Material listing",
+      "Output determination"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 71,
+    "question": "Material listing and exclusion is used to:",
+    "options": [
+      "Control which materials a customer may or may not order",
+      "Determine tax jurisdiction",
+      "Perform account determination",
+      "Set delivery priorities"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 72,
+    "question": "Customer-material info records are primarily used to:",
+    "options": [
+      "Store customer-specific material data such as customer material number",
+      "Store shipping point determination rules",
+      "Create pricing procedures",
+      "Store delivery split criteria"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 73,
+    "question": "A delivery split can occur when which key logistical field differs between items?",
+    "options": [
+      "Shipping point",
+      "Material number",
+      "Base unit of measure",
+      "Customer group"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 74,
+    "question": "Which of the following is another common reason for delivery split in SAP SD?",
+    "options": [
+      "Different ship-to party",
+      "Same delivering plant",
+      "Same route",
+      "Same incoterms"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 75,
+    "question": "Intercompany billing is relevant when:",
+    "options": [
+      "The sales company and delivering company code are different",
+      "The same company code sells and delivers",
+      "A quotation is copied to order",
+      "Only a consignment issue is processed"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 76,
+    "question": "Which billing type is commonly associated with intercompany billing in standard examples?",
+    "options": [
+      "IV",
+      "F2",
+      "G2",
+      "L2"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 77,
+    "question": "Which type of contract is based on an overall target quantity?",
+    "options": [
+      "Value contract",
+      "Quantity contract",
+      "Service contract",
+      "Scheduling agreement"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 78,
+    "question": "Which type of contract is based on an overall target value?",
+    "options": [
+      "Quantity contract",
+      "Value contract",
+      "Rush order",
+      "Cash sales"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 79,
+    "question": "Which outline agreement is typically used for periodic releases against agreed terms?",
+    "options": [
+      "Scheduling agreement",
+      "Debit memo request",
+      "Rush order",
+      "Consignment issue"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 80,
+    "question": "Which sales process creates delivery automatically upon saving in standard configuration examples?",
+    "options": [
+      "Returns order",
+      "Rush order",
+      "Credit memo request",
+      "Quantity contract"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 81,
+    "question": "Which process is commonly associated with immediate order-related billing in standard examples?",
+    "options": [
+      "Cash sales",
+      "Consignment fill-up",
+      "Third-party returns",
+      "Intercompany billing"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 82,
+    "question": "Which billing type is generally used for a credit memo?",
+    "options": [
+      "F2",
+      "G2",
+      "L2",
+      "IV"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 83,
+    "question": "Which billing type is generally used for a debit memo?",
+    "options": [
+      "G2",
+      "L2",
+      "F2",
+      "IV"
+    ],
+    "correct_answers": [
+      "B"
+    ]
+  },
+  {
+    "id": 84,
+    "question": "A billing plan can be:",
+    "options": [
+      "Periodic or milestone",
+      "Manual or automatic only",
+      "Header only",
+      "Quantity or weight only"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 85,
+    "question": "Milestone billing is typically used in:",
+    "options": [
+      "Project-oriented scenarios",
+      "Cash sales only",
+      "Returns processing only",
+      "Consignment issue only"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 86,
+    "question": "Periodic billing is typically used in:",
+    "options": [
+      "Service or rental contract-like scenarios",
+      "Rush orders only",
+      "Third-party sales only",
+      "Returns orders only"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 87,
+    "question": "Which function allows packed handling units or nested packaging structures in delivery processing?",
+    "options": [
+      "Multilevel packing",
+      "Split valuation",
+      "Customer hierarchy",
+      "Rebate settlement"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 88,
+    "question": "Picking generally takes place:",
+    "options": [
+      "Before PGI",
+      "After billing",
+      "After invoice cancellation",
+      "After credit memo settlement"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 89,
+    "question": "Which object can block billing at item or header level in sales and delivery documents?",
+    "options": [
+      "Billing block",
+      "Output type",
+      "Account key",
+      "Requirement routine"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 90,
+    "question": "Which object can block creation of delivery from a sales order?",
+    "options": [
+      "Delivery block",
+      "Condition exclusion",
+      "Subtotal",
+      "Text type"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 91,
+    "question": "Which standard SD function can be used to propose alternate materials automatically when the ordered material is not to be used?",
+    "options": [
+      "Material determination",
+      "Account determination",
+      "Output determination",
+      "Credit management"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 92,
+    "question": "What is the role of the account key in pricing?",
+    "options": [
+      "It links condition values to G/L account determination",
+      "It determines schedule line category",
+      "It controls route determination",
+      "It creates shipping points"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 93,
+    "question": "Which of the following is a common prerequisite for standard revenue account determination?",
+    "options": [
+      "Chart of accounts",
+      "Storage location",
+      "Transportation group",
+      "Loading group"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 94,
+    "question": "Which combination is commonly used in revenue account determination?",
+    "options": [
+      "Chart of accounts, sales organization, customer account assignment group, material account assignment group, account key",
+      "Plant, storage location, movement type, route, account key",
+      "Sales office, sales group, incoterms, payment terms, company code",
+      "Customer number, material number, batch, valuation type, route"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 95,
+    "question": "Which S/4HANA functionality extends classic ATP with advanced availability confirmation and backorder processing?",
+    "options": [
+      "Advanced ATP (aATP)",
+      "Classic LIS",
+      "ALE distribution",
+      "LE-TRA shipment planning"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 96,
+    "question": "Which S/4HANA capability is commonly associated with advanced availability confirmation and backorder processing improvements?",
+    "options": [
+      "aATP",
+      "Classic rebate processing only",
+      "Batch input session",
+      "IDoc status monitoring"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 97,
+    "question": "Which SAP SD feature allows an output such as invoice print or email to be issued again after initial processing?",
+    "options": [
+      "Multiple issuing in output control",
+      "Condition exclusion",
+      "Schedule line category",
+      "Billing block"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 98,
+    "question": "Which master data field in customer sales area data is relevant for pricing and tax processing?",
+    "options": [
+      "Customer pricing procedure and tax classification",
+      "Only reconciliation account",
+      "Only dunning procedure",
+      "Only company code"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 99,
+    "question": "Which master data field in material sales data directly influences standard item category determination?",
+    "options": [
+      "Item category group",
+      "Valuation class",
+      "Batch management indicator only",
+      "Profit center only"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 100,
+    "question": "Which sequence correctly represents the standard SD order-to-cash process?",
+    "options": [
+      "Inquiry → Quotation → Sales Order → Delivery → PGI → Billing",
+      "Sales Order → Billing → Delivery → PGI",
+      "Delivery → Sales Order → Billing → PGI",
+      "Quotation → Billing → Sales Order → Delivery"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+{
+  "1": {
+    "hint": "Think about the official SAP terminology for value contract types — the listed options use non-standard names.",
+    "explanation": "SAP has two value contract types: WK1 (General Value Contract) and WK2 (Material-Related Value Contract). None of the options — Standard material, Low/high value, or No/full value — match the actual SAP terminology, making 'None of the above' correct."
+  },
+  "2": {
+    "hint": "Recall all three availability check methods available in SAP SD.",
+    "explanation": "SAP supports three types of availability checks: ATP (Available-to-Promise) logic, Product Allocation, and Planned Independent Requirements. Since all three are valid, the answer is 'All of the above'."
+  },
+  "3": {
+    "hint": "Text determination configuration links text to a specific document structure element — think about what controls the header.",
+    "explanation": "Text determination for a sales document header is assigned to the Sales Document Type in configuration. This allows different document types (e.g., standard order vs. rush order) to have different text determination procedures."
+  },
+  "4": {
+    "hint": "Recall the specific use case for milestone billing and eliminate options with clear factual errors.",
+    "explanation": "Milestone billing plan is used in project or construction scenarios where billing is triggered by the completion of defined project milestones. Option A is false (billing plans can be blocked), and option D is false (subsequent billing does update document flow)."
+  },
+  "5": {
+    "hint": "Think about what the system needs as a minimum prerequisite to run an availability check at the item level.",
+    "explanation": "The availability check requires a plant to be determined at the sales order item level. Without a plant, the system cannot check stock or plan requirements, so the check is skipped entirely."
+  },
+  "6": {
+    "hint": "Consider the two main structural types of packaging hierarchies available in SAP logistics.",
+    "explanation": "Packing in SAP can be single-level (items packed into one handling unit) or multilevel (handling units packed into larger units, e.g., boxes into pallets). Both options are supported, so the answer is 'Both a & c'."
+  },
+  "7": {
+    "hint": "In consignment pickup, goods are being taken back from the customer — where does the inventory reside after or during this transaction?",
+    "explanation": "In consignment pickup (order type KB), the customer returns unused consignment stock back to the company. The physical stock transfers from the customer's consignment location back to the plant, so the plant holds the physical inventory."
+  },
+  "8": {
+    "hint": "Shipment is a logistics execution document — identify which option belongs to billing rather than shipping.",
+    "explanation": "Shipments in SAP handle transport planning, creation of shipping units, grouping of deliveries, and allocation of dates. Invoice creation is a billing function and is not part of the shipment document process."
+  },
+  "9": {
+    "hint": "ERP systems are built around integration and real-time data — find the option that directly contradicts this purpose.",
+    "explanation": "One of the core benefits of ERP systems is timely, integrated information. 'Lack of timely information' is the opposite of what ERP provides, making it the statement that is NOT true about ERP systems."
+  },
+  "10": {
+    "hint": "Quotations are non-binding proposals — does the system need to confirm stock availability at this stage?",
+    "explanation": "No availability check is carried out for quotations in SAP. Since quotations are informal proposals to customers without confirmed commitments, the system does not perform stock or ATP checks at this stage."
+  },
+  "11": {
+    "hint": "Think about which master data object contains shipping and storage location information used during order processing.",
+    "explanation": "Storage location determination during sales order processing is based on material master data. The material master's plant-storage location data provides the default storage location used in outbound delivery."
+  },
+  "12": {
+    "hint": "Consider the classification of shipment activities in SAP logistics — what category do they fall under?",
+    "explanation": "Shipment functions in SAP are classified as operational activities. They handle the physical execution of transportation, including grouping deliveries, planning routes, and managing shipping units at an operational level."
+  },
+  "13": {
+    "hint": "In cash sales, the process is condensed — what is the final document automatically triggered when the order is saved?",
+    "explanation": "In a cash sales process, when the order is saved, SAP automatically creates a delivery and then a billing document. The billing (invoice) is immediately generated because payment is expected at the point of sale."
+  },
+  "14": {
+    "hint": "Condition exclusion is a flexible feature — think about where in the pricing configuration it can be activated.",
+    "explanation": "The condition exclusion indicator can be set at both the condition record level (for specific pricing records) and the condition type level (applying to all records of that type). This dual-level control provides pricing flexibility."
+  },
+  "15": {
+    "hint": "Header conditions apply to the whole document — how can the system allocate them across individual line items?",
+    "explanation": "Header conditions in SAP can be distributed to items either equally (the same amount to each item) or pro-rata (proportional to the item value). Both distribution methods are supported, so the answer is 'Both of the above'."
+  },
+  "16": {
+    "hint": "Think about whether the picking step is always required in the delivery process or if it can be bypassed.",
+    "explanation": "Picking is not always mandatory in SAP. It can be configured as optional depending on the warehouse management setup. For instance, some scenarios use automatic transfer orders or bypass picking entirely based on storage type configuration."
+  },
+  "17": {
+    "hint": "Rebates involve a financial settlement at the end of a rebate agreement — what financial document is used for this?",
+    "explanation": "Rebates in SAP SD are settled using a credit memo. When the rebate agreement is settled, a credit memo request is created and then a credit memo is issued to the customer to reimburse the accrued rebate amount."
+  },
+  "18": {
+    "hint": "Identify the specific SAP organizational unit responsible for planning and creating shipment documents.",
+    "explanation": "Shipments are created and managed under the Transportation Planning Point, which is the organizational unit responsible for transportation planning in SAP. It is distinct from the shipping point, which handles delivery processing."
+  },
+  "19": {
+    "hint": "Think about how SAP determines which pricing procedure to apply — is it set manually or derived automatically?",
+    "explanation": "Pricing procedures in SAP are determined automatically based on the combination of sales area, customer pricing procedure (from customer master), and document pricing procedure (from sales document type). No manual selection is needed."
+  },
+  "20": {
+    "hint": "Review the SAP SD organizational hierarchy — which of these assignments breaks the standard structural rules?",
+    "explanation": "In SAP, Division is not directly assigned to Sales Organization. Instead, the three elements — Sales Organization, Distribution Channel, and Division — together form a Sales Area. Division is assigned within the sales area, not directly to sales org."
+  },
+  "21": {
+    "hint": "Think about the SAP three-tier architecture and how it supports high-volume enterprise deployments.",
+    "explanation": "In SAP R/3 architecture, a single system can have multiple application servers to distribute workload and balance user connections. This horizontal scaling capability allows SAP to support large numbers of concurrent users efficiently."
+  },
+  "22": {
+    "hint": "Consider where sales area information (Sales Org, Distribution Channel, Division) is visible within a sales order document.",
+    "explanation": "Sales area data is available at both the header level (defining the overall sales context) and the item level (since each item can belong to the same or a different sales area). Both levels store this information."
+  },
+  "23": {
+    "hint": "Recall the two main billing plan categories used in SAP for contracts and project-based billing.",
+    "explanation": "SAP supports two billing plan types: Periodic Billing (used for rental or subscription contracts where billing occurs at regular intervals) and Milestone Billing (used for project-based scenarios where billing is tied to project milestones)."
+  },
+  "24": {
+    "hint": "A deletion indicator is a soft delete — understand the difference between marking a record and actually removing it.",
+    "explanation": "Setting a deletion indicator on a condition record does not physically delete it from the database. The record remains in the system but is flagged as inactive, so it will not be found or applied during automatic pricing determination."
+  },
+  "25": {
+    "hint": "Header conditions apply to the whole document — how can the system allocate them across individual line items?",
+    "explanation": "Header conditions in SAP can be distributed across items either equally (same fixed amount per item) or on a pro-rata basis (proportional to each item's value or quantity). Both methods are available in standard SAP configuration."
+  },
+  "26": {
+    "hint": "Think about the three-part key that SAP uses to look up and assign a pricing procedure to a transaction.",
+    "explanation": "SAP determines the pricing procedure using the combination of: Sales Area (Sales Org + Distribution Channel + Division), Customer Pricing Procedure (from the customer master), and Document Pricing Procedure (from the sales document type). All three must match a configuration entry."
+  },
+  "27": {
+    "hint": "Item category group drives billing relevance — think about where the system reads this data from to apply it in billing.",
+    "explanation": "The item category group, which influences billing and item category determination, is read from the material master. However, when determining item-category-related billing behavior in context of the customer, the customer master (sales area data) plays a role in the final determination."
+  },
+  "28": {
+    "hint": "Header conditions are distributed to items — so a statement saying they only apply at the header level is incomplete.",
+    "explanation": "A header condition is not exclusively applied at the header. It is distributed down to item level as well, so saying 'It is applied at the header' (only) is the false statement. Header conditions are applied at header and then allocated to items automatically."
+  },
+  "29": {
+    "hint": "SAP's text management is very flexible — consider all the places and ways texts can be stored.",
+    "explanation": "SAP allows texts to be stored at both header and item levels, in any language, and across different document types like sales orders and purchase orders. All three statements are true, making 'All of the above' the correct answer."
+  },
+  "30": {
+    "hint": "Think about what happens when an output needs to be sent more than once — what field controls this behavior?",
+    "explanation": "The 'Multiple Issuing' field in the output type configuration controls whether the same output message can be issued more than once. Enabling it allows repeat output (e.g., resending a confirmation email or reprinting a document)."
+  },
+  "31": {
+    "hint": "Think about which element in the sales document controls whether an item participates in pricing at all.",
+    "explanation": "The customer pricing procedure, defined in the customer master, is one of the key factors used to determine the pricing procedure. The pricing relevance of individual items is influenced by the item category, but in context of the question, the customer pricing procedure drives the overall pricing determination."
+  },
+  "32": {
+    "hint": "Think about which order types in SAP trigger automatic delivery creation at the time of order save.",
+    "explanation": "Rush orders, consignment fill-up orders, and return orders can all be configured to automatically create delivery documents upon saving the sales order. This automation accelerates the logistics process for time-sensitive transactions."
+  },
+  "33": {
+    "hint": "Review the delivery process flow — picking happens before goods issue, and it can be done in different ways.",
+    "explanation": "Picking can be performed automatically (via transfer order in WM) or manually by warehouse staff. It always happens before Post Goods Issue (PGI), not after. Packing is optional, not mandatory, and delivery quantity should match picked quantity."
+  },
+  "34": {
+    "hint": "Recall the SAP document type codes for different delivery scenarios — BV is associated with a specific order type.",
+    "explanation": "BV is the document type associated with cash sales delivery/order reference in SAP. It is the standard document type used for the delivery unit order reference in the cash sales process."
+  },
+  "35": {
+    "hint": "Think about SAP HANA's core benefits — in-memory processing, speed, and analytics — and which listed items align with these.",
+    "explanation": "SAP HANA's true advantages are: real-time analytics (in-memory speed), enabling new business models (through real-time insight), and faster data processing (columnar in-memory storage). 'Reduced data redundancy' is not a primary HANA benefit — that is more an ERP/data modeling concern."
+  },
+  "36": {
+    "hint": "Identify which option contains document types that belong to a different SD process area rather than billing.",
+    "explanation": "Returns and External Transactions are sales document types, not billing document types. Standard billing document types include invoices, proforma invoices, debit memos, credit memos, cancellations, intercompany billing, and delivery-related billing."
+  },
+  "37": {
+    "hint": "Focus on the exact combination of criteria SAP uses for revenue account determination — note the difference between 'account key' and 'account number'.",
+    "explanation": "Revenue account determination in SAP uses: Chart of Accounts, Sales Area, Account Assignment Group of Customer, Account Assignment Group of Material, and Account Key. It uses 'Account Key' (not 'Account Number' or 'Sales Organization' or 'Division' alone)."
+  },
+  "38": {
+    "hint": "Think about the standard SAP partner functions for customers — identify the one that does not exist in standard SAP.",
+    "explanation": "'Sold-from party' is not a standard SAP partner function. The standard customer partner functions are: Sold-to Party (SP), Ship-to Party (SH), Bill-to Party (BP), and Payer (PY). There is no 'Sold-from' partner function in standard SAP SD."
+  },
+  "39": {
+    "hint": "Consider which contract type allows item-level validity to differ from the header validity period.",
+    "explanation": "In a Material-Related Value Contract (WK2), the validity dates at item level can differ from those at header level. This allows individual materials within the contract to have their own validity periods, unlike general value contracts (WK1) where one validity period applies to the whole contract."
+  },
+  "40": {
+    "hint": "Think about the SAP organizational hierarchy from top to bottom — what sits above even the company code?",
+    "explanation": "The Client is the highest organizational unit in SAP. It represents the entire SAP system instance and sits above all other organizational units including Company Code, Sales Organization, and Plant. All data within a client is isolated from other clients."
+  },
+  "41": {
+    "hint": "Recall the scheduling sequence SAP follows during availability check — which direction does it try first?",
+    "explanation": "SAP first attempts backward scheduling, calculating from the requested delivery date back to determine if the order can be fulfilled on time. If backward scheduling fails (e.g., not enough lead time), the system then performs forward scheduling to find the earliest possible delivery date."
+  },
+  "42": {
+    "hint": "Recall the standard account group codes in SAP — KU is associated with a specific business partner category.",
+    "explanation": "KU is the standard account group code for customers in SAP. LI is used for vendors/suppliers. When creating a customer master record, the account group KU is used for standard sold-to party customers."
+  },
+  "43": {
+    "hint": "Focus on the predefined statuses in the release procedure — there are only two fixed statuses available.",
+    "explanation": "The release procedure in SAP has two predefined statuses: Released and Blocked. These statuses control whether a condition record or pricing element is active and can be used in transactions. Other options in the question describe different SAP concepts unrelated to release procedures."
+  },
+  "44": {
+    "hint": "Think about the overall structure of a delivery document — what levels of information does it contain?",
+    "explanation": "A delivery document in SAP contains both header-level data (e.g., delivery date, shipping point, total weight) and item-level data (e.g., material, quantity, batch, storage location). Both levels are present in every outbound delivery document."
+  },
+  "45": {
+    "hint": "Think about the SAP feature that automatically substitutes one material with another during sales order processing.",
+    "explanation": "Material Determination (also called Material Substitution) is the SAP feature that automatically replaces a material entered in the sales order with an alternative. It is triggered by condition records in a material determination procedure and is different from the Customer-Material Info Record."
+  },
+  "46": {
+    "hint": "Alternate calculation type modifies how a condition value is computed — think about its primary purpose.",
+    "explanation": "Alternate calculation types (formula routines) are used in pricing procedures to perform special calculations that differ from standard base-value multiplication. For example, calculating a freight charge using custom logic instead of the standard percentage or fixed-amount method."
+  },
+  "47": {
+    "hint": "Outline agreements are long-term purchasing/sales arrangements — identify which option fits this category.",
+    "explanation": "Scheduling Agreements are a type of outline agreement in SAP SD, used for long-term delivery schedules with a customer. Contracts (quantity and value) are also outline agreements. Consignment orders, debit memo requests, and release orders are not outline agreements."
+  },
+  "48": {
+    "hint": "From the customer master, identify which fields are specifically used as key fields in condition record determination for pricing.",
+    "explanation": "The price-relevant fields from the customer master used in condition record determination are: Customer Pricing Procedure, Price List, Price Group, and Tax Classification. Shipping conditions and payment terms are not used as pricing determination keys."
+  },
+  "49": {
+    "hint": "Think about what controls whether a specific condition table within an access sequence is even searched.",
+    "explanation": "Requirements (requirement routines) in an access sequence control whether the system should search a particular condition table. If the requirement is not met, that access step is skipped entirely, allowing more precise and efficient condition record determination."
+  },
+  "50": {
+    "hint": "Statistical conditions serve an informational purpose — think about whether they affect financial postings.",
+    "explanation": "Statistical conditions (marked with the statistical flag in the pricing procedure) are used for internal calculations, subtotals, or display purposes only. They do not generate accounting entries and are not relevant for account posting to the general ledger."
+  }
+}

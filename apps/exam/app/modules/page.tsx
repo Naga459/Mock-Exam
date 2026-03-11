@@ -166,6 +166,33 @@ export default function ModulesPage() {
                   </span>
                 </div>
 
+                {/* Imp branding */}
+                {mod.name.toLowerCase().includes("Imp") && (
+                  <div
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      fontSize: 11,
+                      fontWeight: 700,
+                      letterSpacing: 0.5,
+                      color: "#ff6b00",
+                      opacity: 0.9,
+                    }}
+                  >
+                    <span
+                      style={{
+                        width: 8,
+                        height: 8,
+                        borderRadius: "50%",
+                        background: "#ff6b00",
+                        display: "inline-block",
+                      }}
+                    />
+                    Imp
+                  </div>
+                )}
+
                 {/* Name */}
                 <div
                   style={{

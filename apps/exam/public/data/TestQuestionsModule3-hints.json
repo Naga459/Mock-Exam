@@ -1,0 +1,126 @@
+{
+  "1": {
+    "hint": "Identify which stated function is actually performed by sales staff rather than the Sales Organization unit itself.",
+    "explanation": "The Sales Organization is responsible for distributing goods and services and managing legal sales relationships. Negotiating terms of sale is a task performed by sales staff or account managers, not by the Sales Organization as an organizational unit."
+  },
+  "2": {
+    "hint": "SAP's three conceptual areas are Presentation, Application, and Basis — identify which option does not match any of these.",
+    "explanation": "The three SAP conceptual areas are the Presentation Server (user interface), Application Area (business logic), and Basis Server (technical foundation). 'SAP Development Area' is not one of the three conceptual areas — development tools like ABAP Workbench are part of the Basis/application environment but not a standalone conceptual area."
+  },
+  "3": {
+    "hint": "Think about where reference document numbers (delivery, sales order) are visible in the billing document structure.",
+    "explanation": "In a billing document, delivery and sales order numbers are stored at the item level. Each billing item references its originating delivery or order item, since multiple items in one billing document can originate from different deliveries or orders."
+  },
+  "4": {
+    "hint": "Quotations are non-binding proposals — consider whether the system commits to stock allocation at this stage.",
+    "explanation": "No availability check is performed for quotations in SAP. Since a quotation is only a price proposal to the customer without a confirmed order, the system does not run ATP checks or allocate stock at this stage."
+  },
+  "5": {
+    "hint": "Think about whether output in SAP is purely rule-driven or if users can also intervene manually.",
+    "explanation": "Output determination in SAP can be proposed automatically by the system based on configuration rules (output condition records), but users can also add, change, or delete outputs manually in the document. Both methods are supported."
+  },
+  "6": {
+    "hint": "Consider which physical product characteristics can be used as a basis for calculating pricing conditions.",
+    "explanation": "In SAP SD pricing, condition types can use physical product characteristics as the calculation base. Gross weight, net weight, and volume are all valid bases for pricing conditions such as freight charges. All three options are therefore correct."
+  },
+  "7": {
+    "hint": "Think about the relationship between a condition type and the tables it searches through — can it search multiple tables?",
+    "explanation": "A condition type is assigned to one access sequence, and that access sequence can contain multiple condition tables (access steps). Through the access sequence, a condition type can relate to multiple condition tables during condition record determination."
+  },
+  "8": {
+    "hint": "Billing plans are maintained in the sales document — identify the option that places them in the wrong location.",
+    "explanation": "Billing plans are configured and maintained in the sales document (order or contract), not in the billing document schedule line. The billing document schedule line does not exist as a place to maintain billing plans; that concept belongs to sales order scheduling."
+  },
+  "9": {
+    "hint": "Review SAP SD organizational hierarchy — Division does not attach directly to one unit, it forms part of a three-element combination.",
+    "explanation": "Division is not directly assigned to Sales Organization. Instead, Sales Organization, Distribution Channel, and Division together form a Sales Area. Division is part of the sales area combination, not a direct child assignment of sales organization."
+  },
+  "10": {
+    "hint": "Think about all the ways ERP systems improve business operations — consider whether all four listed benefits are genuine ERP advantages.",
+    "explanation": "ERP systems optimize business processes through all four mechanisms: a central shared database eliminates data silos, built-in best practices standardize processes, transparency improves decision-making, and real-time data ensures up-to-date information across modules."
+  },
+  "11": {
+    "hint": "Recall the two main billing plan categories used in SAP for contracts and project-based billing.",
+    "explanation": "SAP supports two billing plan types: Periodic Billing (used for recurring fixed-amount billing such as rental or service contracts) and Milestone Billing (used for project-based billing where dates are tied to project completion milestones)."
+  },
+  "12": {
+    "hint": "A shipment requires route information from the delivery — consider which statement correctly describes this dependency.",
+    "explanation": "A shipment can only be created if the route has been determined in the delivery document. Route determination is a prerequisite for shipment creation in SAP logistics. PGI occurs after the shipment is created, not before, and a group of deliveries forms a shipment — not the other way around."
+  },
+  "13": {
+    "hint": "Recall the three specific organizational units that combine to define a sales area in SAP.",
+    "explanation": "A Sales Area is the combination of Sales Organization, Distribution Channel, and Division. Sales office is an additional optional organizational unit but is not part of the sales area definition."
+  },
+  "14": {
+    "hint": "The availability check scope is highly configurable — consider whether all listed elements can be included.",
+    "explanation": "The scope of the availability check can include purchase requisitions and purchase orders (supply elements), sales requirements and deliveries (demand elements), and replenishment lead time. All options are valid scope elements, so the answer is 'All of the above'."
+  },
+  "15": {
+    "hint": "Identify which of the options is an actual SAP SD organizational unit versus a master data classification field.",
+    "explanation": "Sales Organization is the only SAP SD organizational unit among the options. Distribution partner is not a standard SAP term. Material group and material type are material master classification fields, not SD organizational units."
+  },
+  "16": {
+    "hint": "Think about what configuration element in SAP distinguishes a standard order from a rush order or cash sale.",
+    "explanation": "The type of sales order (standard, rush, cash sale, return, etc.) is differentiated by the Sales Order Type configuration. Sales area, sold-to party, and material determine other aspects of the order but not the fundamental process type."
+  },
+  "17": {
+    "hint": "Consider how deliveries are structured within a shipment document in SAP logistics.",
+    "explanation": "Each delivery is represented as a line item within the shipment document. A single shipment can contain multiple deliveries, and each delivery appears as one line in the shipment, allowing the planner to manage multiple deliveries in one transportation unit."
+  },
+  "18": {
+    "hint": "The customer-material info record stores customer-specific data for a material — identify which statement misrepresents its purpose.",
+    "explanation": "The customer-material info record is created for a specific customer/material combination in a sales area to store customer-specific data such as the customer's own material number or delivery tolerances. It is not created simply because 'a customer specifically manages a sale' — that phrasing is vague and incorrect."
+  },
+  "19": {
+    "hint": "Focus on what the SAP logon client enables — multiple data environments, cost sharing, and scaling — eliminate the incorrect statement.",
+    "explanation": "The SAP logon client enables: (1) maintaining multiple independent data sets in one R/3 system, (3) supporting more users as the customer base grows, and (4) saving costs through shared hardware and software. Statement 2 is a duplicate/incorrect variation of statement 3 and is not a separate distinct benefit."
+  },
+  "20": {
+    "hint": "Remember the correct sequence of warehouse operations — picking must be completed before goods can be issued.",
+    "explanation": "Picking happens BEFORE Post Goods Issue (PGI), not after. PGI is the final step confirming goods have physically left the warehouse. Statements A, B, and C about WM integration, transfer orders, and single/multiple picks are all correct SAP behaviors."
+  },
+  "21": {
+    "hint": "Consider whether billing plans are flexible enough to apply at different levels of the sales document.",
+    "explanation": "Billing plans in SAP can be maintained at both the header level (applying to all items) and the item level (where individual items have their own billing schedules). This flexibility allows different items in the same order to have different billing timelines."
+  },
+  "22": {
+    "hint": "Think about how the delivery item category is determined — does it come from manual entry or from a system-driven process?",
+    "explanation": "The item category in a delivery document is typically proposed via copy control settings when data is copied from the sales order. Copy control defines which item category from the order maps to the delivery, ensuring consistency in the document flow."
+  },
+  "23": {
+    "hint": "Think about which sales process eliminates the need for the seller to physically stock or handle goods, reducing logistics overhead.",
+    "explanation": "Third-party sales process reduces costs by having the vendor ship goods directly to the customer. The seller acts as an intermediary, eliminating warehousing, handling, and logistics costs. This makes it the most effective cost-reduction process among the options."
+  },
+  "24": {
+    "hint": "Recall the standard SAP order type codes — OR is one of the most fundamental.",
+    "explanation": "OR is the standard SAP order type for the Standard Order, which is the most commonly used order type in the order-to-cash process. RO is Rush Order, BV is Cash Sales, and RE is Return Order."
+  },
+  "25": {
+    "hint": "Think about which partner function codes are authorized to create sales orders in a cash sales account context.",
+    "explanation": "Both the Sold-to party (AG) and the Sold-to party for reference (AA) are authorized to create sales orders for cash accounts in SAP. The reference code allows a reference sold-to party to place orders on behalf of a cash account customer."
+  },
+  "26": {
+    "hint": "HB00 is a well-known SAP condition type — verify what level it applies at (header or item).",
+    "explanation": "HB00 is a HEADER condition type in SAP used for percentage header discounts, not an item pricing condition type. The false statement is D. Header conditions (like HB00) apply to the entire document and are distributed to items, not determined at the item level."
+  },
+  "27": {
+    "hint": "Identify the official SAP-branded project implementation methodology, distinct from SAP's technical tools and platforms.",
+    "explanation": "SAP ASAP (Accelerated SAP) is SAP's proprietary structured implementation methodology. SAP Solution Manager is a tool for project management and monitoring, SAP NetWeaver is a technology platform, and SAP Solution Set is not a standard SAP term."
+  },
+  "28": {
+    "hint": "Supplementary conditions are dependent on another condition — consider where their records are accessed and maintained.",
+    "explanation": "A supplementary condition record is maintained through (and linked to) the parent condition record. When the main condition record is accessed, the supplementary condition can be maintained together with it, establishing the dependency between the two pricing elements."
+  },
+  "29": {
+    "hint": "Think about the standard SAP reasons that cause a single delivery to be split into multiple deliveries.",
+    "explanation": "Delivery splits occur in SAP due to logistical differences such as different shipping points, different delivery dates from scheduling, or capacity constraints. Packing issues and driver knowledge are not SAP system-level reasons for delivery splits."
+  },
+  "30": {
+    "hint": "Recall the three standard views of the customer master in SAP — identify which option is not one of them.",
+    "explanation": "The three standard customer master data views in SAP are: General Data (name, address, communication), Company Code Data (payment terms, reconciliation account), and Sales Area Data (pricing, shipping, billing). 'Export data' is not a standard customer master view."
+  },
+  "31": {
+    "hint": "Think about which organizational level SAP uses to check stock during the availability check process.",
+    "explanation": "The availability check in SAP is performed at the Plant level. Stock is stored and managed at the plant, so the system checks inventory at the plant assigned to the sales order item. Shipping point, company code, and sales organization do not hold stock."
+  }
+}

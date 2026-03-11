@@ -1,0 +1,1302 @@
+[
+    {
+        "id": 1,
+        "question": "What does SAP SD stand for?",
+        "options": [
+            "System Distribution",
+            "Sales and Distribution",
+            "Supply Development",
+            "Sales Database"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Which organizational unit represents a selling unit in SAP SD?",
+        "options": [
+            "Client",
+            "Plant",
+            "Sales Organization",
+            "Company Code"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Which element forms the Sales Area?",
+        "options": [
+            "Sales Office, Sales Group, Division",
+            "Company Code, Plant, Storage Location",
+            "Sales Organization, Distribution Channel, Division",
+            "Client, Company Code, Plant"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Which document starts the sales cycle?",
+        "options": [
+            "Delivery",
+            "Inquiry",
+            "Sales Order",
+            "Quotation"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "Which partner function represents the party ordering goods?",
+        "options": [
+            "Ship-to party",
+            "Payer",
+            "Sold-to party",
+            "Bill-to party"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "Which document confirms the customer's request for goods or services?",
+        "options": [
+            "Credit Memo",
+            "Billing",
+            "Sales Order",
+            "Delivery"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "Which process checks stock availability?",
+        "options": [
+            "Pricing",
+            "Availability Check",
+            "Packing",
+            "Billing"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 8,
+        "question": "Which step occurs before goods issue?",
+        "options": [
+            "Payment",
+            "Billing",
+            "Accounting entry",
+            "Picking"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 9,
+        "question": "Transaction code to create a sales order?",
+        "options": [
+            "VF01",
+            "VA01",
+            "VA02",
+            "VL01N"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 10,
+        "question": "Transaction code to create delivery?",
+        "options": [
+            "VF01",
+            "VA01",
+            "VA02",
+            "VL01N"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 11,
+        "question": "Transaction code for billing creation?",
+        "options": [
+            "VL01N",
+            "VA01",
+            "ME21N",
+            "VF01"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 12,
+        "question": "Inventory is updated at which step?",
+        "options": [
+            "Billing",
+            "Delivery creation",
+            "Post Goods Issue",
+            "Sales order"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 13,
+        "question": "Which master data contains shipping conditions?",
+        "options": [
+            "Condition Record",
+            "Material Master",
+            "Customer Master",
+            "Vendor Master"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 14,
+        "question": "Which master data contains item category group?",
+        "options": [
+            "Company Code",
+            "Vendor Master",
+            "Material Master",
+            "Customer Master"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 15,
+        "question": "Pricing procedure determination uses:",
+        "options": [
+            "Plant and Storage location",
+            "Sales area + Customer pricing procedure + Document pricing procedure",
+            "Customer pricing procedure only",
+            "Sales area only"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 16,
+        "question": "Which document corrects billing errors?",
+        "options": [
+            "Sales Order",
+            "Purchase Order",
+            "Credit Memo",
+            "Delivery"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 17,
+        "question": "Material substitution is done using:",
+        "options": [
+            "Delivery Split",
+            "Pricing",
+            "Material Determination",
+            "Availability Check"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 18,
+        "question": "Returns order document type?",
+        "options": [
+            "F2",
+            "OR",
+            "RE",
+            "LF"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 19,
+        "question": "Standard order document type?",
+        "options": [
+            "F2",
+            "OR",
+            "LF",
+            "RE"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 20,
+        "question": "Standard billing document type?",
+        "options": [
+            "RE",
+            "LF",
+            "OR",
+            "F2"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 21,
+        "question": "Shipping point determination is based on:",
+        "options": [
+            "Plant, Loading Group, Shipping Conditions",
+            "Customer Group",
+            "Material Group",
+            "Sales Org, Division"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 22,
+        "question": "Scheduling determines:",
+        "options": [
+            "Billing date",
+            "Delivery date",
+            "Tax rate",
+            "Invoice number"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 23,
+        "question": "Pricing conditions stored in which table?",
+        "options": [
+            "VBAP",
+            "VBAK",
+            "KONV",
+            "MARA"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 24,
+        "question": "Sales order header table?",
+        "options": [
+            "LIKP",
+            "VBAP",
+            "VBRK",
+            "VBAK"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 25,
+        "question": "Sales order item table?",
+        "options": [
+            "KNA1",
+            "VBAP",
+            "LIPS",
+            "VBAK"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 26,
+        "question": "Delivery header table?",
+        "options": [
+            "VBAK",
+            "LIPS",
+            "LIKP",
+            "VBRK"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 27,
+        "question": "Delivery item table?",
+        "options": [
+            "LIKP",
+            "LIPS",
+            "VBAP",
+            "VBAK"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 28,
+        "question": "Billing header table?",
+        "options": [
+            "VBRP",
+            "LIKP",
+            "VBRK",
+            "VBAP"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 29,
+        "question": "Billing item table?",
+        "options": [
+            "LIPS",
+            "VBAP",
+            "VBRK",
+            "VBRP"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 30,
+        "question": "Which module integrates with SD for inventory?",
+        "options": [
+            "CO",
+            "FI",
+            "MM",
+            "PP"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 31,
+        "question": "Billing posts accounting entries to:",
+        "options": [
+            "MM",
+            "WM",
+            "FI",
+            "PP"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 32,
+        "question": "Partner type for customer?",
+        "options": [
+            "PE",
+            "KU",
+            "LI",
+            "VE"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 33,
+        "question": "Which partner receives goods?",
+        "options": [
+            "Bill-to party",
+            "Ship-to party",
+            "Sold-to party",
+            "Payer"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 34,
+        "question": "Which partner pays the invoice?",
+        "options": [
+            "Bill-to party",
+            "Payer",
+            "Ship-to party",
+            "Sold-to party"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 35,
+        "question": "Which partner receives the invoice?",
+        "options": [
+            "Vendor",
+            "Bill-to party",
+            "Payer",
+            "Ship-to party"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 36,
+        "question": "Outline agreements include:",
+        "options": [
+            "Contracts and Scheduling Agreements",
+            "Sales Orders",
+            "Deliveries",
+            "Billing Documents"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 37,
+        "question": "Cash sales document type?",
+        "options": [
+            "LF",
+            "CS",
+            "OR",
+            "RE"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 38,
+        "question": "Rush order document type?",
+        "options": [
+            "CS",
+            "OR",
+            "RE",
+            "RO"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 39,
+        "question": "Pricing procedure controls:",
+        "options": [
+            "Stock transfer",
+            "Tax codes",
+            "Price calculation",
+            "Delivery creation"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 40,
+        "question": "Condition technique is used in:",
+        "options": [
+            "Pricing",
+            "Billing",
+            "Shipment",
+            "Delivery"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 41,
+        "question": "Condition record stores:",
+        "options": [
+            "Material weight",
+            "Delivery route",
+            "Customer address",
+            "Pricing data"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 42,
+        "question": "Rebate settlement uses:",
+        "options": [
+            "Sales order",
+            "Delivery",
+            "Credit memo",
+            "Debit memo"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 43,
+        "question": "Delivery split occurs when:",
+        "options": [
+            "Same plant",
+            "Same shipping point",
+            "Same route",
+            "Different shipping points"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 44,
+        "question": "Route determination depends on:",
+        "options": [
+            "Division",
+            "Sales office",
+            "Shipping condition, Transportation group, Delivery plant",
+            "Customer group"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 45,
+        "question": "Packing can be:",
+        "options": [
+            "Single level",
+            "Multi level",
+            "None",
+            "Both A and B"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 46,
+        "question": "Shipment document in SAP SD is created for:",
+        "options": [
+            "Sales orders",
+            "Deliveries",
+            "Invoices",
+            "Purchase orders"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 47,
+        "question": "Third party order processing involves:",
+        "options": [
+            "Vendor stores goods",
+            "Vendor delivers goods directly to customer",
+            "Company delivers goods",
+            "Customer collects goods"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 48,
+        "question": "Consignment stock is stored at:",
+        "options": [
+            "Customer location",
+            "Plant",
+            "Warehouse",
+            "Vendor location"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 49,
+        "question": "ATP stands for:",
+        "options": [
+            "Actual to Plan",
+            "Available to Promise",
+            "Available to Pay",
+            "Actual to Produce"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 50,
+        "question": "Highest organizational unit in SAP:",
+        "options": [
+            "Plant",
+            "Company Code",
+            "Client",
+            "Sales Organization"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 51,
+        "question": "Which unit represents the legal entity?",
+        "options": [
+            "Plant",
+            "Client",
+            "Company Code",
+            "Sales Org"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 52,
+        "question": "Plant belongs to:",
+        "options": [
+            "Sales Org",
+            "Division",
+            "Company Code",
+            "Client"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 53,
+        "question": "Storage location belongs to:",
+        "options": [
+            "Company Code",
+            "Plant",
+            "Sales Org",
+            "Client"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 54,
+        "question": "Division represents:",
+        "options": [
+            "Sales office",
+            "Customer group",
+            "Product line",
+            "Company code"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 55,
+        "question": "Sales office represents:",
+        "options": [
+            "Warehouse",
+            "Regional sales office",
+            "Finance office",
+            "Vendor office"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 56,
+        "question": "Sales group represents:",
+        "options": [
+            "Plants",
+            "Customers",
+            "Group of salespeople",
+            "Divisions"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 57,
+        "question": "Billing relevance controlled by:",
+        "options": [
+            "Pricing procedure",
+            "Customer master",
+            "Item category",
+            "Sales area"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 58,
+        "question": "Delivery relevance controlled by:",
+        "options": [
+            "Schedule line category",
+            "Division",
+            "Pricing procedure",
+            "Customer group"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 59,
+        "question": "Schedule line category determines:",
+        "options": [
+            "Billing",
+            "Customer account",
+            "Movement type",
+            "Pricing"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 60,
+        "question": "Movement type 601 used for:",
+        "options": [
+            "Inventory adjustment",
+            "Goods issue",
+            "Goods receipt",
+            "Transfer posting"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 61,
+        "question": "Movement type 101 used for:",
+        "options": [
+            "Inventory block",
+            "Transfer posting",
+            "Goods receipt",
+            "Goods issue"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 62,
+        "question": "Delivery block used for:",
+        "options": [
+            "Prevent billing",
+            "Prevent pricing",
+            "Prevent delivery",
+            "Prevent order"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 63,
+        "question": "Billing block used for:",
+        "options": [
+            "Prevent order",
+            "Prevent invoice",
+            "Prevent shipment",
+            "Prevent delivery"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 64,
+        "question": "Standard credit check in SAP SD is primarily performed during:",
+        "options": [
+            "Billing",
+            "Shipment",
+            "Sales order",
+            "Post Goods Issue"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 65,
+        "question": "Credit management belongs to module:",
+        "options": [
+            "MM",
+            "CO",
+            "FI",
+            "PP"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 66,
+        "question": "Condition type PR00 represents:",
+        "options": [
+            "Discount",
+            "Base price",
+            "Freight",
+            "Tax"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 67,
+        "question": "Discount condition example:",
+        "options": [
+            "PR00",
+            "KF00",
+            "K004",
+            "MWST"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 68,
+        "question": "Tax condition example:",
+        "options": [
+            "KF00",
+            "PR00",
+            "MWST",
+            "K004"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 69,
+        "question": "Freight condition example:",
+        "options": [
+            "K004",
+            "KF00",
+            "PR00",
+            "MWST"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 70,
+        "question": "Access sequence controls:",
+        "options": [
+            "Search strategy for condition records",
+            "Billing",
+            "Stock movement",
+            "Delivery creation"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 71,
+        "question": "Condition table in pricing is used to:",
+        "options": [
+            "Store fields used to search for condition records",
+            "Store material stock levels",
+            "Maintain delivery routes",
+            "Store customer master data"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 72,
+        "question": "Output determination used for:",
+        "options": [
+            "Pricing",
+            "Print/email documents",
+            "Delivery split",
+            "Stock movement"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 73,
+        "question": "Example output type:",
+        "options": [
+            "MWST",
+            "K004",
+            "BA00",
+            "PR00"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 74,
+        "question": "Text determination used for:",
+        "options": [
+            "Billing",
+            "Pricing",
+            "Automatic text in documents",
+            "Delivery split"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 75,
+        "question": "Partner determination used for:",
+        "options": [
+            "Pricing",
+            "Shipment",
+            "Assign partners to documents",
+            "Delivery"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 76,
+        "question": "Account determination posts revenue to:",
+        "options": [
+            "Vendor account",
+            "Plant",
+            "GL account",
+            "Customer group"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 77,
+        "question": "Revenue account determination configured in:",
+        "options": [
+            "OBYC",
+            "OVX5",
+            "VKOA",
+            "OVZ1"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 78,
+        "question": "Customer master general data table:",
+        "options": [
+            "VBAK",
+            "KNA1",
+            "MARA",
+            "KNVV"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 79,
+        "question": "Customer sales data table:",
+        "options": [
+            "VBAP",
+            "KNVV",
+            "KNA1",
+            "VBAK"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 80,
+        "question": "Material master table:",
+        "options": [
+            "LIKP",
+            "VBAP",
+            "MARA",
+            "KNA1"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 81,
+        "question": "Material description table:",
+        "options": [
+            "MARA",
+            "KNA1",
+            "MAKT",
+            "VBAP"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 82,
+        "question": "Availability to Promise (ATP) check is primarily executed during:",
+        "options": [
+            "Sales order processing",
+            "Billing",
+            "Shipment processing",
+            "Invoice posting"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 83,
+        "question": "Forward scheduling used when:",
+        "options": [
+            "Delivery blocked",
+            "Backward scheduling fails",
+            "Stock available",
+            "Customer cancels"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 84,
+        "question": "Backward scheduling starts from:",
+        "options": [
+            "Billing date",
+            "Requested delivery date",
+            "Shipment date",
+            "Order date"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 85,
+        "question": "PGI updates:",
+        "options": [
+            "Pricing",
+            "Inventory and accounting",
+            "Vendor master",
+            "Customer master"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 86,
+        "question": "Billing creates:",
+        "options": [
+            "Shipment",
+            "Delivery document",
+            "Accounting document",
+            "Material document"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 87,
+        "question": "Document flow in SAP SD is used to:",
+        "options": [
+            "Track relationships between sales documents",
+            "Calculate pricing conditions",
+            "Monitor stock levels",
+            "Determine customer credit limits"
+        ],
+        "correct_answers": [
+            "A"
+        ]
+    },
+    {
+        "id": 88,
+        "question": "Transaction to display sales order:",
+        "options": [
+            "VA01",
+            "VL01N",
+            "VA03",
+            "VA02"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 89,
+        "question": "Transaction to change sales order:",
+        "options": [
+            "VL01N",
+            "VA03",
+            "VA01",
+            "VA02"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 90,
+        "question": "Transaction to display delivery:",
+        "options": [
+            "VF01",
+            "VA01",
+            "VL03N",
+            "VL01N"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 91,
+        "question": "Transaction to display billing:",
+        "options": [
+            "VF01",
+            "VL01N",
+            "VF03",
+            "VA01"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 92,
+        "question": "Customer–material info record stores:",
+        "options": [
+            "Pricing only",
+            "Vendor data",
+            "Customer specific material data",
+            "Stock levels"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 93,
+        "question": "Material listing/exclusion controls:",
+        "options": [
+            "Pricing",
+            "Allowed materials for customer",
+            "Shipment",
+            "Stock transfer"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 94,
+        "question": "Free goods determination gives:",
+        "options": [
+            "Tax exemption",
+            "Free items with purchase",
+            "Freight discount",
+            "Discount only"
+        ],
+        "correct_answers": [
+            "B"
+        ]
+    },
+    {
+        "id": 95,
+        "question": "Rebate agreement based on:",
+        "options": [
+            "Plant",
+            "Stock",
+            "Sales volume",
+            "Vendor"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 96,
+        "question": "Delivery split occurs if:",
+        "options": [
+            "Same route",
+            "Same shipping point",
+            "Different shipping points",
+            "Same plant"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 97,
+        "question": "Item category determination based on:",
+        "options": [
+            "Plant",
+            "Storage location",
+            "Customer group",
+            "Sales doc type + Item category group + Usage + Higher level item"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 98,
+        "question": "Schedule line category determined by:",
+        "options": [
+            "Customer group",
+            "Division",
+            "Sales org",
+            "Item category + MRP type"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    },
+    {
+        "id": 99,
+        "question": "Which process groups deliveries for transportation?",
+        "options": [
+            "Billing",
+            "ATP",
+            "Shipment processing",
+            "Pricing"
+        ],
+        "correct_answers": [
+            "C"
+        ]
+    },
+    {
+        "id": 100,
+        "question": "SAP HANA provides:",
+        "options": [
+            "Offline database",
+            "Delayed reporting",
+            "Manual processing",
+            "Real-time analytics"
+        ],
+        "correct_answers": [
+            "D"
+        ]
+    }
+]

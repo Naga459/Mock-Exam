@@ -1,0 +1,402 @@
+{
+"1": {
+"hint": "SAP SD is one of the core functional modules in SAP ERP.",
+"explanation": "SAP SD stands for Sales and Distribution. It manages the complete order-to-cash process including sales orders, deliveries, billing, and customer management."
+},
+"2": {
+"hint": "The selling organizational unit handles sales transactions.",
+"explanation": "The Sales Organization is responsible for selling goods and services, negotiating sales conditions, and managing customer relationships."
+},
+"3": {
+"hint": "Sales area combines three organizational elements.",
+"explanation": "A Sales Area is formed by Sales Organization, Distribution Channel, and Division. It defines the structure used to sell products to customers."
+},
+"4": {
+"hint": "The sales cycle often begins with a presales document.",
+"explanation": "An Inquiry is typically the first document in the sales cycle where the customer asks about product availability or pricing."
+},
+"5": {
+"hint": "This partner is the main customer placing the order.",
+"explanation": "The Sold-to party represents the customer who places the order and is responsible for the business transaction."
+},
+"6": {
+"hint": "This document legally confirms the customer's order.",
+"explanation": "The Sales Order confirms the customer’s request for goods or services and triggers the order-to-cash process."
+},
+"7": {
+"hint": "Availability checks ensure stock can meet customer demand.",
+"explanation": "Availability Check (ATP) verifies whether the requested quantity can be delivered on the requested date."
+},
+"8": {
+"hint": "Warehouse preparation must occur before shipping goods.",
+"explanation": "Picking is the process of selecting goods from the warehouse before the Post Goods Issue step."
+},
+"9": {
+"hint": "Sales order creation uses a VA transaction.",
+"explanation": "VA01 is used to create a sales order in SAP SD."
+},
+"10": {
+"hint": "Outbound delivery creation uses a VL transaction.",
+"explanation": "VL01N is used to create outbound deliveries based on sales orders."
+},
+"11": {
+"hint": "Billing documents are created with VF transactions.",
+"explanation": "VF01 creates billing documents such as invoices and debit memos."
+},
+"12": {
+"hint": "Inventory changes occur during a goods movement.",
+"explanation": "Inventory is updated during Post Goods Issue (PGI), which reduces stock and records the goods movement."
+},
+"13": {
+"hint": "Shipping conditions are maintained in customer logistics data.",
+"explanation": "Customer master sales area data stores shipping conditions used in shipping point determination."
+},
+"14": {
+"hint": "Material master sales views influence item behavior.",
+"explanation": "Item category group is maintained in the material master and is used in item category determination."
+},
+"15": {
+"hint": "Pricing procedure depends on both customer and document data.",
+"explanation": "Pricing procedure determination uses Sales Area, Customer Pricing Procedure, and Document Pricing Procedure."
+},
+"16": {
+"hint": "Billing corrections require financial adjustment documents.",
+"explanation": "A Credit Memo is used to correct billing errors or reduce invoice amounts."
+},
+"17": {
+"hint": "Alternate materials can be proposed automatically.",
+"explanation": "Material Determination allows substitution of materials based on predefined rules."
+},
+"18": {
+"hint": "Returns orders use a specific SD document type.",
+"explanation": "RE is the standard document type used for returns orders."
+},
+"19": {
+"hint": "The standard order type is commonly used in SAP SD.",
+"explanation": "OR represents the standard sales order document type."
+},
+"20": {
+"hint": "Invoices are generated using a specific billing type.",
+"explanation": "F2 is the standard billing document type for invoices."
+},
+"21": {
+"hint": "Shipping point determination uses logistics factors.",
+"explanation": "Shipping point determination is based on Plant, Loading Group, and Shipping Conditions."
+},
+"22": {
+"hint": "Scheduling determines when goods can be delivered.",
+"explanation": "Scheduling calculates confirmed delivery dates based on lead times and availability."
+},
+"23": {
+"hint": "Pricing results are stored in a dedicated table.",
+"explanation": "KONV stores pricing condition values used in sales orders."
+},
+"24": {
+"hint": "Sales orders have header and item tables.",
+"explanation": "VBAK stores header-level sales order data."
+},
+"25": {
+"hint": "Item data is stored separately from header data.",
+"explanation": "VBAP stores item-level details of sales orders."
+},
+"26": {
+"hint": "Delivery documents also follow header–item structure.",
+"explanation": "LIKP stores delivery header data."
+},
+"27": {
+"hint": "Delivery items contain material movement information.",
+"explanation": "LIPS stores delivery item data such as materials and quantities."
+},
+"28": {
+"hint": "Billing documents also have header and item tables.",
+"explanation": "VBRK stores billing header information."
+},
+"29": {
+"hint": "Billing items store invoice line details.",
+"explanation": "VBRP stores billing item data."
+},
+"30": {
+"hint": "Inventory management is handled by a logistics module.",
+"explanation": "MM integrates with SD for inventory management and goods movement."
+},
+"31": {
+"hint": "Financial postings occur after invoicing.",
+"explanation": "Billing documents create accounting entries in Financial Accounting (FI)."
+},
+"32": {
+"hint": "Partner types identify business partner categories.",
+"explanation": "KU represents the customer partner type in SAP."
+},
+"33": {
+"hint": "One partner receives the goods physically.",
+"explanation": "Ship-to party represents the partner receiving the goods."
+},
+"34": {
+"hint": "One partner is responsible for payment.",
+"explanation": "Payer partner function represents the party responsible for payment."
+},
+"35": {
+"hint": "One partner receives the invoice.",
+"explanation": "Bill-to party receives billing documents."
+},
+"36": {
+"hint": "Outline agreements define long-term sales agreements.",
+"explanation": "Contracts and Scheduling Agreements are types of outline agreements."
+},
+"37": {
+"hint": "Cash sales are processed immediately.",
+"explanation": "CS is the document type used for cash sales."
+},
+"38": {
+"hint": "Rush orders trigger immediate delivery.",
+"explanation": "RO is the standard rush order document type."
+},
+"39": {
+"hint": "Pricing procedure determines how prices are calculated.",
+"explanation": "Pricing procedures define the sequence of condition types used for price calculation."
+},
+"40": {
+"hint": "Condition technique is the foundation of pricing.",
+"explanation": "Condition technique is used to determine pricing conditions based on access sequences and condition tables."
+},
+"41": {
+"hint": "Condition records hold actual pricing values.",
+"explanation": "Condition records store pricing values like prices and discounts."
+},
+"42": {
+"hint": "Rebates are settled through financial adjustments.",
+"explanation": "Rebate settlement normally creates credit memos."
+},
+"43": {
+"hint": "Delivery splits occur when logistics attributes differ.",
+"explanation": "Different shipping points will cause delivery splitting."
+},
+"44": {
+"hint": "Routes depend on shipping and transport characteristics.",
+"explanation": "Route determination uses Shipping Condition, Transportation Group, and Delivering Plant."
+},
+"45": {
+"hint": "Packaging structures may be hierarchical.",
+"explanation": "Packing can be single-level or multi-level depending on the packaging structure."
+},
+"46": {
+"hint": "Shipment documents organize deliveries for transportation.",
+"explanation": "Shipment documents are created for deliveries in transportation processing."
+},
+"47": {
+"hint": "Third-party orders bypass company inventory.",
+"explanation": "In third-party processing, the vendor delivers goods directly to the customer."
+},
+"48": {
+"hint": "Consignment stock remains company-owned until used.",
+"explanation": "Consignment stock is stored at the customer location but owned by the supplier."
+},
+"49": {
+"hint": "ATP is a key availability concept.",
+"explanation": "ATP stands for Available to Promise and checks stock availability."
+},
+"50": {
+"hint": "SAP hierarchy begins with the client.",
+"explanation": "Client is the highest organizational unit in SAP."
+},
+"51": {
+"hint": "Legal financial reporting uses this unit.",
+"explanation": "Company Code represents the legal entity for accounting."
+},
+"52": {
+"hint": "Plants belong to company codes.",
+"explanation": "A plant is assigned to a company code."
+},
+"53": {
+"hint": "Storage locations manage inventory within plants.",
+"explanation": "Storage locations are subdivisions of plants used for inventory management."
+},
+"54": {
+"hint": "Divisions categorize products.",
+"explanation": "Division represents a product line or product group."
+},
+"55": {
+"hint": "Sales offices represent geographic sales units.",
+"explanation": "Sales offices represent regional sales units within a sales organization."
+},
+"56": {
+"hint": "Sales groups organize sales teams.",
+"explanation": "Sales groups represent groups of salespeople."
+},
+"57": {
+"hint": "Billing relevance determines whether invoicing occurs.",
+"explanation": "Item category controls billing relevance."
+},
+"58": {
+"hint": "Delivery relevance is controlled by logistics configuration.",
+"explanation": "Schedule line category determines delivery relevance."
+},
+"59": {
+"hint": "Schedule lines link sales with logistics movements.",
+"explanation": "Schedule line category determines the movement type used during goods movement."
+},
+"60": {
+"hint": "Movement types define inventory transactions.",
+"explanation": "Movement type 601 is used for goods issue in outbound deliveries."
+},
+"61": {
+"hint": "Movement types are used for different inventory activities.",
+"explanation": "Movement type 101 is used for goods receipt."
+},
+"62": {
+"hint": "Blocks stop logistics activities.",
+"explanation": "Delivery blocks prevent delivery creation."
+},
+"63": {
+"hint": "Billing blocks stop invoice generation.",
+"explanation": "Billing blocks prevent invoice creation."
+},
+"64": {
+"hint": "Credit checks ensure customer creditworthiness.",
+"explanation": "Standard credit checks are usually performed during sales order creation."
+},
+"65": {
+"hint": "Credit control is part of financial management.",
+"explanation": "Credit management is handled within the FI module."
+},
+"66": {
+"hint": "PR00 is the standard base price condition.",
+"explanation": "PR00 represents base price in pricing procedures."
+},
+"67": {
+"hint": "Discount conditions reduce the price.",
+"explanation": "K004 is a common discount condition type."
+},
+"68": {
+"hint": "Tax conditions apply tax calculations.",
+"explanation": "MWST is a common tax condition type."
+},
+"69": {
+"hint": "Freight costs are handled through pricing conditions.",
+"explanation": "KF00 is commonly used as a freight condition."
+},
+"70": {
+"hint": "Pricing condition searches follow a defined path.",
+"explanation": "Access sequence determines the search strategy for condition records."
+},
+"71": {
+"hint": "Condition tables define field combinations.",
+"explanation": "Condition tables store fields used to search for pricing condition records."
+},
+"72": {
+"hint": "Outputs manage communication with customers.",
+"explanation": "Output determination controls document outputs such as print or email."
+},
+"73": {
+"hint": "Output types represent message types.",
+"explanation": "BA00 is a standard output type for billing documents."
+},
+"74": {
+"hint": "Text determination proposes standard texts automatically.",
+"explanation": "Text determination inserts predefined text in documents."
+},
+"75": {
+"hint": "Partner determination assigns partner roles.",
+"explanation": "Partner determination defines partners like sold-to and ship-to."
+},
+"76": {
+"hint": "Revenue is posted to financial accounts.",
+"explanation": "Account determination posts revenue to G/L accounts."
+},
+"77": {
+"hint": "Revenue account determination is configured in a specific transaction.",
+"explanation": "VKOA is used to configure revenue account determination."
+},
+"78": {
+"hint": "Customer general master data is stored in a key table.",
+"explanation": "KNA1 stores customer master general data."
+},
+"79": {
+"hint": "Sales area data is stored separately from general customer data.",
+"explanation": "KNVV stores customer sales area data."
+},
+"80": {
+"hint": "Material master general data is stored centrally.",
+"explanation": "MARA stores material master general data."
+},
+"81": {
+"hint": "Material descriptions are language-dependent.",
+"explanation": "MAKT stores material descriptions."
+},
+"82": {
+"hint": "ATP checks product availability during order processing.",
+"explanation": "ATP checks are usually performed during sales order processing."
+},
+"83": {
+"hint": "If backward scheduling fails, the system tries another approach.",
+"explanation": "Forward scheduling is used when backward scheduling fails."
+},
+"84": {
+"hint": "Backward scheduling starts from the requested date.",
+"explanation": "Backward scheduling starts from the requested delivery date and calculates earlier logistics activities."
+},
+"85": {
+"hint": "PGI triggers logistics and financial updates.",
+"explanation": "PGI updates inventory and creates accounting entries."
+},
+"86": {
+"hint": "Billing integrates SD with FI.",
+"explanation": "Billing documents create accounting documents."
+},
+"87": {
+"hint": "Document flow shows the relationship between documents.",
+"explanation": "Document flow tracks the chain from inquiry to billing."
+},
+"88": {
+"hint": "Display transactions usually end with 3.",
+"explanation": "VA03 displays sales orders."
+},
+"89": {
+"hint": "Change transactions usually end with 2.",
+"explanation": "VA02 is used to change sales orders."
+},
+"90": {
+"hint": "Delivery display uses VL transactions.",
+"explanation": "VL03N displays outbound deliveries."
+},
+"91": {
+"hint": "Billing display uses VF transactions.",
+"explanation": "VF03 displays billing documents."
+},
+"92": {
+"hint": "Customer-material relationships can store special data.",
+"explanation": "Customer–material info records store customer-specific material data."
+},
+"93": {
+"hint": "Some customers are restricted to certain materials.",
+"explanation": "Material listing/exclusion controls which materials customers can order."
+},
+"94": {
+"hint": "Promotional goods may be automatically included.",
+"explanation": "Free goods determination provides free items when conditions are met."
+},
+"95": {
+"hint": "Rebates depend on sales performance.",
+"explanation": "Rebate agreements are based on sales volume."
+},
+"96": {
+"hint": "Delivery splits occur when logistics attributes differ.",
+"explanation": "Different shipping points can cause delivery splitting."
+},
+"97": {
+"hint": "Item category determination depends on multiple attributes.",
+"explanation": "Item category determination uses sales document type, item category group, usage, and higher-level item."
+},
+"98": {
+"hint": "Schedule line category depends on item processing and planning.",
+"explanation": "Schedule line category is determined from item category and MRP type."
+},
+"99": {
+"hint": "Transportation processing groups deliveries.",
+"explanation": "Shipment processing groups deliveries for transportation."
+},
+"100": {
+"hint": "HANA enables real-time data processing.",
+"explanation": "SAP HANA provides real-time analytics and high-speed in-memory database processing."
+}
+}

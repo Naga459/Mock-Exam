@@ -9,7 +9,7 @@
   },
   {
     "id": "sap-sd-1",
-    "name": " Infosys SAP SD Module  1",
+    "name": " Imp SAP SD Module  1",
     "description": "SAP Sales & Distribution fundamentals — contracts, billing plans, pricing, availability check and more.",
     "file": "TestQuestionsModule1.json",
     "questionCount": 50,
@@ -17,7 +17,7 @@
   },
   {
     "id": "sap-sd-2",
-    "name": "Infosys SAP SD Module 2",
+    "name": "Imp SAP SD Module 2",
     "description": "Advanced SAP SD topics — intercompany sales, consignment, route determination, rebates and POD.",
     "file": "TestQuestionsModule2.json",
     "questionCount": 30,
@@ -25,10 +25,26 @@
   },
   {
     "id": "sap-sd-3",
-    "name": "Infosys SAP SD Module 3",
+    "name": "Imp SAP SD Module 3",
     "description": "SAP SD organizational structures, billing plans, availability check scope and shipment creation.",
     "file": "TestQuestionsModule3.json",
     "questionCount": 31,
+    "badge": "SD"
+  },
+  {
+    "id": "sap-sd-4",
+    "name": "ChatGpt: Top 100 SDConsultant level",
+    "description": "SAP SD organizational structures, billing plans, availability check scope and shipment creation.",
+    "file": "Top100consultant-level.json",
+    "questionCount": 100,
+    "badge": "SD"
+  },
+  {
+    "id": "sap-sd-5",
+    "name": "ChatGpt: Top 100 Imp Interview MCQ",
+    "description": "SAP SD organizational structures, billing plans, availability check scope and shipment creation.",
+    "file": "Top100SDInterviewMCQChatGpt.json",
+    "questionCount": 100,
     "badge": "SD"
   }
 ]

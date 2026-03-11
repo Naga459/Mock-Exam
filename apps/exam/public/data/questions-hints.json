@@ -1,0 +1,122 @@
+{
+  "1": {
+    "hint": "Focus on safeguards that directly protect customer data — eliminate options related to sustainability or core maintenance.",
+    "explanation": "SAP Business AI protects customer data through consent-based model training (data used only with permission), SAP-hosted AI infrastructure (secure managed environments), and tenant isolation (prevents data leakage between customers). Clean core maintenance and sustainability are unrelated to data protection."
+  },
+  "2": {
+    "hint": "Identify options related to sustainability, efficiency, and ethical governance in SAP's responsible AI operations.",
+    "explanation": "SAP's responsible AI commitment covers: renewable-energy-powered data centers (sustainability), optimized AI model sizes and routing (efficiency and reduced resource use), and ethical AI governance (fairness, transparency, accountability). Pervasive agentic AI and clean core extensions are not part of this responsible AI commitment."
+  },
+  "3": {
+    "hint": "Consider whether drafting talking points involves retrieving existing information, executing a system transaction, or generating new content.",
+    "explanation": "Requesting Joule to draft meeting talking points is a creative (Be creative) interaction because the user asks the AI to generate new content from scratch, rather than retrieve information (informational) or execute a business transaction (transactional). This aligns with generative AI's content creation capabilities."
+  },
+  "4": {
+    "hint": "Recall the three official Joule interaction patterns — eliminate options that are not part of the defined SAP taxonomy.",
+    "explanation": "Joule supports three official interaction patterns: Informational (asking questions or retrieving knowledge), Analytical (analyzing data and generating insights), and Navigational (helping users move through SAP applications). 'Conventional' and 'Educational' are not official Joule interaction patterns."
+  },
+  "5": {
+    "hint": "Think about which capabilities are specifically designed to assist SAP consultants and developers — not end-users or business process owners.",
+    "explanation": "For consultants and developers, Joule provides project lifecycle support (helping manage implementation tasks) and code intelligence (assisting with ABAP and development tasks). Process automation and SAP Fiori smart help are targeted at business end-users, not consultants specifically."
+  },
+  "6": {
+    "hint": "Identify which tool in the SAP integrated toolchain is specifically designed for enterprise architecture management and IT landscape visibility.",
+    "explanation": "SAP LeanIX is designed to provide a consolidated view of the enterprise architecture and IT landscape. It helps organizations understand application dependencies, technology stacks, and transformation opportunities. SAP Signavio focuses on process intelligence, and SAP Cloud ALM handles implementation and operations monitoring."
+  },
+  "7": {
+    "hint": "Think about which AI Foundation component manages and deploys generative AI models for text-based use cases like summarization.",
+    "explanation": "The Generative AI Hub is the AI Foundation component designed to manage and deploy generative AI models. It enables use cases such as summarizing customer feedback across multiple channels using LLMs. SAP Document AI handles structured documents, and SAP Knowledge Graph provides semantic context."
+  },
+  "8": {
+    "hint": "Focus on the three pillars that allow SAP's suite to operate as an integrated intelligent service — eliminate terms not in SAP's definition.",
+    "explanation": "SAP's Suite-as-a-Service approach is enabled by integrated applications (systems working together seamlessly), harmonized data (consistent business context across the suite), and embedded AI (intelligence delivered directly within business processes). Scalable intelligence and coordinated automation are not the defined pillars."
+  },
+  "9": {
+    "hint": "Enterprise-grade orchestration belongs to the generative AI hub — focus on what makes Document AI specifically valuable for document processing.",
+    "explanation": "SAP Document AI's value propositions are secure and compliant frameworks (ensuring regulatory alignment in document processing) and preconfigured content models (simplifying extraction and automation for specific document types). Enterprise-grade orchestration of models is a generative AI hub proposition, not Document AI."
+  },
+  "10": {
+    "hint": "Identify the three technical and governance-focused domain clusters — eliminate organizational structures that are not domain-based.",
+    "explanation": "SAP's guiding principles for ethical AI are grouped into three domain clusters: AI System Definition (what the AI should do), AI System Engineering (how it is built and tested), and Organizational Practice (how organizations govern and monitor AI use). Executive Sponsorship and AI Ethics Steering Committee are governance structures, not domain clusters."
+  },
+  "11": {
+    "hint": "Think about which AI Foundation component connects and contextualizes enterprise data to give AI models business meaning.",
+    "explanation": "SAP Knowledge Graph is the semantic backbone of the AI Foundation. It links enterprise data, entities, and relationships so that AI models can understand the meaning and context of business data, enabling more accurate and relevant AI insights across SAP applications."
+  },
+  "12": {
+    "hint": "Consider whether creating a purchase requisition involves asking a question, generating content, or executing a business transaction in the system.",
+    "explanation": "Creating a purchase requisition through Joule is a transactional interaction because it triggers an actual business transaction within the SAP system — it creates a real document. Informational interactions involve asking questions, while creative interactions involve generating new content."
+  },
+  "13": {
+    "hint": "Recall SAP's four official customer promises delivered through Joule — look for cross-enterprise scope, agility, insights, and simplicity/security.",
+    "explanation": "Joule delivers SAP's four customer promises through: Cross-enterprise outcomes (working across all SAP solutions), Agility for all (enabling all types of users), Insights at scale (delivering data-driven intelligence), and Simple and secure (ease of use with enterprise-grade security)."
+  },
+  "14": {
+    "hint": "Focus on the strategic cloud migration and operational efficiency benefits — eliminate options about encryption or clean core compliance.",
+    "explanation": "Generative AI provides RISE customers with: accelerated migration (faster move to cloud), improved agility (intelligent automation for faster adaptation), and cost efficiency (reducing manual tasks and improving process efficiency). Improved encryption and enhanced clean core are not primary strategic generative AI benefits for RISE customers."
+  },
+  "15": {
+    "hint": "Think about which architectural layer acts as the single unified gateway for all developers, operators, and administrators accessing AI Foundation.",
+    "explanation": "The OS Interfaces Layer in AI Foundation's architecture provides the unified entry point for development, operations, and administration. It connects the underlying AI capabilities (AI Kernel, Peripheral & Data layers) with the tools and interfaces used by developers and system operators."
+  },
+  "16": {
+    "hint": "Distinguish the generative AI hub's value propositions from those of Document AI — focus on model governance and orchestration.",
+    "explanation": "The generative AI hub offers: secure and compliant frameworks for enterprise AI usage (governance and regulatory compliance) and enterprise-grade orchestration of models (managing multiple LLMs in a controlled environment). Preconfigured content models are a Document AI proposition, not the generative AI hub."
+  },
+  "17": {
+    "hint": "Each C-suite role has a specific AI impact domain — verify that each role is matched to its correct business function.",
+    "explanation": "SAP Business AI impacts all executive roles: CHRO improves HR and talent processes, CPO improves sourcing and supplier management, CIO/CTO ensures seamless tech integration, CFO improves financial planning and risk management, and COO enhances process automation and supply chain resilience. All five matches are correct."
+  },
+  "18": {
+    "hint": "Focus on the core AI ethics principles — eliminate broader CSR commitments like human rights reporting or ESG that belong to a different framework.",
+    "explanation": "SAP's Responsible AI framework includes transparency and accountability (clear AI decision-making), ethical governance (structures ensuring fair and responsible AI), and human-centered design (AI that supports and empowers humans). Global Human Rights commitment and ESG reporting belong to SAP's broader sustainability commitments, not the Responsible AI framework."
+  },
+  "19": {
+    "hint": "Verify each Joule component definition carefully — make sure skills, Studio, Joule itself, and agents are each correctly described.",
+    "explanation": "All four matches are correct: Joule skills are single-task AI capabilities that execute independently; Joule Studio is the low-code environment within SAP Build for extending AI; Joule is the AI user interface for SAP; and Joule agents are AI applications that assist business users with decision support and task automation."
+  },
+  "20": {
+    "hint": "Think about what an executive AI dashboard in SAP LeanIX measures — focus on workforce impact and adoption metrics, not deployment planning.",
+    "explanation": "The SAP LeanIX executive dashboard for AI agents provides insights on: skill shifts within the workforce (how AI changes required skills), business impact of AI adoption (measured outcomes), and adoption trends (how AI capabilities are being used across the organization). Automation gaps and deployment opportunities are planning tools, not executive dashboard insights."
+  },
+  "21": {
+    "hint": "Eliminate claims about long-term learning or guaranteed accuracy — AI agents have well-defined capabilities but also known limitations.",
+    "explanation": "Ready-to-use Joule Agents: automate complex multi-step workflows, collaborate across business functions, and deliver contextual insights and recommendations. They do NOT provide long-term memory and autonomous learning, nor do they guarantee accuracy and reliability — these are known limitations of current AI agent technology."
+  },
+  "22": {
+    "hint": "AI agents assist and augment human work — eliminate options that overstate their autonomy or replace human roles.",
+    "explanation": "AI agents provide business value by facilitating collaboration across teams, boosting productivity through automation, and reducing operational costs. They assist humans in their work rather than replacing managers or guaranteeing privacy — those are not defined AI agent benefits."
+  },
+  "23": {
+    "hint": "Identify the specific inter-agent communication protocol designed for autonomous AI agent discovery and task collaboration across platforms.",
+    "explanation": "The Agent2Agent (A2A) protocol enables autonomous AI agents to discover one another, communicate their capabilities, delegate tasks, and collaborate across different systems and platforms. MCP (Model Context Protocol) is a different protocol for tool/context integration, and A2O is not a standard SAP protocol."
+  },
+  "24": {
+    "hint": "Focus on Joule's unique business advantages — extensibility, cross-functional integration, and SAP's deep data and process knowledge.",
+    "explanation": "Joule Agents provide businesses with: unmatched extensibility and built-in security (flexible yet secure customization), integration and collaboration across business functions (cross-department workflows), and harmonized data combined with SAP's robust process expertise (leveraging SAP's knowledge base). Process mining and sustainable value chains are not Joule Agent-specific advantages."
+  },
+  "25": {
+    "hint": "Identify the technical architectural building blocks of Joule agents — 'seamless collaboration' is an outcome, not an architecture feature.",
+    "explanation": "The key architectural features of Joule agents are: managed agent runtime (controlled execution environment), bi-directional connectivity (agents can both send and receive data from systems), and shared agent services (common reusable capabilities). 'Seamless collaboration' describes an outcome and 'agent to agent protocol' is a communication standard, not an architectural feature of Joule itself."
+  },
+  "26": {
+    "hint": "Think about how a knowledge graph specifically provides structured reasoning and semantic clarity — not general analytics or data connectivity.",
+    "explanation": "SAP Knowledge Graph provides context to AI agents by validating assumptions and deriving logical conclusions from structured data relationships, and by disambiguating terms, linking concepts to entities, and grounding conversations in domain-specific knowledge. Connecting data from multiple systems and advanced analytics are broader integration/BI capabilities, not specific Knowledge Graph functions."
+  },
+  "27": {
+    "hint": "Recall the two specific agent types that Joule integrates — one handles knowledge and documentation, the other handles development tasks.",
+    "explanation": "Joule integrates two types of agents: content-based agents (which process knowledge, documentation, and unstructured information) and code-based agents (which assist developers with coding, technical operations, and development tasks). Product-specific and retrieval-augmented agents are not the defined Joule agent types."
+  },
+  "28": {
+    "hint": "Focus on hallucinations and entity relationship errors — the two core LLM weaknesses that a structured knowledge graph can directly address.",
+    "explanation": "LLMs face two key challenges that SAP Knowledge Graph helps mitigate: generating factually incorrect or fabricated information (hallucinations), and overlooking relationships between entities (failing to understand how concepts are connected). Knowledge graphs provide structured facts and relationships to ground AI responses. Dynamic real-time information and subjective context are different challenges."
+  },
+  "29": {
+    "hint": "SAP recommends practical integration activities — focus on data provision, performance evaluation, and human oversight rather than governance committees or change programs.",
+    "explanation": "SAP recommends organizations: provide internal data for AI agent training (domain-specific knowledge), measure and evaluate AI agent performance (continuous improvement), and maintain expert oversight over AI agent decisions (human-in-the-loop governance). Setting up an AI governance board and implementing change management are good practices but not SAP's specific recommended integration activities."
+  },
+  "30": {
+    "hint": "Recall which SAP solutions are specifically mentioned as supported by the AI agent hub alongside SAP LeanIX.",
+    "explanation": "In addition to SAP LeanIX (for enterprise architecture), the AI agent hub also supports SAP SuccessFactors (for HR-related AI use cases) and SAP Signavio (for process intelligence and business transformation). SAP Integrated Business Planning and SAP Ariba are not mentioned as AI agent hub supported solutions."
+  }
+}

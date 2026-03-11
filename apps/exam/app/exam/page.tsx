@@ -8,6 +8,9 @@ type Question = {
   correct_answers: string[]; // e.g., ["A","C"]
 };
 
+type HintEntry = { hint: string; explanation: string };
+type HintsMap = Record<number, HintEntry>;
+
 type ExamMeta = {
   title: string;
   durationMinutes: number;
@@ -41,6 +44,10 @@ export default function ExamPage() {
   const [answers, setAnswers] = useState<Record<number, Set<string>>>({});
   const [flagged, setFlagged] = useState<Record<number, boolean>>({});
   const [showAnswers, setShowAnswers] = useState<Record<number, boolean>>({});
+  const [hints, setHints] = useState<HintsMap>({});
+  const [showHints, setShowHints] = useState<Record<number, boolean>>({});
+  const [showExplanations, setShowExplanations] = useState<Record<number, boolean>>({});
+  const [mode, setMode] = useState<"learn" | "assess">("assess");
   const [submitted, setSubmitted] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -83,14 +90,27 @@ export default function ExamPage() {
       try {
         const params = new URLSearchParams(window.location.search);
         const moduleFile = params.get("module") || "questions.json";
-        const [e, q] = await Promise.all([
+        const hintFile = moduleFile.replace(/\.json$/, "-hints.json");
+        const [e, q, h] = await Promise.all([
           fetch("/data/exam.json").then((r) => r.json()),
           fetch(`/data/${moduleFile}`).then((r) => r.json()),
+          fetch(`/data/${hintFile}`).then((r) => r.ok ? r.json() : {}),
         ]);
         if (!mounted) return;
 
+        // Normalize question list: support both flat arrays and {module, questions:[]} wrappers
+        const rawQuestions: Question[] = Array.isArray(q) ? q : q.questions ?? [];
+
+        // Normalize options: support both string arrays and {A:"...", B:"..."} objects
+        const normalizedQuestions: Question[] = rawQuestions.map((qq: Question & { options: string[] | Record<string, string> }) => {
+          const opts: string[] = Array.isArray(qq.options)
+            ? qq.options
+            : Object.values(qq.options as Record<string, string>);
+          return { ...qq, options: opts };
+        });
+
         // shuffle questions
-        const qs = e.shuffleQuestions ? shuffle(q) : q;
+        const qs = e.shuffleQuestions ? shuffle(normalizedQuestions) : normalizedQuestions;
 
         const shaped = qs.map((qq: Question) => {
           const opts = e.shuffleOptions ? shuffle(qq.options) : qq.options;
@@ -103,8 +123,19 @@ export default function ExamPage() {
           return { ...qq, options: opts, correct_answers: newCorrect };
         });
 
+        // Normalize hints: support both plain string values and {hint, explanation} objects
+        const normalizedHints: HintsMap = {};
+        for (const [k, v] of Object.entries(h as Record<string, unknown>)) {
+          if (typeof v === "string") {
+            normalizedHints[Number(k)] = { hint: v, explanation: "" };
+          } else {
+            normalizedHints[Number(k)] = v as HintEntry;
+          }
+        }
+
         setExam(e);
         setQuestions(shaped);
+        setHints(normalizedHints);
         setTimeLeft(Math.max(1, e.durationMinutes) * 60); // seconds
       } catch {
         // Minimal offline fallback to avoid hard-fail in artifact
@@ -240,6 +271,10 @@ export default function ExamPage() {
     setShowAnswers((prev) => ({ ...prev, [qid]: !prev[qid] }));
   };
 
+  const toggleHint = (qid: number) => {
+    setShowHints((prev) => ({ ...prev, [qid]: !prev[qid] }));
+  };
+
   const doSubmit = () => {
     // compute score
     let correct = 0;
@@ -286,6 +321,8 @@ export default function ExamPage() {
     setAnswers({});
     setFlagged({});
     setShowAnswers({});
+    setShowHints({});
+    setShowExplanations({});
     setSubmitted(false);
     setShowSummary(false);
     setCurrentQuestion(0);
@@ -302,7 +339,10 @@ export default function ExamPage() {
   const isCorrectAnswer =
     JSON.stringify(sortedSel) === JSON.stringify(sortedCorr);
   const multiSelect = q.correct_answers.length > 1;
-  const showCurrentAnswer = showAnswers[q.id] || submitted;
+  const isAnswered = (answers[q.id]?.size || 0) > 0;
+  const showCurrentAnswer = showAnswers[q.id] || submitted || (mode === "learn" && isAnswered);
+  const showHintPanel = showHints[q.id] || (mode === "learn" && isAnswered && !!hints[q.id]);
+  const showExplanationPanel = showExplanations[q.id] || (mode === "learn" && isAnswered);
 
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: isMobile ? 12 : 24 }}>
@@ -387,15 +427,59 @@ export default function ExamPage() {
           flexWrap: "wrap",
         }}
       >
-        <div
-          style={{
-            background: "#0e1630",
-            padding: "8px 12px",
-            borderRadius: 8,
-            border: "1px solid #2b3a6a",
-          }}
-        >
-          Question {currentQuestion + 1} of {questions.length}
+        <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          <div
+            style={{
+              background: "#0e1630",
+              padding: "8px 12px",
+              borderRadius: 8,
+              border: "1px solid #2b3a6a",
+            }}
+          >
+            Question {currentQuestion + 1} of {questions.length}
+          </div>
+
+          {/* Mode toggle */}
+          <div
+            style={{
+              display: "flex",
+              borderRadius: 8,
+              border: "1px solid #2b3a6a",
+              overflow: "hidden",
+            }}
+          >
+            <button
+              onClick={() => setMode("assess")}
+              style={{
+                padding: "8px 14px",
+                background: mode === "assess" ? "#1a2752" : "transparent",
+                border: "none",
+                color: mode === "assess" ? "white" : "#6b7faa",
+                cursor: "pointer",
+                fontWeight: mode === "assess" ? 700 : 400,
+                fontSize: 13,
+              }}
+              title="Assess mode — answers hidden until you choose to reveal"
+            >
+              📝 Assess
+            </button>
+            <button
+              onClick={() => setMode("learn")}
+              style={{
+                padding: "8px 14px",
+                background: mode === "learn" ? "#1a3a5c" : "transparent",
+                border: "none",
+                borderLeft: "1px solid #2b3a6a",
+                color: mode === "learn" ? "#60b4ff" : "#6b7faa",
+                cursor: "pointer",
+                fontWeight: mode === "learn" ? 700 : 400,
+                fontSize: 13,
+              }}
+              title="Learn mode — instantly shows correct answer and explanation after each selection"
+            >
+              🎓 Learn
+            </button>
+          </div>
         </div>
 
         <div style={{ display: "flex", gap: 8 }}>
@@ -587,15 +671,40 @@ export default function ExamPage() {
 
       {/* Question card (hidden if just viewing summary) */}
       {!showSummary && (
-        <div
-          style={{
-            background: "#121a33",
-            border: "1px solid #2b3a6a",
-            borderRadius: 16,
-            padding: 24,
-            marginBottom: 16,
-          }}
-        >
+        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
+          {/* Left arrow */}
+          <button
+            onClick={prevQuestion}
+            disabled={currentQuestion === 0}
+            title="Previous question"
+            style={{
+              flexShrink: 0,
+              width: isMobile ? 32 : 40,
+              height: isMobile ? 32 : 40,
+              borderRadius: "50%",
+              border: "1px solid #2b3a6a",
+              background: currentQuestion === 0 ? "#0a1020" : "#1a2752",
+              color: "white",
+              cursor: currentQuestion === 0 ? "not-allowed" : "pointer",
+              opacity: currentQuestion === 0 ? 0.35 : 1,
+              fontSize: isMobile ? 16 : 20,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            ‹
+          </button>
+
+          <div
+            style={{
+              flex: 1,
+              background: "#121a33",
+              border: "1px solid #2b3a6a",
+              borderRadius: 16,
+              padding: 24,
+            }}
+          >
           {/* Question header + flag */}
           <div
             style={{
@@ -650,6 +759,24 @@ export default function ExamPage() {
               >
                 💡 {isMobile ? "Answer" : showAnswers[q.id] ? "Hide Answer" : "Show Answer"}
               </button>
+              {hints[q.id] && (
+                <button
+                  onClick={() => toggleHint(q.id)}
+                  style={{
+                    padding: "8px 12px",
+                    borderRadius: 20,
+                    border: "1px solid #7b4fb5",
+                    background: showHints[q.id] ? "#7b4fb5" : "transparent",
+                    color: showHints[q.id] ? "white" : "#a67de8",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                    fontSize: isMobile ? 12 : 14,
+                  }}
+                  title="Show hint for this question"
+                >
+                  🔍 {isMobile ? "Hint" : showHints[q.id] ? "Hide Hint" : "Hint"}
+                </button>
+              )}
               <button
                 onClick={() => toggleFlag(q.id)}
                 style={{
@@ -738,6 +865,47 @@ export default function ExamPage() {
             })}
           </div>
 
+          {/* Hint panel */}
+          {showHintPanel && hints[q.id] && (
+            <div
+              style={{
+                marginTop: isMobile ? 16 : 12,
+                padding: isMobile ? 16 : 12,
+                background: "#1a1030",
+                border: "1px solid #7b4fb5",
+                borderRadius: 8,
+                fontSize: isMobile ? 15 : 14,
+                lineHeight: 1.6,
+              }}
+            >
+              <div>
+                <strong style={{ color: "#a67de8" }}>🔍 Hint:</strong>{" "}
+                <span style={{ opacity: 0.9 }}>{hints[q.id].hint}</span>
+              </div>
+              {hints[q.id].explanation && (
+                <div style={{ marginTop: 8, paddingTop: 8, borderTop: "1px solid #3a2060" }}>
+                  <button
+                    onClick={() => setShowExplanations((prev) => ({ ...prev, [q.id]: !prev[q.id] }))}
+                    style={{
+                      background: "transparent",
+                      border: "none",
+                      color: "#c4a0ff",
+                      cursor: "pointer",
+                      fontWeight: 700,
+                      fontSize: "inherit",
+                      padding: 0,
+                    }}
+                  >
+                    📖 {showExplanations[q.id] ? "Hide Explanation ▲" : "Show Explanation ▼"}
+                  </button>
+                  {showExplanationPanel && (
+                    <div style={{ marginTop: 6, opacity: 0.85 }}>{hints[q.id].explanation}</div>
+                  )}
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Answer feedback for the current question */}
           {showCurrentAnswer && (
             <div
@@ -764,6 +932,29 @@ export default function ExamPage() {
               )}
             </div>
           )}
+          </div>
+
+          {/* Right arrow */}
+          <button
+            onClick={currentQuestion === questions.length - 1 ? () => setConfirmOpen(true) : nextQuestion}
+            title={currentQuestion === questions.length - 1 ? "Submit exam" : "Next question"}
+            style={{
+              flexShrink: 0,
+              width: isMobile ? 32 : 40,
+              height: isMobile ? 32 : 40,
+              borderRadius: "50%",
+              border: "1px solid #2b3a6a",
+              background: currentQuestion === questions.length - 1 ? "#2b7f4a" : "#1a2752",
+              color: "white",
+              cursor: "pointer",
+              fontSize: isMobile ? 16 : 20,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            ›
+          </button>
         </div>
       )}
 
