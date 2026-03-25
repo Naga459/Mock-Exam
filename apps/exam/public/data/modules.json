@@ -46,5 +46,21 @@
     "file": "Top100SDInterviewMCQChatGpt.json",
     "questionCount": 100,
     "badge": "SD"
-  }
+  },
+  {
+  "id": "sap-sd-6",
+  "name": "SAP SD Module 4 MCQ",
+  "description": "SAP SD shipment processing, availability check, pricing configuration, billing documents, and system landscape concepts.",
+  "file": "TestQuestionsModule4.json",
+  "questionCount": 19,
+  "badge": "SD"
+},
+{
+  "id": "sap-sd-7",
+  "name": "SAP SD Module 5 MCQ",
+  "description": "SAP SD shipment creation, packing functions, consignment processes, contracts, partner functions, and route determination.",
+  "file": "TestQuestionsModule5.json",
+  "questionCount": 11,
+  "badge": "SD"
+}
 ]

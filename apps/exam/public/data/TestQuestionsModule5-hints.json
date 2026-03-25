@@ -1,46 +1,46 @@
 {
   "1": {
-    "hint": "Shipment processing supports multiple creation methods.",
-    "explanation": "Shipments in SAP can be created manually, collectively, or via electronic/EDI interfaces depending on business setup."
+    "hint": "Think about all the ways a shipment document can be initiated in SAP logistics execution.",
+    "explanation": "Shipments in SAP can be created manually (by a user in VT01N), collectively (via collective processing of multiple deliveries), or electronically (via EDI/interfaces). All three modes are supported, making 'All of the above' correct."
   },
   "2": {
-    "hint": "Packing is part of logistics execution, not process enforcement.",
-    "explanation": "Packing ensures correct packaging, handling, and packing material updates, but it does not enforce that packing must occur before delivery."
+    "hint": "Packing functions ensure goods are properly packaged — identify which option describes something packing does NOT do.",
+    "explanation": "Packing in SAP ensures volume and weight limits are respected, products are packed correctly, and packing material stock is updated. However, packing does not enforce that it happens before delivery creation — it is a step within delivery processing, not a prerequisite."
   },
   "3": {
-    "hint": "Credit memo is related to returns and refunds.",
-    "explanation": "In consignment processing, a credit memo is created when goods are returned (consignment return), not during fill-up or pickup."
+    "hint": "In consignment processes, a credit memo is issued when the customer returns goods they were billed for.",
+    "explanation": "A credit memo is created in the Consignment Return process, where the customer returns goods that were previously issued (and billed) from consignment stock. The credit memo reverses the billing from the consignment issue."
   },
   "4": {
-    "hint": "Free goods can be given within or in addition to ordered quantity.",
-    "explanation": "SAP supports inclusive free goods (within ordered quantity) and exclusive free goods (additional quantity)."
+    "hint": "Free goods in SAP come in two varieties based on whether the free item is the same as or different from the ordered item.",
+    "explanation": "SAP supports two types of free goods: Inclusive (the free quantity is included within the ordered quantity, e.g., buy 10 get 1 free out of the 10) and Exclusive (the free quantity is given on top of the ordered quantity, e.g., buy 10 get 1 extra free). Both types are available."
   },
   "5": {
-    "hint": "Plant data is maintained where material is stored and managed.",
-    "explanation": "Plant-specific data is primarily maintained in the Material Master (plant view), not directly in customer master."
+    "hint": "Plant/Site is a key organizational unit — think about which master data object stores plant assignment for a material.",
+    "explanation": "The Plant (Site) is maintained in the Material Master under the plant-specific views (e.g., MRP, Sales, Storage). The material master is the primary source for plant-level data used during order and delivery processing."
   },
   "6": {
-    "hint": "This partner is responsible for initiating the sales process.",
-    "explanation": "The Sold-to party places the order and is the primary partner in a sales document."
+    "hint": "Think about which partner function is the primary driver of a sales order — the one who places the order.",
+    "explanation": "The Sold-to Party is the partner function most closely associated with the sales order. It is the customer who places the order and drives the determination of all other partner functions, pricing, and document settings."
   },
   "7": {
-    "hint": "Document type determines the behavior of a sales order.",
-    "explanation": "Sales order type controls processing logic, such as delivery, billing, and pricing behavior."
+    "hint": "Sales orders are differentiated by their document type — think about what configuration object controls this.",
+    "explanation": "The Sales Order Type (e.g., OR for standard order, RO for returns, CS for cash sales) differentiates types of sales orders. Each order type has its own configuration controlling document flow, item categories, and processing rules."
   },
   "8": {
-    "hint": "Contracts require follow-up execution documents.",
-    "explanation": "Release orders are created with reference to contracts to execute delivery against agreed terms."
+    "hint": "When a customer places an order against an existing contract, what is the specific SAP term for that order?",
+    "explanation": "A Release Order is a sales order created with reference to a contract (quantity or value contract). It 'releases' a portion of the contracted quantity or value and is the standard mechanism for fulfilling contract commitments."
   },
   "9": {
-    "hint": "Intercompany billing uses a dedicated billing type.",
-    "explanation": "Billing type IV is used for intercompany billing between company codes in SAP."
+    "hint": "Intercompany billing uses a specific billing type — recall the standard SAP code for internal company invoices.",
+    "explanation": "IV is the standard SAP billing document type for intercompany billing. It is used when one company code delivers goods on behalf of another and needs to invoice internally. F2 is the standard external customer invoice."
   },
   "10": {
-    "hint": "Route determination depends on logistics factors.",
-    "explanation": "Route is determined using shipping conditions, departure zone, and transportation group/zone."
+    "hint": "Route determination uses multiple factors — think about all the organizational and master data elements involved.",
+    "explanation": "Route determination in SAP uses: Departure Zone (from shipping point), Shipping Conditions (from customer master), Transportation Zone (from ship-to party), and Transportation Group (from material master). All listed factors contribute, making 'All of the above' correct."
   },
   "11": {
-    "hint": "Handling unit represents packed goods using packaging materials.",
-    "explanation": "Handling units are created using packaging materials maintained in the material master and represent physical packing units."
+    "hint": "A handling unit combines physical packaging with the goods inside — think about what it represents in the material master.",
+    "explanation": "A Handling Unit is a physical unit consisting of packaging material and the goods it contains. The packaging material is defined as a material type in the material master (packing material). It tracks the combined physical unit through logistics."
   }
 }
