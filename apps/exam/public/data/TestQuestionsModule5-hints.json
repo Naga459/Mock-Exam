@@ -1,0 +1,46 @@
+{
+  "1": {
+    "hint": "Shipment processing supports multiple creation methods.",
+    "explanation": "Shipments in SAP can be created manually, collectively, or via electronic/EDI interfaces depending on business setup."
+  },
+  "2": {
+    "hint": "Packing is part of logistics execution, not process enforcement.",
+    "explanation": "Packing ensures correct packaging, handling, and packing material updates, but it does not enforce that packing must occur before delivery."
+  },
+  "3": {
+    "hint": "Credit memo is related to returns and refunds.",
+    "explanation": "In consignment processing, a credit memo is created when goods are returned (consignment return), not during fill-up or pickup."
+  },
+  "4": {
+    "hint": "Free goods can be given within or in addition to ordered quantity.",
+    "explanation": "SAP supports inclusive free goods (within ordered quantity) and exclusive free goods (additional quantity)."
+  },
+  "5": {
+    "hint": "Plant data is maintained where material is stored and managed.",
+    "explanation": "Plant-specific data is primarily maintained in the Material Master (plant view), not directly in customer master."
+  },
+  "6": {
+    "hint": "This partner is responsible for initiating the sales process.",
+    "explanation": "The Sold-to party places the order and is the primary partner in a sales document."
+  },
+  "7": {
+    "hint": "Document type determines the behavior of a sales order.",
+    "explanation": "Sales order type controls processing logic, such as delivery, billing, and pricing behavior."
+  },
+  "8": {
+    "hint": "Contracts require follow-up execution documents.",
+    "explanation": "Release orders are created with reference to contracts to execute delivery against agreed terms."
+  },
+  "9": {
+    "hint": "Intercompany billing uses a dedicated billing type.",
+    "explanation": "Billing type IV is used for intercompany billing between company codes in SAP."
+  },
+  "10": {
+    "hint": "Route determination depends on logistics factors.",
+    "explanation": "Route is determined using shipping conditions, departure zone, and transportation group/zone."
+  },
+  "11": {
+    "hint": "Handling unit represents packed goods using packaging materials.",
+    "explanation": "Handling units are created using packaging materials maintained in the material master and represent physical packing units."
+  }
+}

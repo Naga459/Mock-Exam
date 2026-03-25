@@ -1,0 +1,78 @@
+{
+  "1": {
+    "hint": "Shipment processing is controlled by a transportation-specific organizational unit.",
+    "explanation": "Shipment documents are created based on the Transportation Planning Point, which is the key organizational unit for shipment processing in SAP."
+  },
+  "2": {
+    "hint": "Quotation belongs to pre-sales processing in SAP SD.",
+    "explanation": "VA21 is the standard transaction code used to create quotations, while VA01 is used for sales orders."
+  },
+  "3": {
+    "hint": "SAP implementation typically follows a 3-system landscape.",
+    "explanation": "The standard SAP landscape consists of Development (DEV), Quality (QAS), and Production (PRD) systems."
+  },
+  "4": {
+    "hint": "Availability check considers supply and demand elements.",
+    "explanation": "ATP includes stock, purchase orders, sales requirements, and replenishment lead time, so all options are included."
+  },
+  "5": {
+    "hint": "Billing occurs when goods ownership is transferred to the customer.",
+    "explanation": "In consignment processing, billing is relevant during consignment issue, when goods are actually sold."
+  },
+  "6": {
+    "hint": "Contracts are used when demand is predictable over time.",
+    "explanation": "Quantity contracts are created when demand is stable and planned, allowing long-term agreements."
+  },
+  "7": {
+    "hint": "This concept controls which materials a customer is allowed to purchase.",
+    "explanation": "Material listing defines allowed materials for a customer, while exclusion blocks certain materials."
+  },
+  "8": {
+    "hint": "Output determination supports multiple communication channels.",
+    "explanation": "Outputs in SAP can be sent via print, email, or EDI."
+  },
+  "9": {
+    "hint": "Scheduling depends mainly on stock availability and timing.",
+    "explanation": "Availability check is the primary factor influencing scheduling in SAP SD."
+  },
+  "10": {
+    "hint": "This configuration ensures mandatory fields are filled in documents.",
+    "explanation": "Incompletion procedure checks for missing required fields at both document and item levels."
+  },
+  "11": {
+    "hint": "Shipment creation belongs to transportation processing.",
+    "explanation": "VT01N is the transaction code used to create shipments in SAP."
+  },
+  "12": {
+    "hint": "Plant determination can come from multiple master data sources.",
+    "explanation": "Delivering plant can be derived from material master, customer master, or customer-material info record."
+  },
+  "13": {
+    "hint": "Pricing uses combinations of fields grouped together.",
+    "explanation": "Condition tables store combinations of fields used in pricing determination."
+  },
+  "14": {
+    "hint": "Billing documents store references to earlier documents.",
+    "explanation": "Both header and item levels contain references to sales order and delivery documents."
+  },
+  "15": {
+    "hint": "Item category controls downstream processing behavior.",
+    "explanation": "Item category determines pricing, delivery relevance, and billing relevance."
+  },
+  "16": {
+    "hint": "Think of SAP’s technical backbone.",
+    "explanation": "SAP Basis is responsible for system performance, database management, and administration."
+  },
+  "17": {
+    "hint": "ASAP methodology follows a structured lifecycle.",
+    "explanation": "ASAP consists of 5 phases: Project Preparation, Blueprint, Realization, Final Preparation, and Go-live."
+  },
+  "18": {
+    "hint": "NORM is the default item category in SAP.",
+    "explanation": "NORM represents a standard item used in normal sales processing."
+  },
+  "19": {
+    "hint": "This phase prepares the system before go-live.",
+    "explanation": "Final Preparation includes testing, training, and readiness before system go-live."
+  }
+}

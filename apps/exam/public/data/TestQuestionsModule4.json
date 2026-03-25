@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "question": "A shipment is created with a",
+    "options": [
+      "Shipping point",
+      "Loading point",
+      "Transportation planning point",
+      "All of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 2,
+    "question": "Transaction code to create quotation is",
+    "options": [
+      "VA01",
+      "VA11",
+      "VA21",
+      "VA41"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 3,
+    "question": "Following is the typical system landscape in a SAP implementation",
+    "options": [
+      "Production, Quality, Presentation & database",
+      "Development, Quality & Presentation",
+      "Development, Quality & Production",
+      "Development, Quality & database"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 4,
+    "question": "Scope of availability check can include which of the following",
+    "options": [
+      "Purchase requisition & purchase order",
+      "Sales requirement & deliveries",
+      "Replenishment lead time",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 5,
+    "question": "Which consignment process is relevant for billing?",
+    "options": [
+      "Consignment fill-up",
+      "Consignment issue",
+      "Consignment pickup",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 6,
+    "question": "Quantity contracts are normally made when",
+    "options": [
+      "Demand is more than supply",
+      "Supply is more than demand",
+      "Supply and demand are balanced",
+      "Supply is sourced from internal transfers"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 7,
+    "question": "List of material for specific customer to buy the material from is defined as",
+    "options": [
+      "Material determination",
+      "Material listing",
+      "Material exclusion",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 8,
+    "question": "Output can be used to send",
+    "options": [
+      "Email",
+      "Printout",
+      "EDI (External messages)",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 9,
+    "question": "Long-term scheduling can be influenced by",
+    "options": [
+      "Condition type",
+      "Schedule line",
+      "Availability",
+      "All of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 10,
+    "question": "Which of the following processes are configured at the document type level & item level?",
+    "options": [
+      "Material listing and exclusion",
+      "Material determination",
+      "Incompletion procedure",
+      "All of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 11,
+    "question": "T-code for creating shipment is",
+    "options": [
+      "VA01",
+      "VT01N",
+      "VL01N",
+      "VLOFM"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 12,
+    "question": "Delivering plant is determined from",
+    "options": [
+      "Material master",
+      "Ship-to customer master",
+      "Customer-material info record",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 13,
+    "question": "Fields are grouped in a condition of fields which is used in",
+    "options": [
+      "Condition record",
+      "Access sequence",
+      "Condition table",
+      "Field catalogue"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 14,
+    "question": "The system shows the delivery number and sales order number at which level of the billing document",
+    "options": [
+      "Header",
+      "Item",
+      "Header and item level",
+      "None"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 15,
+    "question": "An item category in a sales order controls",
+    "options": [
+      "Item category",
+      "Pricing",
+      "Delivery",
+      "Billing"
+    ],
+    "correct_answers": ["B", "C", "D"]
+  },
+  {
+    "id": 16,
+    "question": "SAP server managing performance management, database management, data warehousing is provided by",
+    "options": [
+      "Basis server",
+      "Cross application",
+      "SAP Workbench",
+      "SAP Release strategy"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 17,
+    "question": "ASAP methodology has how many phases",
+    "options": [
+      "4",
+      "5",
+      "3–5",
+      "6"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 18,
+    "question": "Item category NORM refers to",
+    "options": [
+      "Standard item",
+      "Non-stock item",
+      "Packaging",
+      "Text item"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 19,
+    "question": "Organizational change management and developing the system environment are done during",
+    "options": [
+      "Realization",
+      "Final Preparation",
+      "Blueprint",
+      "Go-live support"
+    ],
+    "correct_answers": ["B"]
+  }
+]

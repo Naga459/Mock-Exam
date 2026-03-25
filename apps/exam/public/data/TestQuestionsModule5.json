@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "question": "Modes of shipment creation are",
+    "options": [
+      "Manually",
+      "Collectively",
+      "Electronically",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is not a function of packing",
+    "options": [
+      "Ensuring volume and weights are adhered to",
+      "Ensures products are packed correctly",
+      "Updated stock situation for packing materials",
+      "Ensures packing happens before delivery"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 3,
+    "question": "Credit memo is created for",
+    "options": [
+      "Consignment fill-up process",
+      "Consignment pick-up process",
+      "Consignment return process",
+      "All of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 4,
+    "question": "What are the different types of free goods",
+    "options": [
+      "Inclusive",
+      "Exclusive",
+      "Both A & B",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 5,
+    "question": "Site/Plant is captured in",
+    "options": [
+      "Customer info record",
+      "Customer master",
+      "Material master",
+      "All of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 6,
+    "question": "Which partner function is closely associated with sales order",
+    "options": [
+      "Bill-to party",
+      "Ship-to party",
+      "Sold-to party",
+      "Payer"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 7,
+    "question": "Type of sales order is differentiated by",
+    "options": [
+      "Sales order type",
+      "Sales area",
+      "Sold-to party",
+      "Material"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 8,
+    "question": "Sales orders created with respect to contract for supplying to customers are called",
+    "options": [
+      "Release order",
+      "Contract release",
+      "Rush order",
+      "Consignment"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 9,
+    "question": "Standard intercompany sales billing type is",
+    "options": [
+      "F1",
+      "F2",
+      "FT",
+      "IV"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 10,
+    "question": "Route is determined based on",
+    "options": [
+      "Departure zone",
+      "Shipping conditions",
+      "Transportation zone & transportation group",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 11,
+    "question": "Handling unit is",
+    "options": [
+      "Material used in packing (packing material in material master)",
+      "Shipping condition",
+      "Packaging only",
+      "Equipment used for loading medium"
+    ],
+    "correct_answers": ["A"]
+  }
+]
