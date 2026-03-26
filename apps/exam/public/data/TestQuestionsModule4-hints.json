@@ -1,27 +1,27 @@
 {
   "1": {
     "hint": "Think about which organizational unit in SAP is responsible for planning and initiating shipment documents.",
-    "explanation": "Shipments in SAP are created under the Transportation Planning Point, not the Shipping Point. The Transportation Planning Point is the organizational unit responsible for planning and executing transport."
+    "explanation": "Shipments in SAP are created using the Transportation Planning Point. It is the organizational unit responsible for planning and executing transportation activities, whereas the Shipping Point is used for delivery processing."
   },
   "2": {
     "hint": "Recall the SAP transaction codes for the sales document family — VA11 is for inquiries, VA21 is for quotations.",
-    "explanation": "VA21 is the transaction code to create a quotation in SAP SD. VA01 creates a sales order, VA11 creates an inquiry, and VA41 creates a contract."
+    "explanation": "In SAP SD, transaction codes follow a pattern: VA11 is used to create inquiries, VA21 for quotations, VA01 for sales orders, and VA41 for contracts. Therefore, VA21 is the correct transaction code for creating a quotation."
   },
   "3": {
     "hint": "Think about the three standard environments in a typical SAP implementation landscape.",
-    "explanation": "The standard SAP system landscape consists of Development (DEV), Quality Assurance (QAS), and Production (PRD). This three-tier approach ensures changes are tested before reaching the live system."
+    "explanation": "In SAP, the standard system landscape consists of three environments: Development (DEV), where configurations are created; Quality Assurance (QAS), where testing is performed; and Production (PRD), which is the live system. This ensures that all changes are tested before being deployed."
   },
   "4": {
     "hint": "Availability check scope is highly configurable — consider all the supply and demand elements it can include.",
-    "explanation": "The scope of availability check in SAP can include purchase requisitions, purchase orders, sales requirements, deliveries, replenishment lead time, and more. All of the listed options are valid inclusions."
+    "explanation": "In SAP, the availability check (ATP) considers both supply and demand elements such as purchase requisitions, purchase orders, sales requirements, deliveries, and replenishment lead time. Since the scope of check is configurable, all these elements can be included, making All of the above the correct answer."
   },
   "5": {
     "hint": "In consignment processes, billing only occurs when ownership of goods transfers to the customer.",
-    "explanation": "Consignment Issue (order type CI) is the process where the customer withdraws goods from consignment stock, triggering ownership transfer and therefore billing. Fill-up and pickup do not involve billing."
+    "explanation": "In consignment processing, billing occurs only when ownership of goods transfers to the customer. This happens during Consignment Issue (CI), when the customer withdraws goods from consignment stock. Consignment fill-up (CF) and pickup (CP) do not involve ownership transfer, so no billing occurs."
   },
   "6": {
-    "hint": "Quantity contracts are used to agree on a total quantity to be purchased — think about when supply and demand are predictable.",
-    "explanation": "Quantity contracts are typically created when supply and demand are balanced, allowing both parties to agree on a fixed quantity to be delivered over a period. This provides planning certainty for both sides."
+    "hint": "Quantity contracts are long-term agreements used when a customer commits to purchase a fixed total quantity over a period — think about recurring and predictable demand.",
+    "explanation": "In SAP, a quantity contract is a long-term agreement in which a customer agrees to purchase a specified total quantity within a defined validity period. It is used when demand is predictable and recurring, allowing multiple release orders against the contract. It is not based on supply-demand balance but on business commitment."
   },
   "7": {
     "hint": "Think about the SAP feature that restricts which materials a specific customer is allowed to purchase.",
@@ -61,7 +61,7 @@
   },
   "16": {
     "hint": "Think about which SAP technical layer manages system performance, database operations, and infrastructure services.",
-    "explanation": "The Basis server (SAP Basis) is responsible for system administration including performance management, database management, data warehousing, and technical infrastructure. It is the technical foundation of the SAP system."
+    "explanation": "SAP Basis is the technical layer responsible for system administration, including performance management, database management, and overall system infrastructure. It provides the foundation for running SAP applications. Therefore, the correct answer is Basis server."
   },
   "17": {
     "hint": "ASAP (Accelerated SAP) is SAP's implementation methodology — recall how many phases it defines.",
@@ -69,10 +69,10 @@
   },
   "18": {
     "hint": "NORM is one of the most common item category codes in SAP SD — it represents the default scenario.",
-    "explanation": "Item category NORM represents a Standard Item in SAP SD. It is used for regular stock materials that are delivered and billed in the standard sales process."
+    "explanation": "Item category NORM represents a standard item in SAP SD. It is used for regular stock materials that follow the normal sales process, including delivery and billing."
   },
   "19": {
-    "hint": "Think about which ASAP phase involves building and configuring the actual SAP system environment.",
-    "explanation": "Organizational change management and developing the system environment are activities performed during the Realization phase of ASAP. This is when the system is actually configured and built based on the Business Blueprint."
+    "hint": "Think about the ASAP phase where the system and users are prepared for go-live — including training, testing, and organizational readiness.",
+    "explanation": "OIn the ASAP methodology, organizational change management and preparing the system environment are carried out during the Final Preparation phase. This phase focuses on end-user training, system testing, and ensuring the system and organization are ready for go-live."
   }
 }

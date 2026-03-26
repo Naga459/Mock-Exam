@@ -17,7 +17,7 @@
   },
   "5": {
     "hint": "Plant/Site is a key organizational unit — think about which master data object stores plant assignment for a material.",
-    "explanation": "The Plant (Site) is maintained in the Material Master under the plant-specific views (e.g., MRP, Sales, Storage). The material master is the primary source for plant-level data used during order and delivery processing."
+    "explanation": "Plant is an organizational unit in SAP and is assigned to materials through plant-specific views in the Material Master. Therefore, plant-related data is maintained and used in the Material Master."
   },
   "6": {
     "hint": "Think about which partner function is the primary driver of a sales order — the one who places the order.",
@@ -40,7 +40,7 @@
     "explanation": "Route determination in SAP uses: Departure Zone (from shipping point), Shipping Conditions (from customer master), Transportation Zone (from ship-to party), and Transportation Group (from material master). All listed factors contribute, making 'All of the above' correct."
   },
   "11": {
-    "hint": "A handling unit combines physical packaging with the goods inside — think about what it represents in the material master.",
-    "explanation": "A Handling Unit is a physical unit consisting of packaging material and the goods it contains. The packaging material is defined as a material type in the material master (packing material). It tracks the combined physical unit through logistics."
+    "hint": "Think about a handling unit as a physical package — it combines packaging material and the goods inside into a single unit used in logistics.",
+    "explanation": "A Handling Unit (HU) in SAP is a physical/logistical unit that consists of packaging material and the goods packed inside it. It is treated as one unit for packing, transportation, and tracking during the delivery process."
   }
 }
