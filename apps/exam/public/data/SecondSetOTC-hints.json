@@ -13,11 +13,11 @@
   },
   "4": {
     "hint": "Returns in SAP SD are straightforward — the key question is whether a customer can return goods that were delivered to them.",
-    "explanation": "In SAP SD, a returns process allows customers to send back materials that were previously delivered. The correct statement is that material sent to the customer may be returned. The claim that customers cannot return low-value material is incorrect — SAP returns processing does not restrict returns based on value by default."
+    "explanation": "In SAP SD, customers can return goods that were previously delivered.The returns process allows sending back materials to the seller.Hence, materials sent to customers may be returned."
   },
   "5": {
     "hint": "Goods issue in SAP affects legal and physical aspects — think about what changes when goods leave the warehouse: who is liable, who owns them, and who has them.",
-    "explanation": "When goods are issued in SAP, three key effects occur: (1) Liability — the seller's liability for the goods transfers, (2) Ownership — legal ownership passes to the customer, and (3) Possession — physical possession moves to the customer. Demand (4) is a planning concept, not a direct effect of goods movement."
+    "explanation": "Goods issue affects liability, ownership, and possession.Liability shifts from seller to buyer.Ownership and physical possession also transfer to the customer."
   },
   "6": {
     "hint": "CIF is an Incoterm where the seller arranges and pays for shipping and insurance — who bears the risk during transit under CIF?",
@@ -29,7 +29,7 @@
   },
   "8": {
     "hint": "A trial balance lists all account balances — which source already has all accounts summarized with their running balances?",
-    "explanation": "A Trial Balance is prepared directly from the General Ledger, which contains all account balances after posting journal entries. The general ledger is the final book of accounts where all transactions are summarized by account. Subsidiary books and journal entries are earlier stages in the accounting cycle before the general ledger is updated."
+    "explanation": "A trial balance is prepared from the general ledger.The general ledger contains all account balances after postings.Hence, it is the direct source for trial balance."
   },
   "9": {
     "hint": "Financial accounting serves two core purposes — measuring performance and reporting financial position. Which option covers both?",
@@ -37,15 +37,15 @@
   },
   "10": {
     "hint": "This statement is about how profits have been used or retained — not about cash flow or current profit. Which financial statement tracks the movement of retained earnings?",
-    "explanation": "The Statement of Retained Earnings shows how the net income (earnings) of a business has been distributed — how much was paid as dividends and how much was retained in the business. It provides a snapshot of how earnings have been utilized. The P&L shows profit earned; the Balance Sheet shows the current position; the Cash Flow Statement shows cash movements."
+    "explanation": "The Statement of Retained Earnings shows how profits are used in the business.It explains how much is retained and how much is distributed as dividends.Thus, it shows how earnings have been utilized."
   },
   "11": {
     "hint": "A master contract is a grouping mechanism in SAP SD — think about what types of contracts it can group and what data it contains.",
-    "explanation": "In SAP SD, a Master Contract is a higher-level contract that groups subordinate contracts such as Quantity Contracts, Value Contracts, and Service Contracts. It contains Header data, Business data, Partner data, Billing plan data, and Contract data. All three statements (1, 2, 3) correctly describe master contract characteristics."
+    "explanation": "A master contract groups different contract types like quantity, value, and service contracts.It acts as a higher-level structure for managing related contracts.Hence, statements 1, 2, and 3 are correct."
   },
   "12": {
     "hint": "SAP SD has many sales document types — think about whether returns, standard orders, and credit documents are all valid sales document types.",
-    "explanation": "SAP SD sales document types cover the full range of sales scenarios: Returns sales (RE), Standard sales / Standard order (OR), and Credit memo requests (CR). All four listed items — returns sales, standard sales, standard order, and credit — are valid sales document types in SAP SD, making 'All of the above choices' correct."
+    "explanation": "SAP SD includes multiple sales document types like returns, standard orders, and credit documents.Each listed option represents a valid sales document type.Hence, all the given options are correct"
   },
   "13": {
     "hint": "A returns order in SAP uses transaction VA01 with a specific document type — 'RE' is the returns document type, but check which T-code and type combination is listed.",

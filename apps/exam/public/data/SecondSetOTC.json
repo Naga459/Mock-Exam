@@ -1,79 +1,90 @@
 [
   {
     "id": 1,
-    "question": "If you are carrying materials above, the system tries to ______ if second source?",
+    "question": "Material exclusion, Inclusion and determination is controlled with",
     "options": [
-      "Send to gravity",
-      "Slip to gravity",
-      "Peg it",
-      "Slide to gravity"
+      "Condition Techniques",
+      "Field Catelogues",
+      "Condition tables",
+      "Access sequence"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 2,
-    "question": "Which of the following is not an example of packing material?",
+    "question": "which is not a type of delivery",
     "options": [
-      "Carton",
-      "Container",
-      "Raw material",
-      "Box"
+      "Delivery without order reference",
+      "Delivery with Order reference",
+      "Delivery with reference to Invoice",
+      "Returns Delivery"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 3,
-    "question": "Bottleneck material & excess process missing are standard examples of:",
+    "question": "When several deliveries are grouped together in one invoice this is know as",
     "options": [
-      "Excessive inventory",
-      "Waiting / holding factory",
-      "Non-material flow category",
-      "Modern type"
+      "Split Invoice",
+      "Complete Invoice",
+      "Collective Invoice",
+      "Invoice Split"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 4,
-    "question": "Which of the following statements are true about returns?",
+    "question": "Which of the following  is not a example of billing document type",
     "options": [
-      "The material sent to the customer may be returned",
-      "The customer may not send back the material in case it is of low value",
-      "All the above choices"
+      "Invoice, Profoma Invoice and invoice list",
+      "Debit, Credit Memo and cancellations",
+      "Returns, external transactions",
+      "Intercompany Delivery and billing"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 5,
-    "question": "The effects of goods remain covered under which of the following? (1) Liability (2) Ownership (3) Possession (4) Demand",
+    "question": "A CPG company operating in US has received a customer order for the goods manufactured by its plant in canada it is a type of _________________",
     "options": [
-      "1, 2, 3",
-      "2, 3, 4",
-      "1, 3, 4",
-      "All of the above choices"
+      "Intercompany Order",
+      "Standard Sales Order",
+      "rush Order ",
+      "Third Party Sales"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 6,
-    "question": "Under CIF (Cost, Insurance, Freight), the seller ______ and pays for the insurance.",
+    "question": "which of these acitivities must be completed before performing a post goods issue",
     "options": [
-      "maintains risk",
-      "takes risk",
-      "insurance",
-      "freight"
+      "Picking",
+      "Packing",
+      "both picking and packing",
+      "Either picking or packing"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 7,
-    "question": "A contract contains a certain quantity of product (material) being delivered from time to time.",
+    "question": "Consignment  pickup always gives a delivery document",
     "options": [
-      "Value contract",
-      "Service contract",
-      "Master contract",
-      "Quantity contract"
+      "True",
+      "False"
     ],
-    "correct_answers": ["D"]
+    "correct_answers": ["A"]
   },
   {
     "id": 8,
@@ -84,7 +95,9 @@
       "Journal entries",
       "None of the above"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 9,
@@ -95,82 +108,98 @@
       "Both a and b",
       "None of these"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 10,
-    "question": "______ statement gives snapshot of how the earnings has been utilized by the business.",
+    "question": "The primary objectives of financial accounting is:",
     "options": [
-      "Profit and Loss Statement",
-      "Balance Sheet",
-      "Statement of Retained Earnings",
-      "Cash Flow Statement"
+      "to measure profit",
+      "To draw up balance Sheet",
+      "Both a and b",
+      "None of these"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 11,
-    "question": "Which of the following are true about master contract? (1) Master main contracts are ______ (2) Quantity contracts, value contracts, service contracts can be grouped under master contracts (3) Header data, business data, partner data, billing plan data, contract data",
+    "question": "The customer to whom you are selling is the ______ and the customer to whom you are delivering the goods is the ______",
     "options": [
-      "1, 2, 3",
-      "2, 3, 4",
-      "1, 3, 4",
-      "All of the above choices"
+      "Sold to party, sold to party",
+      "Sold to party, ship to party",
+      "Sold to party, payer",
+      "Customer, sold to party"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": [
+      "B"
+    ]
   },
   {
     "id": 12,
-    "question": "Sales document types confirm the following: (1) Returns sales (2) Standard sales (3) Standard order (4) Credit",
-    "options": [
-      "1, 2, 3",
-      "2, 3, 4",
-      "1, 3, 4",
-      "All of the above choices"
-    ],
-    "correct_answers": ["D"]
-  },
-  {
-    "id": 13,
-    "question": "Returns order is created with reference, the document type is:",
+    "question": "Quotation is created in SAP with the T-code _____ and the document type is _____.",
     "options": [
       "VA21, QT",
       "VA22, QT",
-      "VA11, BA",
-      "VA14, QT"
+      "VA23, QT",
+      "VA11, QT"
     ],
-    "correct_answers": ["D"]
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Quotation is created in SAP with the tcode_____and the document type is _____:",
+    "options": [
+      "VA21, QT",
+      "VA22, QT",
+      "VA11, QT",
+      "VA11, QT"
+    ],
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 14,
-    "question": "The process of posting is to summarize all document entries and transfer them to the general ledger.",
+    "question": "Sales oredr is created in SAP with the TCODE, _____and the document type is _____",
+    "options": [
+      "VA01, OR",
+      "VA02, RO",
+      "VA03, OR",
+      "VA11, RO"
+    ],
+    "correct_answers": [
+      "A"
+    ]
+  },
+  {
+    "id": 15,
+    "question": "A real account can have tangible as well intangible assets",
     "options": [
       "True",
       "False"
     ],
-    "correct_answers": ["A"]
-  },
-  {
-    "id": 15,
-    "question": "Which of the following is about PO? PO are raised by your company. PO may not be raised for: (1) (2) (3) (4) Purchases",
-    "options": [
-      "1, 2, 3",
-      "2, 3, 4",
-      "1, 3, 4",
-      "All of the above choices"
-    ],
-    "correct_answers": ["D"]
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 16,
-    "question": "Incomplete deliveries should be marked when: When the user does not want the whole order",
+    "question": "the payable department in a organisation is for ",
     "options": [
-      "When the customer wants partial delivery",
-      "The delivery is made immediately",
-      "The invoice happens immediately",
-      "The order is not relevant"
+      "Customer Payments",
+      "Vendor Payments",
+      "both A & B",
+      "None of these"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": [
+      "B"
+    ]
   },
   {
     "id": 17,
@@ -181,18 +210,20 @@
       "Periodic billing plan is used for plant engineering and construction where the billing dates need to be spread",
       "Document flow is updated for billing plans for the first invoice; subsequent billing does not update the document flow"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": [
+      "C"
+    ]
   },
-  {
+ {
     "id": 18,
-    "question": "Material for specific customer not to buy the material from the vendor is:",
+    "question": "Which is the correct flow in shipment process",
     "options": [
-      "Material listing",
-      "Material determination",
-      "Material exclusion",
+      "Create delivery,pick,pack,goods issue",
+      "Pick,pack,create delivery,goods issue",
+      "Pack,pick,create delivery,goods issue",
       "None of the above"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": ["A"]
   },
   {
     "id": 19,
@@ -203,62 +234,74 @@
       "No value, full value",
       "None of the above"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 20,
-    "question": "Transaction code for creating single delivery:",
+    "question": "What are the types of value contracts in SAP?",
     "options": [
-      "VL10B",
-      "VL10E",
-      "VL01N",
-      "VL10C"
+      "Standard, material",
+      "Low value, high value",
+      "No value, full value",
+      "None of the above"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 21,
-    "question": "Cash Sales process is:",
+    "question": "Which transaction code is used to create a single delivery in SAP?",
     "options": [
-      "A process where the customer places the sales order and picks and pays for the goods at the same time",
-      "A proposed agreement on a price and quantity for a particular material and particular source for a particular date",
-      "A process whereby customers are undertaking for material source"
+      "VL10B",
+      "VL10Z",
+      "VL01N",
+      "VL04"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": [
+      "C"
+    ]
   },
   {
     "id": 22,
-    "question": "Which of the following statement is regarding billing plan?",
+    "question": "The right flow of the O2C cycle is",
     "options": [
-      "The following are the three types of billing plan: periodic, contracted, milestone",
-      "Billing plan types can be in the header and item level",
-      "The date category can be changed in the item",
-      "The billing plan type that is created at header level"
+      "Presale activities, sales order processing, inventory sourcing,delivery, billing and payment",
+      "salesorder processing, inventory sourcing, delivery, billing and payment",
+      "presales activity, sales order processing, delivery, billing and payment",
+      "Presales acitivty, sales order processing, inventory sourcing, delivery and payment"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": [
+      "A"
+    ]
   },
   {
     "id": 23,
-    "question": "When will the status of delivery be updated to \"completed\"?",
+    "question": "the following are mandatory partner fuctions while creating a sales document",
     "options": [
-      "After the picking and packing is done",
-      "After the goods issue has been done",
-      "After the billing document has been created",
-      "After the accounting document has been posted in FI",
-      "After the accounting document has been cleared with an incoming payment"
+      "SP - Sold to Party",
+      "SH - ship to party",
+      "SB- special stock partner",
+      "Both A & B above"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": [
+      "D"
+    ]
   },
   {
     "id": 24,
-    "question": "The following are subsequent documents issued except:",
+    "question": "In the configuration of which of these document types would you generally have the immediate delivery and billing document automatically created using the document type?",
     "options": [
-      "Delivery",
-      "Consignment fill-up",
-      "Goods issue",
-      "Invoice"
+      "Quotation",
+      "Credit Request",
+      "Debit Request",
+      "RushOrder"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": [
+      "D"
+    ]
   },
   {
     "id": 25,
@@ -269,6 +312,8 @@
       "Text",
       "Manual notes"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": [
+      "C"
+    ]
   }
 ]

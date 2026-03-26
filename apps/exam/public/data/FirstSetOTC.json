@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "question": "Service contract is generally",
+    "question": "Service contract is generally 1. To initate the billing of the routine service 2. Customer is covered by service contract 3.To determine which price agreement apply for service 4.Whether a cancellation request from the customer is valid",
     "options": [
-      "To include the liability of the entire service",
-      "Customer is covered by service contract",
-      "To determine which price agreement apply for service",
-      "Whether a cancellation request from the customer is valid"
+      "1,2,3",
+      "2,3,4",
+      "1,3,4",
+      "all of the above"
     ],
-    "correct_answers": ["C"]
+    "correct_answers": ["A"]
   },
   {
     "id": 2,
-    "question": "A pharmaceutical company has launched a new product that it wants to sell only to those you will use",
+    "question": "A pharmaceutical company has launched a new product that it wants to sell only to those who will use",
     "options": [
       "Product listing",
       "Product exclusion",
@@ -23,89 +23,87 @@
   },
   {
     "id": 3,
-    "question": "What type of document is created in the sales process to request the warehouse to pick goods?",
+    "question": "Consignment  pickup always gives a delivery document",
     "options": [
-      "Picking list",
-      "Packing",
-      "Transfer order / Picking",
-      "Billing"
-    ],
-    "correct_answers": ["C"]
-  },
-  {
-    "id": 4,
-    "question": "When creating a customer master, you can specify the partner function for each business partner. These partner functions determine which business partner performs which function.",
-    "options": [
-      "Partner functions",
-      "Sales area data",
-      "General data",
-      "Billing data"
+      "True",
+      "False"
     ],
     "correct_answers": ["A"]
   },
   {
-    "id": 5,
-    "question": "Which of the following is not an example of a billing document type?",
+    "id": 4,
+    "question": "Which of the activities must be completed before performing a post goods issue?",
     "options": [
-      "Invoice, Proforma, and Invoice list",
-      "Credit memo and debit memo",
-      "Invoice cancellation",
-      "Sales order"
+      "Picking",
+      "Packing",
+      "Both picking and packing",
+      "Either picking or packing"
     ],
-    "correct_answers": ["D"]
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 5,
+    "question": "A CP and company operating in US have received a customer order for goods manufacture by its plant in canada. Sale order type of",
+    "options": [
+      "Inter company order",
+      "Standard sales order",
+      "Rush order",
+      "Third party sales"
+    ],
+    "correct_answers": ["A"]
   },
   {
     "id": 6,
-    "question": "Which of the following are examples of invoice split?",
+    "question": "Which of the following is NOT an example of billing document type",
     "options": [
-      "A complete invoice",
-      "A collective invoice",
-      "An invoice split",
-      "An invoice delivery"
+      "Invoice, Proforma Invoice, and Invoice List",
+    "Debit Memo, Credit Memo, and Cancellation",
+    "Returns and External Transactions",
+    "Intercompany Billing and Delivery-related Billing"
     ],
     "correct_answers": ["C"]
   },
   {
     "id": 7,
-    "question": "Which is not type of delivery?",
+    "question": "When several deliveries are grouped together into a single invoice, what is this called?",
     "options": [
-      "Delivery without order reference",
-      "Delivery with order reference",
-      "Billing with reference to invoice",
-      "Return delivery"
+      "Separate invoice",
+      "A complete invoice ",
+      "A Collective Invoice",
+      "Invoice Split"
     ],
     "correct_answers": ["C"]
   },
   {
     "id": 8,
-    "question": "The payable department in an organization is for",
+    "question": "Which is not a type of delivery",
     "options": [
-      "Customer payment",
-      "Vendor payment",
-      "Both a and b",
-      "None of these"
+      "Delivery without order reference",
+      "Delivery with order reference",
+      "Delivery with reference to invoice",
+      "Returns delivery"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": ["C"]
   },
    {
     "id": 9,
-    "question": "DUMMY",
+    "question": "Material exclusion, inclusion, and determination are controlled by ",
     "options": [
-      "Dummy",
-      "Dummy",
-      "Dummy",
-      "Dummy"
+      "Condition Technique",
+    "Field Catalog",
+    "Condition Tables",
+    "Access Sequence"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": ["A"]
   },
    {
     "id": 10,
-    "question": "Dummy",
+    "question": "The payable department in an organisation is for ",
     "options": [
-      "Dummy",
-      "Dummy",
-      "Dummy",
-      "Dummy"
+      "customer payment",
+      "Vendor payment",
+      "Both a & b above",
+      "None of the Above"
     ],
     "correct_answers": ["B"]
   },
@@ -144,12 +142,12 @@
     "id": 14,
     "question": "The customer to whom you are selling is the ______ and the customer to whom you are delivering the goods is the ______",
     "options": [
+      "Sold to party, sold to party",
       "Sold to party, ship to party",
       "Sold to party, payer",
-      "Sold to party, bill to party",
       "Customer, sold to party"
     ],
-    "correct_answers": ["A"]
+    "correct_answers": ["B"]
   },
   {
     "id": 15,
@@ -171,25 +169,27 @@
       "Payroll is not integrated to cost",
       "All of the above options"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": ["D"]
   },
   {
     "id": 17,
-    "question": "Which is the component with highest priority in delivery processing?",
+    "question": "Which is the correct flow in shipment process",
     "options": [
-      "Create delivery request from sales order",
-      "Pick goods, create delivery, create goods issue",
-      "Post goods issue, billing",
-      "Billing"
+      "Create delivery,pick,pack,goods issue",
+      "Pick,pack,create delivery,goods issue",
+      "Pack,pick,create delivery,goods issue",
+      "None of the above"
     ],
-    "correct_answers": ["B"]
+    "correct_answers": ["A"]
   },
   {
     "id": 18,
-    "question": "Data might flow of the order in",
+    "question": "The right flow of OTC cycle is ",
     "options": [
-      "Pre sales activity, sales order processing, delivery, billing and payment",
-      "Pre sales activity, sales order processing, inventory, delivery and payment"
+      "Pre sales activities, sales order processing, inventory sources delivery, billing and payment",
+      "Sales order processing, inventory sources delivery, billing and payment",
+      "Presales activites, sales order processing, delivery,billing and payment",
+      "Pre sales activities sales order processing, inventory sources delivery and  payment"
     ],
     "correct_answers": ["A"]
   },
@@ -206,7 +206,7 @@
   },
   {
     "id": 20,
-    "question": "In the configuration of which of these document types would you generally want to have the immediate delivery creation occur using the document type?",
+    "question": "In the configuration of which of these document types would you generally want to have the immediate delivery ____ created using the document type?",
     "options": [
       "Quotation",
       "Credit request",
