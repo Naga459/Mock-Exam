@@ -62,5 +62,21 @@
   "file": "TestQuestionsModule5.json",
   "questionCount": 11,
   "badge": "SD"
+},
+{
+  "id": "otc-1",
+  "name": "OTC First Set",
+  "description": "Order-to-Cash first set of practice questions covering SAP SD OTC processes.",
+  "file": "FirstSetOTC.json",
+  "questionCount": 25,
+  "badge": "SD"
+},
+{
+  "id": "otc-2",
+  "name": "OTC Second Set",
+  "description": "Order-to-Cash second set covering contracts, billing plans, deliveries, and financial accounting basics.",
+  "file": "SecondSetOTC.json",
+  "questionCount": 25,
+  "badge": "SD"
 }
 ]

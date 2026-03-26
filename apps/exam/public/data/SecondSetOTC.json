@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "question": "If you are carrying materials above, the system tries to ______ if second source?",
+    "options": [
+      "Send to gravity",
+      "Slip to gravity",
+      "Peg it",
+      "Slide to gravity"
+    ],
+    "correct_answers": ["Peg it"]
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is not an example of packing material?",
+    "options": [
+      "Carton",
+      "Container",
+      "Raw material",
+      "Box"
+    ],
+    "correct_answers": ["Raw material"]
+  },
+  {
+    "id": 3,
+    "question": "Bottleneck material & excess process missing are standard examples of:",
+    "options": [
+      "Excessive inventory",
+      "Waiting / holding factory",
+      "Non-material flow category",
+      "Modern type"
+    ],
+    "correct_answers": ["Waiting / holding factory"]
+  },
+  {
+    "id": 4,
+    "question": "Which of the following statements are true about returns?",
+    "options": [
+      "The material sent to the customer may be returned",
+      "The customer may not send back the material in case it is of low value",
+      "All the above choices"
+    ],
+    "correct_answers": ["The material sent to the customer may be returned"]
+  },
+  {
+    "id": 5,
+    "question": "The effects of goods remain covered under which of the following? (1) Liability (2) Ownership (3) Possession (4) Demand",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["1, 2, 3"]
+  },
+  {
+    "id": 6,
+    "question": "Under CIF (Cost, Insurance, Freight), the seller ______ and pays for the insurance.",
+    "options": [
+      "maintains risk",
+      "takes risk",
+      "insurance",
+      "freight"
+    ],
+    "correct_answers": ["takes risk"]
+  },
+  {
+    "id": 7,
+    "question": "A contract contains a certain quantity of product (material) being delivered from time to time.",
+    "options": [
+      "Value contract",
+      "Service contract",
+      "Master contract",
+      "Quantity contract"
+    ],
+    "correct_answers": ["Quantity contract"]
+  },
+  {
+    "id": 8,
+    "question": "Trial balance is prepared directly from:",
+    "options": [
+      "General ledger",
+      "Subsidiary books",
+      "Journal entries",
+      "None of the above"
+    ],
+    "correct_answers": ["General ledger"]
+  },
+  {
+    "id": 9,
+    "question": "The primary objectives of financial accounting is:",
+    "options": [
+      "To measure profit",
+      "To draw up balance sheet",
+      "Both a and b",
+      "None of these"
+    ],
+    "correct_answers": ["Both a and b"]
+  },
+  {
+    "id": 10,
+    "question": "______ statement gives snapshot of how the earnings has been utilized by the business.",
+    "options": [
+      "Profit and Loss Statement",
+      "Balance Sheet",
+      "Statement of Retained Earnings",
+      "Cash Flow Statement"
+    ],
+    "correct_answers": ["Statement of Retained Earnings"]
+  },
+  {
+    "id": 11,
+    "question": "Which of the following are true about master contract? (1) Master main contracts are ______ (2) Quantity contracts, value contracts, service contracts can be grouped under master contracts (3) Header data, business data, partner data, billing plan data, contract data",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["1, 2, 3"]
+  },
+  {
+    "id": 12,
+    "question": "Sales document types confirm the following: (1) Returns sales (2) Standard sales (3) Standard order (4) Credit",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["All of the above choices"]
+  },
+  {
+    "id": 13,
+    "question": "Returns order is created with reference, the document type is:",
+    "options": [
+      "VA21, QT",
+      "VA22, QT",
+      "VA11, BA",
+      "VA14, QT"
+    ],
+    "correct_answers": ["VA14, QT"]
+  },
+  {
+    "id": 14,
+    "question": "The process of posting is to summarize all document entries and transfer them to the general ledger.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answers": ["True"]
+  },
+  {
+    "id": 15,
+    "question": "Which of the following is about PO? PO are raised by your company. PO may not be raised for: (1) (2) (3) (4) Purchases",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["All of the above choices"]
+  },
+  {
+    "id": 16,
+    "question": "Incomplete deliveries should be marked when: When the user does not want the whole order",
+    "options": [
+      "When the customer wants partial delivery",
+      "The delivery is made immediately",
+      "The invoice happens immediately",
+      "The order is not relevant"
+    ],
+    "correct_answers": ["When the customer wants partial delivery"]
+  },
+  {
+    "id": 17,
+    "question": "Which of the following statements is true regarding billing plans?",
+    "options": [
+      "Billing plan cannot be blocked for billing",
+      "Milestone billing plan is used for plant engineering and construction where the billing dates need to be spread over",
+      "Periodic billing plan is used for plant engineering and construction where the billing dates need to be spread",
+      "Document flow is updated for billing plans for the first invoice; subsequent billing does not update the document flow"
+    ],
+    "correct_answers": ["Milestone billing plan is used for plant engineering and construction where the billing dates need to be spread over"]
+  },
+  {
+    "id": 18,
+    "question": "Material for specific customer not to buy the material from the vendor is:",
+    "options": [
+      "Material listing",
+      "Material determination",
+      "Material exclusion",
+      "None of the above"
+    ],
+    "correct_answers": ["Material exclusion"]
+  },
+  {
+    "id": 19,
+    "question": "What are the types of value contracts?",
+    "options": [
+      "Standard contract",
+      "Low value, high value",
+      "No value, full value",
+      "None of the above"
+    ],
+    "correct_answers": ["Standard contract"]
+  },
+  {
+    "id": 20,
+    "question": "Transaction code for creating single delivery:",
+    "options": [
+      "VL10B",
+      "VL10E",
+      "VL01N",
+      "VL10C"
+    ],
+    "correct_answers": ["VL01N"]
+  },
+  {
+    "id": 21,
+    "question": "Cash Sales process is:",
+    "options": [
+      "A process where the customer places the sales order and picks and pays for the goods at the same time",
+      "A proposed agreement on a price and quantity for a particular material and particular source for a particular date",
+      "A process whereby customers are undertaking for material source"
+    ],
+    "correct_answers": ["A process where the customer places the sales order and picks and pays for the goods at the same time"]
+  },
+  {
+    "id": 22,
+    "question": "Which of the following statement is regarding billing plan?",
+    "options": [
+      "The following are the three types of billing plan: periodic, contracted, milestone",
+      "Billing plan types can be in the header and item level",
+      "The date category can be changed in the item",
+      "The billing plan type that is created at header level"
+    ],
+    "correct_answers": ["Billing plan types can be in the header and item level"]
+  },
+  {
+    "id": 23,
+    "question": "When will the status of delivery be updated to \"completed\"?",
+    "options": [
+      "After the picking and packing is done",
+      "After the goods issue has been done",
+      "After the billing document has been created",
+      "After the accounting document has been posted in FI",
+      "After the accounting document has been cleared with an incoming payment"
+    ],
+    "correct_answers": ["After the goods issue has been done"]
+  },
+  {
+    "id": 24,
+    "question": "The following are subsequent documents issued except:",
+    "options": [
+      "Delivery",
+      "Consignment fill-up",
+      "Goods issue",
+      "Invoice"
+    ],
+    "correct_answers": ["Consignment fill-up"]
+  },
+  {
+    "id": 25,
+    "question": "Sales notes for customer liability for material replacement:",
+    "options": [
+      "Not post",
+      "Order",
+      "Text",
+      "Manual notes"
+    ],
+    "correct_answers": ["Text"]
+  }
+]

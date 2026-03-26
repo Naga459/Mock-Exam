@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "question": "Service contract is generally",
+    "options": [
+      "To include the liability of the entire service",
+      "Customer is covered by service contract",
+      "To determine which price agreement apply for service",
+      "Whether a cancellation request from the customer is valid"
+    ],
+    "correct_answers": ["To determine which price agreement apply for service"]
+  },
+  {
+    "id": 2,
+    "question": "A pharmaceutical company has launched a new product that it wants to sell only to those you will use",
+    "options": [
+      "Product listing",
+      "Product exclusion",
+      "None of the above",
+      "Both of the above"
+    ],
+    "correct_answers": ["Product listing"]
+  },
+  {
+    "id": 3,
+    "question": "What type of document is created in the sales process to request the warehouse to pick goods?",
+    "options": [
+      "Picking list",
+      "Packing",
+      "Transfer order / Picking",
+      "Billing"
+    ],
+    "correct_answers": ["Transfer order / Picking"]
+  },
+  {
+    "id": 4,
+    "question": "When creating a customer master, you can specify the partner function for each business partner. These partner functions determine which business partner performs which function.",
+    "options": [
+      "Partner functions",
+      "Sales area data",
+      "General data",
+      "Billing data"
+    ],
+    "correct_answers": ["Partner functions"]
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is not an example of a billing document type?",
+    "options": [
+      "Invoice, Proforma, and Invoice list",
+      "Credit memo and debit memo",
+      "Invoice cancellation",
+      "Sales order"
+    ],
+    "correct_answers": ["Sales order"]
+  },
+  {
+    "id": 6,
+    "question": "Which of the following are examples of invoice split?",
+    "options": [
+      "A complete invoice",
+      "A collective invoice",
+      "An invoice split",
+      "An invoice delivery"
+    ],
+    "correct_answers": ["An invoice split"]
+  },
+  {
+    "id": 7,
+    "question": "Which is not type of delivery?",
+    "options": [
+      "Delivery without order reference",
+      "Delivery with order reference",
+      "Billing with reference to invoice",
+      "Return delivery"
+    ],
+    "correct_answers": ["Billing with reference to invoice"]
+  },
+  {
+    "id": 8,
+    "question": "The payable department in an organization is for",
+    "options": [
+      "Customer payment",
+      "Vendor payment",
+      "Both a and b",
+      "None of these"
+    ],
+    "correct_answers": ["Vendor payment"]
+  },
+  {
+    "id": 11,
+    "question": "A sales document from the organization created by customer request is called",
+    "options": [
+      "Sales order",
+      "Purchase order",
+      "Quotation",
+      "Pro forma"
+    ],
+    "correct_answers": ["Sales order"]
+  },
+  {
+    "id": 12,
+    "question": "Sales order is created in SAP with transaction code",
+    "options": [
+      "VA01",
+      "VA00",
+      "VA05 or 02",
+      "VA01 RO"
+    ],
+    "correct_answers": ["VA01"]
+  },
+  {
+    "id": 13,
+    "question": "In Personal Accounts debit = Receiver and credit = giver",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answers": ["True"]
+  },
+  {
+    "id": 14,
+    "question": "The customer to whom you are selling is the ______ and the customer to whom you are delivering the goods is the ______",
+    "options": [
+      "Sold to party, ship to party",
+      "Sold to party, payer",
+      "Sold to party, bill to party",
+      "Customer, sold to party"
+    ],
+    "correct_answers": ["Sold to party, ship to party"]
+  },
+  {
+    "id": 15,
+    "question": "Financial accounting will not provide information about",
+    "options": [
+      "Profitability",
+      "Outstanding debtors",
+      "Marketing strategy",
+      "None of the above"
+    ],
+    "correct_answers": ["Marketing strategy"]
+  },
+  {
+    "id": 16,
+    "question": "Time processing & controlling integration",
+    "options": [
+      "Payroll is posted to controlling",
+      "Payroll is posted to FI (Financial)",
+      "Payroll is not integrated to cost",
+      "All of the above options"
+    ],
+    "correct_answers": ["Payroll is posted to FI (Financial)"]
+  },
+  {
+    "id": 17,
+    "question": "Which is the component with highest priority in delivery processing?",
+    "options": [
+      "Create delivery request from sales order",
+      "Pick goods, create delivery, create goods issue",
+      "Post goods issue, billing",
+      "Billing"
+    ],
+    "correct_answers": ["Pick goods, create delivery, create goods issue"]
+  },
+  {
+    "id": 18,
+    "question": "Data might flow of the order in",
+    "options": [
+      "Pre sales activity, sales order processing, delivery, billing and payment",
+      "Pre sales activity, sales order processing, inventory, delivery and payment"
+    ],
+    "correct_answers": ["Pre sales activity, sales order processing, delivery, billing and payment"]
+  },
+  {
+    "id": 19,
+    "question": "The Sales order consists of",
+    "options": [
+      "Header item and schedule line",
+      "Header and schedule line",
+      "Only header and item",
+      "Only item"
+    ],
+    "correct_answers": ["Header item and schedule line"]
+  },
+  {
+    "id": 20,
+    "question": "In the configuration of which of these document types would you generally want to have the immediate delivery creation occur using the document type?",
+    "options": [
+      "Quotation",
+      "Credit request",
+      "Debit request",
+      "Rush order"
+    ],
+    "correct_answers": ["Rush order"]
+  },
+  {
+    "id": 21,
+    "question": "The following are mandatory partner functions while creating sales document",
+    "options": [
+      "SP (sold to party)",
+      "SH (ship to party)",
+      "SB (special stock partner)",
+      "Both a & b above"
+    ],
+    "correct_answers": ["Both a & b above"]
+  }
+]
