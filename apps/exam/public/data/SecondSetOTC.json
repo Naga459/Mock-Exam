@@ -8,7 +8,7 @@
       "Peg it",
       "Slide to gravity"
     ],
-    "correct_answers": ["Peg it"]
+    "correct_answers": ["C"]
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
       "Raw material",
       "Box"
     ],
-    "correct_answers": ["Raw material"]
+    "correct_answers": ["C"]
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
       "Non-material flow category",
       "Modern type"
     ],
-    "correct_answers": ["Waiting / holding factory"]
+    "correct_answers": ["B"]
   },
   {
     "id": 4,
@@ -40,7 +40,7 @@
       "The customer may not send back the material in case it is of low value",
       "All the above choices"
     ],
-    "correct_answers": ["The material sent to the customer may be returned"]
+    "correct_answers": ["A"]
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
       "1, 3, 4",
       "All of the above choices"
     ],
-    "correct_answers": ["1, 2, 3"]
+    "correct_answers": ["A"]
   },
   {
     "id": 6,
@@ -62,7 +62,7 @@
       "insurance",
       "freight"
     ],
-    "correct_answers": ["takes risk"]
+    "correct_answers": ["B"]
   },
   {
     "id": 7,
@@ -73,7 +73,7 @@
       "Master contract",
       "Quantity contract"
     ],
-    "correct_answers": ["Quantity contract"]
+    "correct_answers": ["D"]
   },
   {
     "id": 8,
@@ -84,7 +84,7 @@
       "Journal entries",
       "None of the above"
     ],
-    "correct_answers": ["General ledger"]
+    "correct_answers": ["A"]
   },
   {
     "id": 9,
@@ -95,7 +95,7 @@
       "Both a and b",
       "None of these"
     ],
-    "correct_answers": ["Both a and b"]
+    "correct_answers": ["C"]
   },
   {
     "id": 10,
@@ -106,7 +106,7 @@
       "Statement of Retained Earnings",
       "Cash Flow Statement"
     ],
-    "correct_answers": ["Statement of Retained Earnings"]
+    "correct_answers": ["C"]
   },
   {
     "id": 11,
@@ -117,7 +117,7 @@
       "1, 3, 4",
       "All of the above choices"
     ],
-    "correct_answers": ["1, 2, 3"]
+    "correct_answers": ["A"]
   },
   {
     "id": 12,
@@ -128,7 +128,7 @@
       "1, 3, 4",
       "All of the above choices"
     ],
-    "correct_answers": ["All of the above choices"]
+    "correct_answers": ["D"]
   },
   {
     "id": 13,
@@ -139,7 +139,7 @@
       "VA11, BA",
       "VA14, QT"
     ],
-    "correct_answers": ["VA14, QT"]
+    "correct_answers": ["D"]
   },
   {
     "id": 14,
@@ -148,7 +148,7 @@
       "True",
       "False"
     ],
-    "correct_answers": ["True"]
+    "correct_answers": ["A"]
   },
   {
     "id": 15,
@@ -159,7 +159,7 @@
       "1, 3, 4",
       "All of the above choices"
     ],
-    "correct_answers": ["All of the above choices"]
+    "correct_answers": ["D"]
   },
   {
     "id": 16,
@@ -170,7 +170,7 @@
       "The invoice happens immediately",
       "The order is not relevant"
     ],
-    "correct_answers": ["When the customer wants partial delivery"]
+    "correct_answers": ["A"]
   },
   {
     "id": 17,
@@ -181,7 +181,7 @@
       "Periodic billing plan is used for plant engineering and construction where the billing dates need to be spread",
       "Document flow is updated for billing plans for the first invoice; subsequent billing does not update the document flow"
     ],
-    "correct_answers": ["Milestone billing plan is used for plant engineering and construction where the billing dates need to be spread over"]
+    "correct_answers": ["B"]
   },
   {
     "id": 18,
@@ -192,7 +192,7 @@
       "Material exclusion",
       "None of the above"
     ],
-    "correct_answers": ["Material exclusion"]
+    "correct_answers": ["C"]
   },
   {
     "id": 19,
@@ -203,7 +203,7 @@
       "No value, full value",
       "None of the above"
     ],
-    "correct_answers": ["Standard contract"]
+    "correct_answers": ["A"]
   },
   {
     "id": 20,
@@ -214,7 +214,7 @@
       "VL01N",
       "VL10C"
     ],
-    "correct_answers": ["VL01N"]
+    "correct_answers": ["C"]
   },
   {
     "id": 21,
@@ -224,7 +224,7 @@
       "A proposed agreement on a price and quantity for a particular material and particular source for a particular date",
       "A process whereby customers are undertaking for material source"
     ],
-    "correct_answers": ["A process where the customer places the sales order and picks and pays for the goods at the same time"]
+    "correct_answers": ["A"]
   },
   {
     "id": 22,
@@ -235,7 +235,7 @@
       "The date category can be changed in the item",
       "The billing plan type that is created at header level"
     ],
-    "correct_answers": ["Billing plan types can be in the header and item level"]
+    "correct_answers": ["B"]
   },
   {
     "id": 23,
@@ -247,7 +247,7 @@
       "After the accounting document has been posted in FI",
       "After the accounting document has been cleared with an incoming payment"
     ],
-    "correct_answers": ["After the goods issue has been done"]
+    "correct_answers": ["C"]
   },
   {
     "id": 24,
@@ -258,7 +258,7 @@
       "Goods issue",
       "Invoice"
     ],
-    "correct_answers": ["Consignment fill-up"]
+    "correct_answers": ["B"]
   },
   {
     "id": 25,
@@ -269,6 +269,6 @@
       "Text",
       "Manual notes"
     ],
-    "correct_answers": ["Text"]
+    "correct_answers": ["C"]
   }
 ]

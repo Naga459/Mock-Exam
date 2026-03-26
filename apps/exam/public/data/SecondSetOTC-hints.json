@@ -1,15 +1,15 @@
 {
   "1": {
     "hint": "In SAP MRP/supply chain, when a material requirement has a second source available, the system tries to link or attach it — what is that action called?",
-    "explanation": "In SAP supply chain and MRP context, 'pegging' refers to the system linking (pegging) a supply element to a demand element. When carrying materials and a second source is available, the system tries to 'peg it' — i.e., assign the available supply to the demand to fulfill the requirement."
+    "explanation": "Pegging means linking a supply source to a demand requirement.When a second source is available, the system assigns it to fulfill the demand.Thus, the system “pegs” the available supply to the requirement."
   },
   "2": {
     "hint": "Packing materials are used to wrap, contain, or protect goods during shipment — think about which option is an input to production, not packaging.",
-    "explanation": "Packing materials in SAP SD include items like cartons, containers, boxes, pallets, and wrapping used to pack goods for delivery. Raw material is an input used in manufacturing/production — it is not used for packing finished goods. Therefore, raw material is not an example of packing material."
+    "explanation": "Packing materials are used to protect or contain goods during shipment.Items like cartons, boxes, and containers are packing materials.Raw material is used in production, not for packing"
   },
   "3": {
     "hint": "Bottleneck materials and excess process issues cause delays and idle time in the factory — which category describes that kind of waste?",
-    "explanation": "In lean manufacturing and supply chain management, bottleneck materials (causing production stoppages) and excess process steps (unnecessary work) are examples of 'Waiting / holding' waste — where the factory or process is held up and not adding value. This is one of the classic 7 wastes (Muda) in lean thinking."
+    "explanation": "Bottlenecks and excess processes cause delays and idle time.This results in waiting waste where resources are not utilized.In lean terms, this is classified as waiting (idle time) waste."
   },
   "4": {
     "hint": "Returns in SAP SD are straightforward — the key question is whether a customer can return goods that were delivered to them.",

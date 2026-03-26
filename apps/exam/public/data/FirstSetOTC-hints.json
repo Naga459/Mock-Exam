@@ -1,19 +1,19 @@
 {
   "1": {
-    "hint": "A service contract in SAP SD is primarily about pricing agreements — think about what it governs between the seller and customer.",
-    "explanation": "A service contract in SAP SD is used to determine which price agreements apply for a service rendered to a customer. It defines the pricing conditions, validity periods, and service scope — not liability coverage or cancellation rules."
+    "hint": "Service contract mainly controls pricing conditions for services.",
+    "explanation": "A service contract stores predefined pricing terms for services.These terms are automatically applied during service processing or billing.Hence, it determines which price agreement applies."
   },
   "2": {
-    "hint": "The company wants to restrict sales to a specific group of customers — think about whether that means including or excluding.",
-    "explanation": "Product listing in SAP SD allows a company to restrict the sale of a material to only specific customers. If a product is listed for a customer, only those listed materials can be ordered. This is the correct tool when you want to sell exclusively to a defined group."
+    "hint": "If a company wants to sell only to selected customers, think of allowing (listing) rather than blocking.",
+    "explanation": "Product listing specifies which customers are allowed to purchase a product.It ensures the product is sold only to selected/approved customers.Product exclusion does the opposite (blocks), so listing is correct."
   },
   "3": {
-    "hint": "The warehouse needs an instruction to physically pick goods — which document triggers that action in SAP WM?",
-    "explanation": "In SAP, a Transfer Order (also called a Picking document) is created in Warehouse Management (WM) to instruct the warehouse to pick goods from storage bins. A picking list is a printed output, but the actual system document that drives the picking process is the Transfer Order."
+    "hint": "Think of the warehouse execution document that triggers picking, not just a reference/output document.",
+    "explanation": "A transfer order is created to instruct the warehouse to pick goods.It contains storage location and quantity details required for execution.A picking list is only a reference/output document, not the one that triggers picking."
   },
   "4": {
     "hint": "The question describes assigning roles to business partners in the customer master — what is that feature called in SAP?",
-    "explanation": "Partner Functions in SAP define the roles that different business partners play in a sales transaction (e.g., Sold-to Party, Ship-to Party, Bill-to Party, Payer). These are configured in the customer master under the Sales Area data and control how each partner participates in the process."
+    "explanation": "Partner functions define the roles of different business partners in a transaction.Examples include Sold-to, Ship-to, Bill-to, and Payer.They are maintained in customer master (Sales Area data) and control partner roles."
   },
   "5": {
     "hint": "Billing document types are created after delivery — think about which option belongs to a completely different stage of the sales cycle.",
@@ -21,7 +21,7 @@
   },
   "6": {
     "hint": "An invoice split occurs when one delivery results in multiple invoices — which option directly names that scenario?",
-    "explanation": "An invoice split in SAP SD happens when a single delivery or order is split into multiple billing documents due to different billing-relevant criteria (e.g., different payers, payment terms, or billing dates). 'An invoice split' is the direct example of this scenario."
+    "explanation": "An invoice split occurs when one delivery creates multiple invoices.This happens due to differences like payer, billing date, or payment terms.Hence, the scenario itself is called an invoice split."
   },
   "7": {
     "hint": "Delivery types relate to goods movement — one of the options belongs to the billing process, not delivery.",
@@ -29,7 +29,15 @@
   },
   "8": {
     "hint": "Accounts Payable deals with money the company owes — think about who the company owes money to.",
-    "explanation": "The Accounts Payable (AP) department handles payments that the organization owes to its vendors/suppliers. Accounts Receivable (AR) handles customer payments. AP is strictly for vendor-side transactions such as processing vendor invoices and outgoing payments."
+    "explanation": "Accounts Payable (AP) handles payments the company owes to vendors.It processes vendor invoices and outgoing payments.Hence, it is responsible for vendor payments."
+  },
+   "9": {
+    "hint": "Dummy.",
+    "explanation": "Dummy"
+  },
+   "10": {
+    "hint": "Dummy.",
+    "explanation": "Duymmy."
   },
   "11": {
     "hint": "This document is created by the selling organization in response to a customer's request to buy — it commits both parties.",
@@ -49,7 +57,7 @@
   },
   "15": {
     "hint": "Financial accounting records transactions and reports financial position — think about what falls outside its scope.",
-    "explanation": "Financial Accounting (FI) provides information on profitability (P&L), outstanding debtors (receivables), and financial position (balance sheet). Marketing strategy is a management/operational decision that falls under management accounting or business strategy — it is not derived from financial accounting records."
+    "explanation": "The key part of delivery processing is the physical movement of goods.This includes picking, creating delivery, and posting goods issue.These steps ensure inventory and logistics execution."
   },
   "16": {
     "hint": "In SAP HCM, payroll results are transferred to another module for financial recording — which module receives the posting?",
@@ -57,15 +65,15 @@
   },
   "17": {
     "hint": "The core of delivery processing involves the physical movement of goods — which option covers the complete picking-to-issue cycle?",
-    "explanation": "In SAP delivery processing, the highest priority component is the physical goods handling cycle: Pick goods (select items from warehouse), Create delivery (outbound delivery document), and Create goods issue (post the inventory reduction). This is the core operational activity that drives inventory and financial postings."
+    "explanation": "The core of delivery processing is the physical movement of goods.This includes picking, creating delivery, and posting goods issue.These steps form the main execution process in delivery"
   },
   "18": {
     "hint": "The standard SAP order-to-cash cycle follows a specific sequence — look for the option that correctly includes billing before payment.",
-    "explanation": "The standard SAP Order-to-Cash (OTC) data flow is: Pre-sales activity → Sales order processing → Delivery → Billing → Payment. The second option incorrectly inserts 'inventory' instead of 'billing', which breaks the standard process flow. Billing must occur before payment."
+    "explanation": "The standard Order-to-Cash flow is Pre-sales → Sales Order → Delivery → Billing → Payment.Billing is required before payment as it generates the invoice.Option B is incorrect because it does not follow this standard sequence."
   },
   "19": {
     "hint": "A sales order in SAP has three structural levels — think header (overall), item (product), and schedule line (delivery dates/quantities).",
-    "explanation": "A SAP Sales Order is structured into three levels: Header (general data applying to the whole order like sold-to party and pricing), Item (individual materials/products being ordered), and Schedule Line (delivery dates and confirmed quantities for each item). All three levels are required for a complete sales order."
+    "explanation": "A sales order has three levels: Header, Item, and Schedule line.Header contains overall data, item contains product details.Schedule lines manage delivery dates and quantities when applicable"
   },
   "20": {
     "hint": "Immediate delivery means the system creates a delivery automatically upon saving the order — which order type is designed for urgent, same-day fulfillment?",
@@ -73,6 +81,6 @@
   },
   "21": {
     "hint": "SAP requires at minimum the party placing the order and the party receiving the goods — which combination covers both?",
-    "explanation": "In SAP SD, the two mandatory partner functions when creating a sales document are SP (Sold-to Party) — the customer placing the order, and SH (Ship-to Party) — the customer receiving the delivery. Without both, the system cannot process the order or create a delivery. SB (Special Stock Partner) is optional."
+    "explanation": "In SAP SD, Sold-to Party (SP) and Ship-to Party (SH) arestandard mandatory partner functions.SP represents the ordering customer, and SH represents the delivery recipient.These are typically required for processing sales documents."
   }
 }

@@ -8,7 +8,7 @@
       "To determine which price agreement apply for service",
       "Whether a cancellation request from the customer is valid"
     ],
-    "correct_answers": ["To determine which price agreement apply for service"]
+    "correct_answers": ["C"]
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
       "None of the above",
       "Both of the above"
     ],
-    "correct_answers": ["Product listing"]
+    "correct_answers": ["A"]
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
       "Transfer order / Picking",
       "Billing"
     ],
-    "correct_answers": ["Transfer order / Picking"]
+    "correct_answers": ["C"]
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
       "General data",
       "Billing data"
     ],
-    "correct_answers": ["Partner functions"]
+    "correct_answers": ["A"]
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
       "Invoice cancellation",
       "Sales order"
     ],
-    "correct_answers": ["Sales order"]
+    "correct_answers": ["D"]
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
       "An invoice split",
       "An invoice delivery"
     ],
-    "correct_answers": ["An invoice split"]
+    "correct_answers": ["C"]
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
       "Billing with reference to invoice",
       "Return delivery"
     ],
-    "correct_answers": ["Billing with reference to invoice"]
+    "correct_answers": ["C"]
   },
   {
     "id": 8,
@@ -85,7 +85,29 @@
       "Both a and b",
       "None of these"
     ],
-    "correct_answers": ["Vendor payment"]
+    "correct_answers": ["B"]
+  },
+   {
+    "id": 9,
+    "question": "DUMMY",
+    "options": [
+      "Dummy",
+      "Dummy",
+      "Dummy",
+      "Dummy"
+    ],
+    "correct_answers": ["B"]
+  },
+   {
+    "id": 10,
+    "question": "Dummy",
+    "options": [
+      "Dummy",
+      "Dummy",
+      "Dummy",
+      "Dummy"
+    ],
+    "correct_answers": ["B"]
   },
   {
     "id": 11,
@@ -96,7 +118,7 @@
       "Quotation",
       "Pro forma"
     ],
-    "correct_answers": ["Sales order"]
+    "correct_answers": ["A"]
   },
   {
     "id": 12,
@@ -107,7 +129,7 @@
       "VA05 or 02",
       "VA01 RO"
     ],
-    "correct_answers": ["VA01"]
+    "correct_answers": ["A"]
   },
   {
     "id": 13,
@@ -116,7 +138,7 @@
       "True",
       "False"
     ],
-    "correct_answers": ["True"]
+    "correct_answers": ["A"]
   },
   {
     "id": 14,
@@ -127,7 +149,7 @@
       "Sold to party, bill to party",
       "Customer, sold to party"
     ],
-    "correct_answers": ["Sold to party, ship to party"]
+    "correct_answers": ["A"]
   },
   {
     "id": 15,
@@ -138,7 +160,7 @@
       "Marketing strategy",
       "None of the above"
     ],
-    "correct_answers": ["Marketing strategy"]
+    "correct_answers": ["C"]
   },
   {
     "id": 16,
@@ -149,7 +171,7 @@
       "Payroll is not integrated to cost",
       "All of the above options"
     ],
-    "correct_answers": ["Payroll is posted to FI (Financial)"]
+    "correct_answers": ["B"]
   },
   {
     "id": 17,
@@ -160,7 +182,7 @@
       "Post goods issue, billing",
       "Billing"
     ],
-    "correct_answers": ["Pick goods, create delivery, create goods issue"]
+    "correct_answers": ["B"]
   },
   {
     "id": 18,
@@ -169,7 +191,7 @@
       "Pre sales activity, sales order processing, delivery, billing and payment",
       "Pre sales activity, sales order processing, inventory, delivery and payment"
     ],
-    "correct_answers": ["Pre sales activity, sales order processing, delivery, billing and payment"]
+    "correct_answers": ["A"]
   },
   {
     "id": 19,
@@ -180,7 +202,7 @@
       "Only header and item",
       "Only item"
     ],
-    "correct_answers": ["Header item and schedule line"]
+    "correct_answers": ["A"]
   },
   {
     "id": 20,
@@ -191,7 +213,7 @@
       "Debit request",
       "Rush order"
     ],
-    "correct_answers": ["Rush order"]
+    "correct_answers": ["D"]
   },
   {
     "id": 21,
@@ -202,6 +224,6 @@
       "SB (special stock partner)",
       "Both a & b above"
     ],
-    "correct_answers": ["Both a & b above"]
+    "correct_answers": ["D"]
   }
 ]
