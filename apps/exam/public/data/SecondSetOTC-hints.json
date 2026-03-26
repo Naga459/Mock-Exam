@@ -1,0 +1,102 @@
+{
+  "1": {
+    "hint": "In SAP MRP/supply chain, when a material requirement has a second source available, the system tries to link or attach it — what is that action called?",
+    "explanation": "In SAP supply chain and MRP context, 'pegging' refers to the system linking (pegging) a supply element to a demand element. When carrying materials and a second source is available, the system tries to 'peg it' — i.e., assign the available supply to the demand to fulfill the requirement."
+  },
+  "2": {
+    "hint": "Packing materials are used to wrap, contain, or protect goods during shipment — think about which option is an input to production, not packaging.",
+    "explanation": "Packing materials in SAP SD include items like cartons, containers, boxes, pallets, and wrapping used to pack goods for delivery. Raw material is an input used in manufacturing/production — it is not used for packing finished goods. Therefore, raw material is not an example of packing material."
+  },
+  "3": {
+    "hint": "Bottleneck materials and excess process issues cause delays and idle time in the factory — which category describes that kind of waste?",
+    "explanation": "In lean manufacturing and supply chain management, bottleneck materials (causing production stoppages) and excess process steps (unnecessary work) are examples of 'Waiting / holding' waste — where the factory or process is held up and not adding value. This is one of the classic 7 wastes (Muda) in lean thinking."
+  },
+  "4": {
+    "hint": "Returns in SAP SD are straightforward — the key question is whether a customer can return goods that were delivered to them.",
+    "explanation": "In SAP SD, a returns process allows customers to send back materials that were previously delivered. The correct statement is that material sent to the customer may be returned. The claim that customers cannot return low-value material is incorrect — SAP returns processing does not restrict returns based on value by default."
+  },
+  "5": {
+    "hint": "Goods issue in SAP affects legal and physical aspects — think about what changes when goods leave the warehouse: who is liable, who owns them, and who has them.",
+    "explanation": "When goods are issued in SAP, three key effects occur: (1) Liability — the seller's liability for the goods transfers, (2) Ownership — legal ownership passes to the customer, and (3) Possession — physical possession moves to the customer. Demand (4) is a planning concept, not a direct effect of goods movement."
+  },
+  "6": {
+    "hint": "CIF is an Incoterm where the seller arranges and pays for shipping and insurance — who bears the risk during transit under CIF?",
+    "explanation": "Under CIF (Cost, Insurance, Freight) Incoterms, the seller is responsible for arranging and paying for freight and insurance to the destination port. The seller takes the risk until the goods are loaded on the vessel. After that, risk transfers to the buyer, but the seller still pays for insurance covering the buyer's risk during transit."
+  },
+  "7": {
+    "hint": "The key word is 'certain quantity' delivered over time — which contract type is defined by a fixed quantity commitment?",
+    "explanation": "A Quantity Contract in SAP SD is an agreement where the customer commits to purchasing a specific total quantity of a material over the contract period, with deliveries made in partial quantities over time. A Value Contract is based on a total monetary value, not a quantity. Service contracts cover services, not physical goods quantities."
+  },
+  "8": {
+    "hint": "A trial balance lists all account balances — which source already has all accounts summarized with their running balances?",
+    "explanation": "A Trial Balance is prepared directly from the General Ledger, which contains all account balances after posting journal entries. The general ledger is the final book of accounts where all transactions are summarized by account. Subsidiary books and journal entries are earlier stages in the accounting cycle before the general ledger is updated."
+  },
+  "9": {
+    "hint": "Financial accounting serves two core purposes — measuring performance and reporting financial position. Which option covers both?",
+    "explanation": "The primary objectives of financial accounting are: (a) to measure profit or loss (through the Profit & Loss statement) and (b) to draw up a balance sheet (showing the financial position of the business). Both objectives together give a complete picture of financial performance and position, so 'Both a and b' is correct."
+  },
+  "10": {
+    "hint": "This statement is about how profits have been used or retained — not about cash flow or current profit. Which financial statement tracks the movement of retained earnings?",
+    "explanation": "The Statement of Retained Earnings shows how the net income (earnings) of a business has been distributed — how much was paid as dividends and how much was retained in the business. It provides a snapshot of how earnings have been utilized. The P&L shows profit earned; the Balance Sheet shows the current position; the Cash Flow Statement shows cash movements."
+  },
+  "11": {
+    "hint": "A master contract is a grouping mechanism in SAP SD — think about what types of contracts it can group and what data it contains.",
+    "explanation": "In SAP SD, a Master Contract is a higher-level contract that groups subordinate contracts such as Quantity Contracts, Value Contracts, and Service Contracts. It contains Header data, Business data, Partner data, Billing plan data, and Contract data. All three statements (1, 2, 3) correctly describe master contract characteristics."
+  },
+  "12": {
+    "hint": "SAP SD has many sales document types — think about whether returns, standard orders, and credit documents are all valid sales document types.",
+    "explanation": "SAP SD sales document types cover the full range of sales scenarios: Returns sales (RE), Standard sales / Standard order (OR), and Credit memo requests (CR). All four listed items — returns sales, standard sales, standard order, and credit — are valid sales document types in SAP SD, making 'All of the above choices' correct."
+  },
+  "13": {
+    "hint": "A returns order in SAP uses transaction VA01 with a specific document type — 'RE' is the returns document type, but check which T-code and type combination is listed.",
+    "explanation": "In SAP SD, a Returns Order is created using transaction VA01 with document type RE (Returns). However, among the given options, VA14 is the transaction code for the Returns Delivery List (used to process returns), and QT is associated with quotations. The question refers to creating a returns order with reference — VA14 with QT is the closest match given the options provided."
+  },
+  "14": {
+    "hint": "Posting in accounting means recording and transferring entries to the main book of accounts — is this statement accurate?",
+    "explanation": "Posting in accounting is the process of transferring journal entries to the respective accounts in the General Ledger. It summarizes all individual document entries and updates the general ledger balances. This is a fundamental accounting process, so the statement is True."
+  },
+  "15": {
+    "hint": "Purchase Orders are raised by the buying company for procurement — think about the broad range of scenarios where a PO can be used.",
+    "explanation": "Purchase Orders (POs) in SAP MM are raised by the company to procure goods or services from vendors. POs can be raised for a wide variety of procurement scenarios including services, assets, consumables, and stock materials. The question implies POs cover all listed scenarios, making 'All of the above choices' correct."
+  },
+  "16": {
+    "hint": "An incomplete delivery indicator is set when the full order quantity cannot or should not be delivered — what customer-driven scenario triggers this?",
+    "explanation": "In SAP SD, the incomplete delivery indicator is set when a customer requests partial delivery — meaning they accept receiving less than the full ordered quantity in a single delivery. This allows the system to create a delivery for the available quantity without blocking the process for the remaining quantity."
+  },
+  "17": {
+    "hint": "Milestone billing is tied to project completion stages — which industry uses project-based billing spread across defined milestones?",
+    "explanation": "Milestone Billing Plan in SAP SD is used in project-based industries like plant engineering and construction, where billing is triggered upon completion of specific project milestones (e.g., 30% completion, 60% completion, final handover). Periodic billing is used for regular recurring billing like rentals or maintenance contracts — not construction projects."
+  },
+  "18": {
+    "hint": "The scenario is about preventing a specific customer from purchasing a material — is that listing (include) or exclusion (exclude)?",
+    "explanation": "Material Exclusion in SAP SD is used to prevent specific customers from ordering certain materials. If a material is excluded for a customer, the system will reject the order for that material. Material Listing is the opposite — it restricts a customer to only listed materials. Material Determination is about substituting one material for another."
+  },
+  "19": {
+    "hint": "Value contracts in SAP SD are categorized by the type of materials they cover — one type covers a specific material group, another covers the whole assortment.",
+    "explanation": "In SAP SD, Value Contracts come in two types: WK1 (General Value Contract) — a standard contract for a customer's total purchase value across materials, and WK2 (Material Group Value Contract) — for a specific material group. The term 'Standard contract' in the options refers to the general/standard value contract type (WK1)."
+  },
+  "20": {
+    "hint": "VL01N is the direct transaction to create a single outbound delivery — the VL10x codes are for background/collective processing.",
+    "explanation": "In SAP SD/WM, VL01N is the transaction code used to create a single outbound delivery directly. VL10B, VL10C, and VL10E are used for collective delivery processing (creating multiple deliveries in the background from sales orders or purchase orders). For creating one individual delivery, VL01N is the correct transaction."
+  },
+  "21": {
+    "hint": "Cash sales is a special sales order type where everything happens at once — order, pickup, and payment in a single visit.",
+    "explanation": "Cash Sales (document type BV) in SAP SD is a process where the customer walks in, places the order, picks up the goods, and pays immediately — all in one transaction. No separate delivery or billing run is needed later. This is different from a standard order where delivery and billing happen separately after the order."
+  },
+  "22": {
+    "hint": "Billing plans in SAP can be assigned at different levels of the sales document — think about where the plan type can be configured.",
+    "explanation": "In SAP SD, billing plan types can be assigned at both the header level (applying to the entire document) and the item level (applying to individual line items). This flexibility allows different billing schedules for different items within the same order. The three billing plan types are Periodic, Milestone, and (for some versions) Resource-related — 'contracted' is not a standard type."
+  },
+  "23": {
+    "hint": "Delivery status in SAP tracks the physical movement of goods — which event actually closes the delivery from a logistics perspective?",
+    "explanation": "In SAP SD, the delivery document status is updated to 'Completed' after the Post Goods Issue (PGI) is performed. PGI is the event that records the physical departure of goods from the warehouse, reduces inventory, and triggers the financial posting. Picking, packing, billing, and payment are separate subsequent steps that do not change the delivery status to completed."
+  },
+  "24": {
+    "hint": "Subsequent documents in SAP SD flow from a sales order — think about which option is a special stock process, not a standard subsequent document.",
+    "explanation": "Standard subsequent documents in SAP SD that follow a sales order include: Delivery, Goods Issue, and Invoice (Billing document). Consignment fill-up is a special consignment process used to stock goods at the customer's location — it is not a standard subsequent document in the regular order-to-cash flow, making it the exception."
+  },
+  "25": {
+    "hint": "In SAP SD, sales notes or messages for customers are stored as a specific type of master data — think about where free-form notes are kept.",
+    "explanation": "In SAP SD, customer-specific notes, instructions, or liability information for material replacement are stored as Text in the sales document or customer master. Text objects (like header text, item text, or customer notes) are the standard way to capture free-form information such as customer liability clauses or special handling instructions."
+  }
+}

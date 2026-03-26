@@ -1,0 +1,78 @@
+{
+  "1": {
+    "hint": "A service contract in SAP SD is primarily about pricing agreements — think about what it governs between the seller and customer.",
+    "explanation": "A service contract in SAP SD is used to determine which price agreements apply for a service rendered to a customer. It defines the pricing conditions, validity periods, and service scope — not liability coverage or cancellation rules."
+  },
+  "2": {
+    "hint": "The company wants to restrict sales to a specific group of customers — think about whether that means including or excluding.",
+    "explanation": "Product listing in SAP SD allows a company to restrict the sale of a material to only specific customers. If a product is listed for a customer, only those listed materials can be ordered. This is the correct tool when you want to sell exclusively to a defined group."
+  },
+  "3": {
+    "hint": "The warehouse needs an instruction to physically pick goods — which document triggers that action in SAP WM?",
+    "explanation": "In SAP, a Transfer Order (also called a Picking document) is created in Warehouse Management (WM) to instruct the warehouse to pick goods from storage bins. A picking list is a printed output, but the actual system document that drives the picking process is the Transfer Order."
+  },
+  "4": {
+    "hint": "The question describes assigning roles to business partners in the customer master — what is that feature called in SAP?",
+    "explanation": "Partner Functions in SAP define the roles that different business partners play in a sales transaction (e.g., Sold-to Party, Ship-to Party, Bill-to Party, Payer). These are configured in the customer master under the Sales Area data and control how each partner participates in the process."
+  },
+  "5": {
+    "hint": "Billing document types are created after delivery — think about which option belongs to a completely different stage of the sales cycle.",
+    "explanation": "Billing document types in SAP SD include Invoice (F2), Proforma Invoice, Invoice List, Credit Memo, Debit Memo, and Invoice Cancellation. A Sales Order is a pre-delivery document and belongs to the order processing stage — it is not a billing document type."
+  },
+  "6": {
+    "hint": "An invoice split occurs when one delivery results in multiple invoices — which option directly names that scenario?",
+    "explanation": "An invoice split in SAP SD happens when a single delivery or order is split into multiple billing documents due to different billing-relevant criteria (e.g., different payers, payment terms, or billing dates). 'An invoice split' is the direct example of this scenario."
+  },
+  "7": {
+    "hint": "Delivery types relate to goods movement — one of the options belongs to the billing process, not delivery.",
+    "explanation": "SAP SD delivery types include: Outbound Delivery with order reference, Outbound Delivery without order reference, and Return Delivery. 'Billing with reference to invoice' is a billing process, not a delivery type — billing and delivery are separate steps in the order-to-cash cycle."
+  },
+  "8": {
+    "hint": "Accounts Payable deals with money the company owes — think about who the company owes money to.",
+    "explanation": "The Accounts Payable (AP) department handles payments that the organization owes to its vendors/suppliers. Accounts Receivable (AR) handles customer payments. AP is strictly for vendor-side transactions such as processing vendor invoices and outgoing payments."
+  },
+  "11": {
+    "hint": "This document is created by the selling organization in response to a customer's request to buy — it commits both parties.",
+    "explanation": "A Sales Order is the document created by the selling organization when a customer requests to purchase goods or services. It is a legally binding agreement that triggers the subsequent delivery and billing processes. A Purchase Order is raised by the buying company, not the seller."
+  },
+  "12": {
+    "hint": "VA01 is the standard SAP transaction code for creating new documents — the '01' suffix typically means 'create'.",
+    "explanation": "In SAP SD, VA01 is the transaction code used to create a new Sales Order. VA02 is used to change an existing sales order, VA03 is used to display it, and VA05 is used to list sales orders. VA00 is the SD menu, not a creation transaction."
+  },
+  "13": {
+    "hint": "Recall the golden rule of accounting for Personal Accounts — who receives value is debited, who gives value is credited.",
+    "explanation": "In accounting, the rule for Personal Accounts is: Debit the Receiver, Credit the Giver. This is one of the three fundamental rules of double-entry bookkeeping. When a person or entity receives something of value, their account is debited; when they give, their account is credited."
+  },
+  "14": {
+    "hint": "In SAP partner functions, SP = who buys, SH = who receives the goods — match each role to its function.",
+    "explanation": "In SAP SD partner functions: SP (Sold-to Party) is the customer who places the order and is legally responsible for payment. SH (Ship-to Party) is the customer to whom the goods are physically delivered. These can be the same customer or different entities."
+  },
+  "15": {
+    "hint": "Financial accounting records transactions and reports financial position — think about what falls outside its scope.",
+    "explanation": "Financial Accounting (FI) provides information on profitability (P&L), outstanding debtors (receivables), and financial position (balance sheet). Marketing strategy is a management/operational decision that falls under management accounting or business strategy — it is not derived from financial accounting records."
+  },
+  "16": {
+    "hint": "In SAP HCM, payroll results are transferred to another module for financial recording — which module receives the posting?",
+    "explanation": "In SAP, payroll processing is integrated with Financial Accounting (FI). After payroll is run, the results are posted to FI to record salary expenses, tax liabilities, and deductions as financial documents. This integration ensures accurate financial reporting of personnel costs."
+  },
+  "17": {
+    "hint": "The core of delivery processing involves the physical movement of goods — which option covers the complete picking-to-issue cycle?",
+    "explanation": "In SAP delivery processing, the highest priority component is the physical goods handling cycle: Pick goods (select items from warehouse), Create delivery (outbound delivery document), and Create goods issue (post the inventory reduction). This is the core operational activity that drives inventory and financial postings."
+  },
+  "18": {
+    "hint": "The standard SAP order-to-cash cycle follows a specific sequence — look for the option that correctly includes billing before payment.",
+    "explanation": "The standard SAP Order-to-Cash (OTC) data flow is: Pre-sales activity → Sales order processing → Delivery → Billing → Payment. The second option incorrectly inserts 'inventory' instead of 'billing', which breaks the standard process flow. Billing must occur before payment."
+  },
+  "19": {
+    "hint": "A sales order in SAP has three structural levels — think header (overall), item (product), and schedule line (delivery dates/quantities).",
+    "explanation": "A SAP Sales Order is structured into three levels: Header (general data applying to the whole order like sold-to party and pricing), Item (individual materials/products being ordered), and Schedule Line (delivery dates and confirmed quantities for each item). All three levels are required for a complete sales order."
+  },
+  "20": {
+    "hint": "Immediate delivery means the system creates a delivery automatically upon saving the order — which order type is designed for urgent, same-day fulfillment?",
+    "explanation": "A Rush Order in SAP SD is configured to trigger immediate delivery creation upon saving the sales order. This is because rush orders require same-day or urgent delivery. Quotations, credit requests, and debit requests do not require immediate delivery — they serve different purposes in the sales cycle."
+  },
+  "21": {
+    "hint": "SAP requires at minimum the party placing the order and the party receiving the goods — which combination covers both?",
+    "explanation": "In SAP SD, the two mandatory partner functions when creating a sales document are SP (Sold-to Party) — the customer placing the order, and SH (Ship-to Party) — the customer receiving the delivery. Without both, the system cannot process the order or create a delivery. SB (Special Stock Partner) is optional."
+  }
+}
