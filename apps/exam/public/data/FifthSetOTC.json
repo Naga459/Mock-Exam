@@ -1,0 +1,253 @@
+[
+  {
+    "id": 3,
+    "question": "Delivery can be created with the transaction code",
+    "options": [
+      "VL04",
+      "VL01N",
+      "VL10G",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 4,
+    "question": "Order type for standard Delivery is",
+    "options": [
+      "LR",
+      "LG",
+      "LF",
+      "LB"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 5,
+    "question": "All of the following are practical examples of creating with reference. EXCEPT",
+    "options": [
+      "Quotation created with reference to a contract",
+      "Quotation created with reference to an inquiry",
+      "Order created with reference to another order",
+      "Return created with reference to an order"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 6,
+    "question": "A pharmaceutical company has decided to ramp product life events to activity/from customer data. You will use:",
+    "options": [
+      "Product listing",
+      "Product exclusion",
+      "None of the above",
+      "Both of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 7,
+    "question": "If the payment term is 14 days 2 percent and 30 net:",
+    "options": [
+      "Payment within 14 days will give a discount of 2 percent",
+      "Within 30 days you must pay",
+      "If you do not pay by 30 days, dunning notices can be sent",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 8,
+    "question": "Ship-to party ______",
+    "options": [
+      "Receives goods",
+      "Places order",
+      "Is responsible for paying invoice",
+      "Receives the invoice for goods"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 9,
+    "question": "The ______ field is what the customer will want to pay for the entire sales order, after the discounts.",
+    "options": [
+      "Gross Value",
+      "Money",
+      "Net Value",
+      "Value"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 10,
+    "question": "Which of the following are correct with respect to consignment fill-up? Consignment fill-up involves sending materials to a customer location where the materials are stored but not charged until consumption. Consignment fill-up does not involve a billing document until goods are withdrawn for a specific use.",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 11,
+    "question": "During the annual reconciliation exercise, it is later realized that they have billed some fictitious invoices to a customer. What document needs to be issued?",
+    "options": [
+      "Invoice",
+      "Credit note",
+      "Debit note",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 12,
+    "question": "______ statement gives a snapshot of how the company has been utilizing the resources.",
+    "options": [
+      "Profit and loss statement",
+      "Balance sheet",
+      "Statement of retained earnings",
+      "Cash flow statement"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 13,
+    "question": "Quotation is created in SAP with the T-code ______ and the document type ______.",
+    "options": [
+      "VA21, QT",
+      "VA22, QT",
+      "VA11, QT",
+      "VA21, QT"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 14,
+    "question": "Sales order is created in SAP with the T-code ______ and the document type ______.",
+    "options": [
+      "VA01, OR",
+      "VA02, RO",
+      "VA03, OR",
+      "VA11, RO"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 15,
+    "question": "In a normal Procure to Pay cycle the payment activities are performed before the invoicing activities.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 16,
+    "question": "______ is a \"snapshot\" of the financial condition of the company at a specific point in time.",
+    "options": [
+      "Profit and Loss Statement",
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "None of these"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 17,
+    "question": "The payables department in an organization is for:",
+    "options": [
+      "Customer payments",
+      "Vendor payments",
+      "Both a and b",
+      "None of these"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 18,
+    "question": "Total Debit always equals total credits:",
+    "options": [
+      "At the journal entry level",
+      "At the trial balance level",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 19,
+    "question": "Upon saving the Cash Sale order, a ______ document is automatically created.",
+    "options": [
+      "Order",
+      "Returns",
+      "Delivery",
+      "Billing"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 20,
+    "question": "What can not be changed before an accounting document is posted:",
+    "options": [
+      "Billing date",
+      "Pricing date",
+      "Billing value",
+      "Account determination"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 21,
+    "question": "Which consignment process is relevant for billing?",
+    "options": [
+      "Consignment fill-up",
+      "Consignment issue",
+      "Consignment pickup",
+      "None of the above"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 22,
+    "question": "Who is the financial owner of the stock in case of consignment issue process?",
+    "options": [
+      "Customer",
+      "Plant",
+      "Vendor",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 23,
+    "question": "The sales order consists of:",
+    "options": [
+      "Header, item and schedule lines",
+      "Header and schedule lines",
+      "Only header item",
+      "Only item"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 24,
+    "question": "Which of the following are true about an inquiry?",
+    "options": [
+      "An obligation to buy",
+      "Fixed dates and prices",
+      "Blocking the materials for selling",
+      "None of the above choices"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 25,
+    "question": "Which of the following statements is true regarding billing plans?",
+    "options": [
+      "The following are the three types of billing plans: periodic, milestone, and down payment",
+      "Billing plan types can be in the header and item levels",
+      "The date category can be changed by the user",
+      "The billing plan types can be created at header and item level for a billing plan"
+    ],
+    "correct_answers": ["B"]
+  }
+]

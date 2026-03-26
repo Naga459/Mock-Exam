@@ -1,0 +1,94 @@
+{
+  "3": {
+    "hint": "Multiple SAP transaction codes can trigger delivery creation — think about whether all three listed codes are valid delivery creation paths.",
+    "explanation": "In SAP SD/WM, deliveries can be created using multiple transaction codes: VL01N (create single outbound delivery), VL04 (collective delivery processing from a worklist), and VL10G (delivery creation for stock transfer orders). Since all three are valid ways to create a delivery, 'All of the above' is correct."
+  },
+  "4": {
+    "hint": "SAP delivery document types use two-letter codes — LF is the standard outbound delivery type used in the regular order-to-cash process.",
+    "explanation": "In SAP SD, LF is the standard delivery document type for outbound deliveries created with reference to a sales order. LR is used for returns deliveries, LB is for subcontracting deliveries, and LG is for goods issue deliveries in special scenarios. LF is the default for standard order fulfillment."
+  },
+  "5": {
+    "hint": "Creating with reference copies data from a preceding document — think about which option is not a standard SAP document flow path.",
+    "explanation": "In SAP SD, standard 'create with reference' scenarios include: Quotation from Inquiry, Quotation from Contract, and Return Order from a billing document or sales order. Creating an order with reference to another order is not a standard SAP document flow — orders are typically created from quotations or directly, not from other orders."
+  },
+  "6": {
+    "hint": "The company wants to control which customers can buy a specific product — does that mean including certain customers or excluding them?",
+    "explanation": "Product Listing in SAP SD is used to restrict the sale of a material to only specific, listed customers. If a product listing record exists, only customers on that list can order the material. This is the correct tool when a company wants to sell a product exclusively to a defined group of customers, such as licensed pharmaceutical buyers."
+  },
+  "7": {
+    "hint": "Payment terms '14 days 2% / 30 net' define three things: a cash discount window, a net due date, and dunning implications — all three statements describe these.",
+    "explanation": "The payment term '14 days 2%, 30 net' means: (1) if payment is made within 14 days, a 2% cash discount applies; (2) the full amount is due within 30 days (net); (3) if payment is not received by day 30, the system can trigger dunning notices. All three statements correctly describe the implications of this payment term."
+  },
+  "8": {
+    "hint": "In SAP partner functions, each role has one specific responsibility — the Ship-to Party is defined purely by the physical delivery of goods.",
+    "explanation": "The Ship-to Party (SH) in SAP SD is the business partner who physically receives the delivered goods. It is not responsible for placing the order (that is the Sold-to Party / SP), paying the invoice (that is the Payer / PY), or receiving the invoice (that is the Bill-to Party / BP). Each partner function has a distinct, single role."
+  },
+  "9": {
+    "hint": "After applying discounts and surcharges to the gross price, what remains is what the customer actually pays — which field name reflects that?",
+    "explanation": "In SAP SD pricing, the Net Value is the amount the customer is expected to pay after all discounts, surcharges, and pricing conditions have been applied to the gross value. The Gross Value is the base price before discounts. Net Value is the key field used for billing and revenue recognition."
+  },
+  "10": {
+    "hint": "Consignment fill-up is about stocking goods at the customer site without billing — both statements in the question correctly describe this process.",
+    "explanation": "Consignment fill-up (document type KB) in SAP SD involves transferring goods to the customer's consignment stock. The goods are stored at the customer's location but remain the property of the selling company — no billing occurs at this stage. Billing only happens when the customer withdraws (issues) the goods for use, via the Consignment Issue process. Both statements are correct, so 'All of the above choices' applies."
+  },
+  "11": {
+    "hint": "Fictitious invoices mean the customer was overbilled — you need to reduce the customer's liability, not increase it.",
+    "explanation": "When a company has incorrectly billed a customer (e.g., fictitious or erroneous invoices), a Credit Note (Credit Memo) must be issued to reverse or reduce the customer's outstanding balance. A Debit Note would increase the amount owed, which is the opposite of what is needed. The credit note corrects the billing error and reduces the receivable."
+  },
+  "12": {
+    "hint": "This statement is about how resources (cash) have been used by the business — which financial statement tracks the inflow and outflow of cash?",
+    "explanation": "The Cash Flow Statement shows how a company has been generating and utilizing its cash resources across operating, investing, and financing activities. It gives a snapshot of resource utilization. The P&L shows profit/loss, the Balance Sheet shows financial position at a point in time, and the Statement of Retained Earnings shows how profits were distributed or retained."
+  },
+  "13": {
+    "hint": "Quotation creation uses VA21 — remember: VA21 = create, VA22 = change, VA23 = display for quotations. The document type for quotation is QT.",
+    "explanation": "In SAP SD, the transaction code to create a Quotation is VA21, and the document type is QT. VA22 is used to change an existing quotation, and VA23 is used to display it. VA11 is used for Inquiries (document type IN), not quotations. The pattern follows: x1 = create, x2 = change, x3 = display."
+  },
+  "14": {
+    "hint": "Sales order creation uses VA01 — the standard sales order document type is OR (standard Order).",
+    "explanation": "In SAP SD, VA01 is the transaction code to create a Sales Order, and OR is the standard document type for a standard order. VA02 is used to change an existing sales order, VA03 is used to display it. RO is the document type for Rush Orders, not standard orders."
+  },
+  "15": {
+    "hint": "In Procure to Pay, think about the logical sequence: you receive goods, then get invoiced, then pay — payment always comes last.",
+    "explanation": "In the standard Procure to Pay (P2P) cycle, the sequence is: Purchase Order → Goods Receipt → Invoice Verification (MIRO) → Payment. Payment always occurs after invoicing, not before. Paying before receiving an invoice would be an advance payment, which is a special case, not the normal P2P flow. Therefore the statement is False."
+  },
+  "16": {
+    "hint": "A 'snapshot at a specific point in time' is a classic definition of one financial statement — it shows what the company owns and owes on a given date.",
+    "explanation": "The Balance Sheet is a financial statement that provides a snapshot of a company's financial position at a specific point in time, showing assets, liabilities, and equity. The P&L Statement covers a period of time (not a single point). The Cash Flow Statement also covers a period. Only the Balance Sheet represents a single moment in time."
+  },
+  "17": {
+    "hint": "Accounts Payable = money the company owes outward — think about who the company makes outgoing payments to.",
+    "explanation": "The Accounts Payable (AP) / Payables department handles outgoing payments that the organization owes to its vendors and suppliers. Accounts Receivable (AR) handles incoming payments from customers. AP strictly manages vendor invoices, payment runs, and supplier reconciliation — not customer-related transactions."
+  },
+  "18": {
+    "hint": "Double-entry bookkeeping requires debits = credits at every level — does this apply only at journal entry level, only at trial balance, or both?",
+    "explanation": "In double-entry bookkeeping, the fundamental rule is that total debits must always equal total credits. This holds true at both levels: (1) at the journal entry level — every individual entry must balance, and (2) at the trial balance level — the sum of all debit balances must equal the sum of all credit balances across all accounts. Both a and b are correct."
+  },
+  "19": {
+    "hint": "Cash Sale is designed for immediate fulfillment — upon saving the order, the system automatically triggers the next step in the process without manual intervention.",
+    "explanation": "In SAP SD, when a Cash Sale order (document type BV) is saved, the system automatically creates an Outbound Delivery document. This is because cash sales are designed for immediate pickup — the customer pays and takes the goods at the same time. The delivery is auto-created to enable immediate goods issue, and the billing document is also generated automatically thereafter."
+  },
+  "20": {
+    "hint": "Once a billing document is released to accounting, certain fields become locked — think about which field controls how revenue is posted to the correct GL accounts.",
+    "explanation": "Account Determination in SAP SD controls which General Ledger accounts are posted to when a billing document is released to Financial Accounting. Once the accounting document is posted, account determination cannot be changed because it would alter the financial postings already made. Billing date, pricing date, and billing value can be adjusted before posting, but account determination is locked once the document is created."
+  },
+  "21": {
+    "hint": "In the consignment cycle, billing only happens when the customer actually takes ownership of the goods — which process represents that moment?",
+    "explanation": "Consignment Issue (document type KE) is the consignment process that triggers billing. It occurs when the customer withdraws goods from their consignment stock for actual use/consumption — at this point, ownership transfers and a billing document is created. Consignment Fill-up only moves goods to the customer's site (no billing). Consignment Pickup returns unused goods to the company (no billing)."
+  },
+  "22": {
+    "hint": "During consignment issue, the customer withdraws goods for use — at that moment, who takes financial ownership?",
+    "explanation": "In the Consignment Issue process, when the customer withdraws goods from consignment stock for consumption, financial ownership transfers to the Customer. Before the issue, the goods are still owned by the selling company (stored at customer premises). After the issue, the customer becomes the financial owner and is billed accordingly."
+  },
+  "23": {
+    "hint": "A SAP sales order has three structural levels — the top level covers the whole order, the middle level covers each product, and the bottom level covers delivery dates.",
+    "explanation": "A SAP Sales Order is structured into three levels: (1) Header — general data for the entire order (sold-to party, overall pricing, payment terms), (2) Item — individual materials or services being ordered, and (3) Schedule Lines — delivery dates and confirmed quantities for each item. All three levels are mandatory for a complete and processable sales order."
+  },
+  "24": {
+    "hint": "An inquiry in SAP is a non-binding request for information — it does not commit the customer or the seller to anything.",
+    "explanation": "An Inquiry (document type IN) in SAP SD is a customer's non-binding request for information about products, prices, or availability. It does not create an obligation to buy, does not fix prices or dates, and does not block any materials. It is purely informational and is the first optional step in the pre-sales process. Therefore, none of the listed statements (obligation, fixed dates/prices, blocking materials) are true about an inquiry."
+  },
+  "25": {
+    "hint": "Billing plans in SAP can be assigned at different levels of the sales document — think about the flexibility of where the plan type can be set.",
+    "explanation": "In SAP SD, billing plan types can be assigned at both the Header level (applying to the entire sales document) and the Item level (applying to individual line items), giving flexibility for different billing schedules within the same order. The standard billing plan types are Periodic (01) and Milestone (02) — 'down payment' is not a billing plan type but a payment method. The date category is set in configuration, not freely changed by the user."
+  }
+}
