@@ -1,0 +1,264 @@
+[
+  {
+    "id": 1,
+    "question": "All of the following are subsequent documents for a consignment issue EXCEPT",
+    "options": [
+      "Delivery",
+      "Consignment fill-up",
+      "Goods issue",
+      "Invoice"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 3,
+    "question": "When you are creating a sales order, the system tries to determine the third party. When billing the customer, from whom does the system determine the third-party determination?",
+    "options": [
+      "Sold-to party",
+      "Ship-to party",
+      "Payer",
+      "Bill-to party"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is not an example of Packaging Material?",
+    "options": [
+      "Carton",
+      "Container",
+      "Raw Materials",
+      "Box"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 5,
+    "question": "\"Bottleneck material\", \"export papers missing\" are standard examples of",
+    "options": [
+      "Delivery blocking reasons",
+      "Billing block reason",
+      "Item categories",
+      "Material types"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 6,
+    "question": "Which of the following statements are true about returns?",
+    "options": [
+      "The materials sent to the customer may be returned",
+      "The customer may not send back materials if it is of low value",
+      "All of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 7,
+    "question": "The effects of goods issue reversal include: (1) Credit limits are reset (2) Stock levels are restored (3) Accounting documents are reversed (4) Billing due list is updated",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 8,
+    "question": "Under C set of INCO terms, the seller arranges and pays for the main carriage but without assuming the ______ of the goods during transit.",
+    "options": [
+      "Returns",
+      "Risks",
+      "Insurance",
+      "Freight"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 9,
+    "question": "______ contracts contain a certain quantity of products/materials to be delivered in partial deliveries.",
+    "options": [
+      "Value contracts",
+      "Service contracts",
+      "Master contracts",
+      "Quantity contracts"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 10,
+    "question": "Trial balance is prepared directly from",
+    "options": [
+      "General Ledger",
+      "Subsidiary Books",
+      "Journal Entries",
+      "None of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 11,
+    "question": "The primary objectives of financial accounting is",
+    "options": [
+      "To measure profit",
+      "To draw up balance sheet",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 12,
+    "question": "______ statement gives a snapshot of how the earnings has been utilized by the business.",
+    "options": [
+      "Profit and loss statement",
+      "Balance sheet",
+      "Statement of Retained Earnings",
+      "Cash flow statement"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 13,
+    "question": "Which of the following are true about master contracts? (1) Master contracts are higher-level contracts (2) Quantity, value and service contracts can be grouped under master contracts (3) Master contracts contain header, business, partner, billing plan and contract data",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 14,
+    "question": "Sales document types could be: (1) Cash sales (2) Rush order (3) Standard order (4) Credit memos",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 15,
+    "question": "Quotation is created in SAP with the T-code ______ and the document type ______.",
+    "options": [
+      "VA21, QT",
+      "VA22, QT",
+      "VA11, QT",
+      "VA23, QT"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 16,
+    "question": "The process of posting is to summarise all journal entries and transfer them to the general ledger.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 17,
+    "question": "Which of the following are true about Purchase Orders? (1) POs are raised by your company (2) POs may be raised for services (3) POs may be raised for materials (4) POs may be raised for assets",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 18,
+    "question": "The difference between Standard order and Rush Order is that in a Rush order:",
+    "options": [
+      "The delivery is created later",
+      "The delivery is created immediately",
+      "The invoicing happens immediately",
+      "The invoicing happens later"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 19,
+    "question": "Which of the following statements is true regarding billing plans?",
+    "options": [
+      "Billing plans cannot be blocked for billing",
+      "Milestone billing plan is used for plant engineering and construction when the billing dates need to be spread over several periods",
+      "Periodic billing is used for plant engineering and construction when the billing dates tend to be spread over several days",
+      "Document flow is updated for billing plans for the first transaction; subsequent billing does not update the document flow"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 20,
+    "question": "List of materials for a specific customer not to buy the material from is noted in",
+    "options": [
+      "Material Listing",
+      "Material Determination",
+      "Material Exclusion",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 21,
+    "question": "What are the types of value contracts in SAP?",
+    "options": [
+      "Standard Materials",
+      "Low value, High value",
+      "No value, Full value",
+      "None of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 22,
+    "question": "Transaction code for creating a single delivery",
+    "options": [
+      "VL10B",
+      "VL10G",
+      "VL01N",
+      "VL04"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 23,
+    "question": "Cash sales process is:",
+    "options": [
+      "A process where the customer places the sales order and picks and pays for the goods at the same time",
+      "A proposed agreement of a price and quantity for a particular material and services for a particular date",
+      "A process where customer returns purchased products",
+      "A process where customer is undercharged for the material or service"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 24,
+    "question": "Which of the following statements is true regarding billing plans?",
+    "options": [
+      "The three types of billing plans are: periodic, contractual, milestone",
+      "Billing plan types can be in the header and item levels",
+      "The date category can be changed in the item",
+      "The billing plan type is created at header level only"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 25,
+    "question": "When will the status of delivery be \"complete\"?",
+    "options": [
+      "After the picking and packing has been done",
+      "After the goods issue has been posted",
+      "After the billing document has been created",
+      "After the accounting document has been posted",
+      "After the accounting document has been cleared with an incoming payment"
+    ],
+    "correct_answers": ["B"]
+  }
+]
