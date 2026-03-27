@@ -42,10 +42,10 @@
     "id": 4,
     "question": "Which of the following  is not a example of billing document type",
     "options": [
-      "Invoice, Profoma Invoice and invoice list",
+      "Invoice, Pro forma Invoice and invoice list",
       "Debit, Credit Memo and cancellations",
       "Returns, external transactions",
-      "Intercompany Delivery and billing"
+      "Inter-company Delivery and billing"
     ],
     "correct_answers": [
       "C"
@@ -57,7 +57,7 @@
     "options": [
       "Intercompany Order",
       "Standard Sales Order",
-      "rush Order ",
+      "Rush Order ",
       "Third Party Sales"
     ],
     "correct_answers": [
@@ -88,29 +88,27 @@
   },
   {
     "id": 8,
-    "question": "Trial balance is prepared directly from:",
+    "question": "A pharmaceutical company has launched a new product that it wants to sell only to those who will use",
     "options": [
-      "General ledger",
-      "Subsidiary books",
-      "Journal entries",
-      "None of the above"
+      "Product listing",
+      "Product exclusion",
+      "None of the above",
+      "Both of the above"
     ],
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
+    
   },
   {
     "id": 9,
-    "question": "The primary objectives of financial accounting is:",
+    "question": "Service contract is generally 1. To initate the billing of the routine service 2. Customer is covered by service contract 3.To determine which price agreement apply for service 4.Whether a cancellation request from the customer is valid",
     "options": [
-      "To measure profit",
-      "To draw up balance sheet",
-      "Both a and b",
-      "None of these"
+      "1,2,3",
+      "2,3,4",
+      "1,3,4",
+      "all of the above"
     ],
-    "correct_answers": [
-      "C"
-    ]
+    "correct_answers": ["A"]
+    
   },
   {
     "id": 10,
@@ -140,16 +138,12 @@
   },
   {
     "id": 12,
-    "question": "Quotation is created in SAP with the T-code _____ and the document type is _____.",
+     "question": "In Personal Accounts debit = Receiver and credit = giver",
     "options": [
-      "VA21, QT",
-      "VA22, QT",
-      "VA23, QT",
-      "VA11, QT"
+      "True",
+      "False"
     ],
-    "correct_answers": [
-      "A"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "id": 13,
@@ -158,7 +152,7 @@
       "VA21, QT",
       "VA22, QT",
       "VA11, QT",
-      "VA11, QT"
+      "VA11, IT"
     ],
     "correct_answers": [
       "A"
@@ -190,7 +184,7 @@
   },
   {
     "id": 16,
-    "question": "the payable department in a organisation is for ",
+    "question": "the payables department in a organisation is for ",
     "options": [
       "Customer Payments",
       "Vendor Payments",
@@ -203,20 +197,29 @@
   },
   {
     "id": 17,
-    "question": "Which of the following statements is true regarding billing plans?",
+    "question": "Financial accounting will not provide information about",
     "options": [
-      "Billing plan cannot be blocked for billing",
-      "Milestone billing plan is used for plant engineering and construction where the billing dates need to be spread over",
-      "Periodic billing plan is used for plant engineering and construction where the billing dates need to be spread",
-      "Document flow is updated for billing plans for the first invoice; subsequent billing does not update the document flow"
+      "Profitability",
+      "Outstanding debtors",
+      "Marketing strategy",
+      "None of the above"
     ],
-    "correct_answers": [
-      "C"
-    ]
+    "correct_answers": ["C"]
   },
  {
     "id": 18,
-    "question": "Which is the correct flow in shipment process",
+    "question": "Pre purchase activities involve",
+    "options": [
+      "Identification of material to be purchase",
+      "Preparation of requisition(indent)",
+      "Approval by respective department head",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 19,
+     "question": "Which is the correct flow in shipment process",
     "options": [
       "Create delivery,pick,pack,goods issue",
       "Pick,pack,create delivery,goods issue",
@@ -224,19 +227,6 @@
       "None of the above"
     ],
     "correct_answers": ["A"]
-  },
-  {
-    "id": 19,
-    "question": "What are the types of value contracts?",
-    "options": [
-      "Standard contract",
-      "Low value, high value",
-      "No value, full value",
-      "None of the above"
-    ],
-    "correct_answers": [
-      "A"
-    ]
   },
   {
     "id": 20,
@@ -279,16 +269,14 @@
   },
   {
     "id": 23,
-    "question": "the following are mandatory partner fuctions while creating a sales document",
+    "question": "The Sales order consists of",
     "options": [
-      "SP - Sold to Party",
-      "SH - ship to party",
-      "SB- special stock partner",
-      "Both A & B above"
+      "Header item and schedule line",
+      "Header and schedule line",
+      "Only header and item",
+      "Only item"
     ],
-    "correct_answers": [
-      "D"
-    ]
+    "correct_answers": ["A"]
   },
   {
     "id": 24,
@@ -305,15 +293,13 @@
   },
   {
     "id": 25,
-    "question": "Sales notes for customer liability for material replacement:",
+    "question": "The following are mandatory partner functions while creating sales document",
     "options": [
-      "Not post",
-      "Order",
-      "Text",
-      "Manual notes"
+      "SP (sold to party)",
+      "SH (ship to party)",
+      "SB (special stock partner)",
+      "Both a & b above"
     ],
-    "correct_answers": [
-      "C"
-    ]
+    "correct_answers": ["D"]
   }
 ]

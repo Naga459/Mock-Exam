@@ -78,5 +78,13 @@
   "file": "SecondSetOTC.json",
   "questionCount": 25,
   "badge": "SD"
+},
+{
+  "id": "otc-5",
+  "name": "OTC Fifth Set",
+  "description": "Order-to-Cash fifth set covering deliveries, consignment, billing, and financial accounting basics.",
+  "file": "FifthSetOTC.json",
+  "questionCount": 23,
+  "badge": "SD"
 }
 ]
