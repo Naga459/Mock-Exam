@@ -19,6 +19,7 @@ export default function ModulesPage() {
   const [modules, setModules] = useState<Module[]>([]);
   const [userName, setUserName] = useState<string>("Candidate");
   const [hovered, setHovered] = useState<string | null>(null);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     // Auth guard
@@ -87,6 +88,26 @@ export default function ModulesPage() {
         </button>
       </div>
 
+      {/* Search bar */}
+      <input
+        type="text"
+        placeholder="Search modules…"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        style={{
+          width: "100%",
+          boxSizing: "border-box",
+          marginBottom: 24,
+          padding: "10px 16px",
+          borderRadius: 10,
+          border: "1px solid #2b3a6a",
+          background: "#0e1630",
+          color: "#e6e6f0",
+          fontSize: 14,
+          outline: "none",
+        }}
+      />
+
       {/* Module grid */}
       {modules.length === 0 ? (
         <div style={{ opacity: 0.7, textAlign: "center", marginTop: 60 }}>
@@ -100,7 +121,7 @@ export default function ModulesPage() {
             gap: 20,
           }}
         >
-          {modules.map((mod) => {
+          {modules.filter((m) => m.name.toLowerCase().includes(search.toLowerCase()) || m.description.toLowerCase().includes(search.toLowerCase())).map((mod) => {
             const badgeStyle = BADGE_COLORS[mod.badge] || {
               bg: "#2b3a6a",
               color: "#e6e6f0",
