@@ -1,0 +1,102 @@
+{
+  "1": {
+    "hint": "You are swapping one material for another — which SAP SD feature is specifically designed to automatically replace one material with another?",
+    "explanation": "Material Determination in SAP SD allows the system to automatically substitute one material with another during sales order processing, based on predefined condition records. Listing controls which materials a customer can buy, Exclusion blocks certain materials, and manual replacement is not a standard SAP feature. Material determination is the correct tool for automatic material substitution."
+  },
+  "2": {
+    "hint": "Material listing, exclusion, and determination all follow the same framework used for pricing — what is that framework called in SAP?",
+    "explanation": "Material Exclusion, Listing, and Determination in SAP SD are all controlled using the Condition Technique — the same framework used for pricing. It involves condition types, condition tables, access sequences, and condition records. This makes the behavior flexible and configurable, just like pricing conditions."
+  },
+  "3": {
+    "hint": "Material determination covers automatic substitution, product selection proposals, and customer-specific product proposals — do all four statements describe valid capabilities?",
+    "explanation": "Material Determination in SAP SD supports all four tasks: (a) automatically substituting one material for another, (b) offering the user a selection list of alternative products, (c) determining materials based on a product proposal (e.g., customer-specific assortments), and (d) proposing materials based on previous customer requests. All of the above choices are correct."
+  },
+  "4": {
+    "hint": "Delivery types in SAP relate to goods movement — one of the options belongs to the billing process, not the delivery process.",
+    "explanation": "SAP SD delivery types include: Outbound Delivery with order reference, Outbound Delivery without order reference, and Returns Delivery. 'Delivery with reference to invoice' is not a delivery type — invoices are billing documents, and deliveries are not created with reference to invoices. Billing and delivery are separate steps in the order-to-cash cycle."
+  },
+  "5": {
+    "hint": "The order involves two different company entities in two different countries — what type of SAP sales process handles cross-company transactions?",
+    "explanation": "An Intercompany Order in SAP SD is used when a sales order is placed with one company code but fulfilled by a plant belonging to a different company code (in this case, a US company selling goods manufactured in Canada). This triggers an intercompany billing process between the two company codes. It is not a standard order, rush order, or third-party process."
+  },
+  "6": {
+    "hint": "The listed elements — checking group, checking rule, schedule line category — are all configuration components of one specific SAP SD feature.",
+    "explanation": "All the listed elements (checking group, checking rule, schedule line category, delivery item category, requirement class, requirement type) are the basic configuration components of the Availability Check in SAP SD. The availability check determines whether requested quantities can be confirmed for delivery on the requested date, based on these settings."
+  },
+  "7": {
+    "hint": "The company wants to restrict sales to only licensed customers — does that mean including a specific group or excluding everyone else?",
+    "explanation": "Product Listing in SAP SD is used to restrict the sale of a material to only specific, approved customers. If a product listing record exists for a material, only customers on that list can order it. This is the correct tool when a company wants to sell exclusively to customers who meet a specific criterion, such as holding a valid license."
+  },
+  "8": {
+    "hint": "The payment term '14 days 2% / 30 net' defines a discount window, a payment deadline, and a dunning trigger — all three statements describe these.",
+    "explanation": "The payment term '14 days 2%, 30 net' means: (1) a 2% cash discount is granted if payment is made within 14 days; (2) the full net amount is due within 30 days; (3) if payment is not received by day 30, the system can trigger dunning notices to chase the outstanding amount. All three statements are correct."
+  },
+  "9": {
+    "hint": "Recall the fundamental accounting equation: Assets = Liabilities + Stockholders' Equity — all three components make up the balance sheet.",
+    "explanation": "The Balance Sheet is composed of three elements: Assets (what the company owns), Liabilities (what the company owes), and Stockholders' Equity (the owners' residual interest). This is based on the fundamental accounting equation: Assets = Liabilities + Equity. All three components are always present in a balance sheet."
+  },
+  "10": {
+    "hint": "Recall the golden rule for Personal Accounts in double-entry bookkeeping — who receives value is debited, who gives value is credited.",
+    "explanation": "The golden rule for Personal Accounts in accounting is: Debit the Receiver, Credit the Giver. When a person or entity receives something of value, their account is debited. When they give something of value, their account is credited. This is one of the three fundamental rules of double-entry bookkeeping and the statement is True."
+  },
+  "11": {
+    "hint": "SAP SD sales document types cover the full range of sales scenarios — think about whether cash sales, rush orders, standard orders, and credit memos are all valid document types.",
+    "explanation": "SAP SD sales document types include: Cash Sale (BV), Rush Order (RO), Standard Order (OR), and Credit Memo Request (CR). All four listed items are valid sales document types in SAP SD. Each represents a different sales scenario with its own processing logic and document flow."
+  },
+  "12": {
+    "hint": "This contract is defined by a total monetary value and can cover multiple materials or material groups within that value — which contract type fits?",
+    "explanation": "A Value Contract in SAP SD is an agreement where the customer commits to purchasing materials or services up to a defined target value within a validity period. It can include a specific material, a group of materials, or an assortment. This is different from a Quantity Contract (fixed quantity), Service Contract (services), or Master Contract (grouping of contracts)."
+  },
+  "13": {
+    "hint": "Think about what a service contract needs to define — validity, cancellation terms, pricing, and follow-up actions are all standard components.",
+    "explanation": "A Service Contract in SAP SD contains: validity dates (start and end of the service period), cancellation conditions (notice periods and rules), price agreements (service rates and discounts), and information on follow-up actions (e.g., renewal or service order creation). All these elements are standard components of a service contract, so the statement is True."
+  },
+  "14": {
+    "hint": "Accounts payable represents money the company owes to vendors — is money owed an asset, liability, expense, or income?",
+    "explanation": "Accounts Payable is a Liability on the company's balance sheet. It represents the amount the company owes to its vendors and suppliers for goods or services received but not yet paid for. It is not an asset (which is something owned), not an expense (which is a cost incurred), and not income (which is revenue earned)."
+  },
+  "15": {
+    "hint": "Accounts payable arises when you record an obligation to pay before actually paying — which accounting basis records transactions when they are incurred, not when cash moves?",
+    "explanation": "Accounts Payable is generated under the Accrual Basis of Accounting, where expenses are recorded when they are incurred (i.e., when goods or services are received), regardless of when the cash payment is made. Under the Cash Basis of Accounting, transactions are only recorded when cash is exchanged, so no payable would be created — the expense would only be recorded upon payment."
+  },
+  "16": {
+    "hint": "The key difference between a standard order and a rush order is timing of delivery — rush means the delivery happens right away.",
+    "explanation": "In SAP SD, the key difference between a Standard Order (OR) and a Rush Order (RO) is that a Rush Order triggers immediate automatic delivery creation upon saving the order. In a standard order, the delivery is created separately at a later stage. Both order types can have immediate or deferred invoicing, but the defining characteristic of a rush order is the immediate delivery creation."
+  },
+  "17": {
+    "hint": "This accounting method records revenues and expenses when earned or incurred — not when cash is received or paid. Which method is that?",
+    "explanation": "The Accrual Basis of Accounting records revenues when they are earned and expenses when they are incurred, regardless of when cash is actually received or paid. This is the standard method used in financial accounting and SAP FI. The Cash Basis records transactions only when cash changes hands, which does not match the description in the question."
+  },
+  "18": {
+    "hint": "Double-entry bookkeeping requires debits = credits at every level — does this apply only at one level or at both journal entry and trial balance levels?",
+    "explanation": "In double-entry bookkeeping, total debits must always equal total credits at both levels: (1) at the journal entry level — every individual transaction entry must balance, and (2) at the trial balance level — the sum of all debit balances across all accounts must equal the sum of all credit balances. Both a and b are correct."
+  },
+  "19": {
+    "hint": "There are exactly two value contract types in SAP SD — WK1 and WK2. Which option names both together?",
+    "explanation": "SAP SD has two types of Value Contracts: WK1 (Standard Value Contract / General Value Contract) — for a customer's total purchase value across any materials, and WK2 (Material-related Value Contract) — for a specific material group. Option D correctly names both types together as 'Value contract and material related value contract', making it the most complete answer."
+  },
+  "20": {
+    "hint": "Multiple deliveries combined into one invoice — think about what 'collective' means versus 'split'.",
+    "explanation": "A Collective Invoice in SAP SD is created when multiple deliveries are grouped together and billed in a single invoice document. This is the opposite of an invoice split, where one delivery results in multiple invoices. Collective invoicing reduces administrative overhead by consolidating multiple shipments into one billing document for the customer."
+  },
+  "21": {
+    "hint": "Proof of Delivery confirms that goods have physically left the warehouse and reached the customer — which step in the delivery process represents that?",
+    "explanation": "Proof of Delivery (POD) in SAP SD can only be confirmed after Post Goods Issue (PGI / Goods Issue) has been performed. PGI is the event that records the physical departure of goods from the warehouse. Only after goods have been issued can the delivery be confirmed as completed and the POD recorded. Picking and packing are preparatory steps before goods issue."
+  },
+  "22": {
+    "hint": "A SAP sales order has three structural levels — overall document, individual products, and delivery date/quantity details.",
+    "explanation": "A SAP Sales Order is structured into three levels: (1) Header — general data for the entire order such as sold-to party, payment terms, and overall pricing; (2) Item — individual materials or services being ordered; and (3) Schedule Lines — delivery dates and confirmed quantities for each item. All three levels are required for a complete and processable sales order."
+  },
+  "23": {
+    "hint": "A Standard Value Contract (WK1) is a general contract not tied to a specific material — how many materials can it cover?",
+    "explanation": "A Standard Value Contract (WK1) in SAP SD is not restricted to a single material. It can include more than one material or even no specific material at all — it is defined by a total target value, and any material can be ordered against it up to that value. This makes it flexible for customers who purchase a variety of products from the same vendor."
+  },
+  "24": {
+    "hint": "Think about standard SAP SD document flow rules — can one delivery really generate multiple invoices, or is that not how billing works?",
+    "explanation": "In SAP SD, the standard rules are: (1) Multiple deliveries CAN be created from a single sales order (partial deliveries), and (2) A single delivery CAN be created from multiple sales orders (collective delivery). However, one delivery typically results in one invoice — creating multiple invoices from a single delivery is not standard SAP behavior. Therefore, statement C is incorrect."
+  },
+  "25": {
+    "hint": "PGI is a critical event in SAP SD — it triggers multiple simultaneous updates across inventory, finance, and the sales document.",
+    "explanation": "Post Goods Issue (PGI) in SAP SD triggers all of the following effects simultaneously: (1) Stock levels are reduced in inventory management and the Billing Due List is updated; (2) Material documents and Accounting documents are created in FI; (3) The delivery status is changed to 'Goods Issue Posted' and open requirements in MRP are reduced. All three options are correct effects of PGI."
+  }
+}

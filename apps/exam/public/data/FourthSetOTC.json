@@ -1,0 +1,273 @@
+[
+  {
+    "id": 1,
+    "question": "You are replacing material 123 with material 456. You are likely to use ______ in SAP SD.",
+    "options": [
+      "Listing",
+      "Exclusion",
+      "Material determination",
+      "Manual replacement"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 2,
+    "question": "Material Exclusion, Inclusion and Determination is controlled with ______",
+    "options": [
+      "Condition technique",
+      "Field catalogues",
+      "Condition tables",
+      "Access Sequence"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 3,
+    "question": "Material determination enables you to carry out the following tasks during sales order processing: (a) Automatically substitute materials (b) Automatically determine and offer the user a selection of products based on pre-defined conditions (c) Determine the materials required by the customer on the basis of a product proposal (d) System proposes the material on the sales order depending on his previous requests",
+    "options": [
+      "a, b",
+      "b, c",
+      "a, b, c",
+      "All of the above choices"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 4,
+    "question": "Which is not a type of delivery?",
+    "options": [
+      "Delivery without order reference",
+      "Delivery with order reference",
+      "Delivery with reference to invoice",
+      "Returns Delivery"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 5,
+    "question": "A CPG company operating in US has received a customer order for goods manufactured by its plant in Canada. It is a type of ______",
+    "options": [
+      "Intercompany order",
+      "Standard sales order",
+      "Rush order",
+      "Third party sales"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 6,
+    "question": "Basic elements of ______ are: checking group, checking rule, schedule line category, delivery item category, requirement class, requirement type.",
+    "options": [
+      "Availability check",
+      "Available to promise",
+      "Sales order",
+      "Customer credit checks"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 7,
+    "question": "A pharmaceutical company has launched a new product that it wants to sell only to those customers who have obtained a valid license as per the latest norms. You will use ______",
+    "options": [
+      "Product listing",
+      "Product exclusion",
+      "None of the above",
+      "Both of the above"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 8,
+    "question": "If the payment term is 14 days 2 percent and 30 net, it means:",
+    "options": [
+      "Payment within 14 days will give a discount of 2 percent",
+      "Within 30 days you must pay",
+      "If you do not pay by 30 days, dunning notices can be sent",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 9,
+    "question": "The balance sheet is composed of: Assets, Liabilities, Stockholders' equity",
+    "options": [
+      "None of the above",
+      "All of the above",
+      "Only 1, 2",
+      "Only 2, 3"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 10,
+    "question": "In Personal Accounts \"Debit-Receiver\" and \"Credit-Giver\"?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 11,
+    "question": "Sales document types could be: (1) Cash sales (2) Rush order (3) Standard order (4) Credit memos",
+    "options": [
+      "1, 2, 3",
+      "2, 3, 4",
+      "1, 3, 4",
+      "All of the above choices"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 12,
+    "question": "______ contains the materials and/or services that may be received within a time period and up to a target value. May include material or group of materials.",
+    "options": [
+      "Value contracts",
+      "Service contracts",
+      "Master contracts",
+      "Quantity contracts"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 13,
+    "question": "Service contracts contain validity dates, cancellation conditions, price agreements, and information on possible follow-up actions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 14,
+    "question": "Accounts payable is ______ to the company.",
+    "options": [
+      "Asset",
+      "Liability",
+      "Expense",
+      "Income"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 15,
+    "question": "Accounts payables are generated as a result of:",
+    "options": [
+      "Cash basis of accounting",
+      "Accrual basis of accounting",
+      "Both of the options",
+      "None of the options"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 16,
+    "question": "The difference between Standard order and Rush Order is that in a Rush order:",
+    "options": [
+      "The delivery is created later",
+      "The delivery is created immediately",
+      "The invoicing happens immediately",
+      "The invoicing happens later"
+    ],
+    "correct_answers": ["B"]
+  },
+  {
+    "id": 17,
+    "question": "Under ______ of accounting, revenues and expenses are recorded according to when they are earned and incurred, not necessarily when the cash is received or paid.",
+    "options": [
+      "Accrual",
+      "Cash",
+      "Both a and b",
+      "None of these"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 18,
+    "question": "Total debits always equal total credits:",
+    "options": [
+      "At the journal entry level",
+      "At the trial balance level",
+      "Both a and b",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 19,
+    "question": "The two types of Value Contract are:",
+    "options": [
+      "Standard Value Contract (WK1)",
+      "Material-related Value Contract (WK2)",
+      "Quantity Contract (NMS)",
+      "Value contract and material related value contract"
+    ],
+    "correct_answers": ["D"]
+  },
+  {
+    "id": 20,
+    "question": "When several deliveries are grouped together in one invoice, this is known as:",
+    "options": [
+      "A split invoice",
+      "A complete invoice",
+      "A collective invoice",
+      "An invoice split"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 21,
+    "question": "The Proof of Delivery for an outbound delivery can be confirmed after ______",
+    "options": [
+      "Picking",
+      "Billing",
+      "Goods Issue",
+      "Packing"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 22,
+    "question": "The sales order consists of ______",
+    "options": [
+      "Header, Item and Schedule lines",
+      "Header and Schedule lines",
+      "Only Header and Item",
+      "Only Item"
+    ],
+    "correct_answers": ["A"]
+  },
+  {
+    "id": 23,
+    "question": "How many materials can be added in a Standard Value Contract?",
+    "options": [
+      "Only one",
+      "Only two",
+      "More than one",
+      "None"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 24,
+    "question": "Which of the statements is incorrect?",
+    "options": [
+      "Multiple deliveries can be created with a single sales order",
+      "Single delivery can be created with multiple sales orders",
+      "Multiple invoices can be created with single delivery",
+      "None of the above"
+    ],
+    "correct_answers": ["C"]
+  },
+  {
+    "id": 25,
+    "question": "What are the effects of PGI (Post Goods Issue)?",
+    "options": [
+      "Stock levels are reduced, Billing Due list updated",
+      "Material and Accounting documents created",
+      "Status in Delivery changed and requirements in Delivery reduced",
+      "All of the above"
+    ],
+    "correct_answers": ["D"]
+  }
+]
