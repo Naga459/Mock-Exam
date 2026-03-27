@@ -91,11 +91,14 @@ export default function ExamPage() {
         const params = new URLSearchParams(window.location.search);
         const moduleFile = params.get("module") || "questions.json";
         const hintFile = moduleFile.replace(/\.json$/, "-hints.json");
-        const [e, q, h] = await Promise.all([
+        const [e, q, h, mods] = await Promise.all([
           fetch("/data/exam.json").then((r) => r.json()),
           fetch(`/data/${moduleFile}`).then((r) => r.json()),
           fetch(`/data/${hintFile}`).then((r) => r.ok ? r.json() : {}),
+          fetch("/data/modules.json").then((r) => r.json()),
         ]);
+        const moduleMeta = (mods as { file: string; name: string }[]).find((m) => m.file === moduleFile);
+        if (moduleMeta) e.title = moduleMeta.name;
         if (!mounted) return;
 
         // Normalize question list: support both flat arrays and {module, questions:[]} wrappers
