@@ -4,32 +4,32 @@
     "explanation": "Subsequent documents for a Consignment Issue in SAP SD include: Delivery (outbound delivery to the customer's consignment stock), Goods Issue (physical stock movement), and Invoice (billing when goods are withdrawn). Consignment Fill-up is a separate, preceding consignment process used to stock goods at the customer site — it is not a subsequent document of a consignment issue."
   },
   "3": {
-    "hint": "In third-party billing, the invoice goes to the customer — which partner function is responsible for receiving and paying the invoice?",
-    "explanation": "In SAP SD third-party processing, when billing the customer, the system determines the Payer partner function for the third-party billing determination. The Payer is the business partner financially responsible for settling the invoice. The Sold-to Party places the order, the Ship-to Party receives goods, and the Bill-to Party receives the invoice — but the Payer is who the system uses for billing determination."
+    "hint": "In third-party processing, focus on who is financially responsible for paying the invoice — that partner function is used for determination.",
+    "explanation": "In SAP SD third-party processing, the system determines the third-party based on the Payer (PY) because the payer is the business partner financially responsible for settling the invoice, while other partner functions serve different roles such as Sold-to placing the order, Ship-to receiving the goods, and Bill-to receiving the invoice, so the determination is based on who actually pays."
   },
   "4": {
     "hint": "Packaging materials are used to wrap or contain finished goods for shipment — think about which option is an input to production, not a container for delivery.",
     "explanation": "Packaging materials in SAP SD include items like cartons, containers, boxes, pallets, and wrapping used to pack goods for delivery. Raw Materials are inputs used in the manufacturing process to produce finished goods — they are not used for packaging. Therefore, Raw Materials is not an example of packaging material."
   },
   "5": {
-    "hint": "Bottleneck materials and missing export papers are reasons why a delivery cannot proceed — what type of block does that represent in SAP SD?",
-    "explanation": "In SAP SD, Delivery Blocking Reasons are used to prevent a delivery from being created or processed. Standard examples include 'Bottleneck material' (insufficient stock or supply issues) and 'Export papers missing' (legal/compliance documents not yet available). These are not billing blocks, item categories, or material types — they specifically block the delivery step."
+    "hint": "These situations stop the delivery process, not billing — so think about which block prevents delivery from happening.",
+    "explanation": "In SAP SD, issues like “bottleneck material” or “export papers missing” prevent the delivery from being created or processed, so they are classified as delivery blocking reasons, not billing blocks, since billing happens only after delivery and goods issue are completed."
   },
   "6": {
-    "hint": "Returns in SAP SD are straightforward — the key question is whether a customer can return goods that were delivered to them.",
-    "explanation": "In SAP SD, the returns process allows customers to send back materials that were previously delivered. The correct statement is that materials sent to the customer may be returned. The claim that customers cannot return low-value materials is incorrect — SAP returns processing does not restrict returns based on value by default. A returns order (document type RE) can be created for any delivered material."
+    "hint": "Focus on whether SAP restricts returns — can customers return any delivered material regardless of value?",
+    "explanation": "In SAP SD, the returns process allows customers to send back any materials that were previously delivered, and there is no standard restriction based on the value of the material, so the statement that materials sent to the customer may be returned is correct, while the claim that low-value materials cannot be returned is incorrect."
   },
   "7": {
-    "hint": "Goods issue reversal undoes the PGI — think about all the system updates that PGI originally triggered and which ones get reversed.",
-    "explanation": "When a Goods Issue is reversed in SAP SD, all effects of the original PGI are undone: (1) Credit limits are reset (the customer's credit exposure is reduced), (2) Stock levels are restored (inventory is returned to the warehouse), (3) Accounting documents are reversed (FI postings are cancelled), and (4) The billing due list is updated (the delivery is removed from the billing worklist). All of the above choices are correct effects of a goods issue reversal."
+    "hint": "Goods issue reversal undoes everything PGI did, so check all system effects that are reversed.",
+    "explanation": "In SAP SD, reversing a goods issue (PGI) cancels all effects of the original posting, including restoring stock levels, reversing accounting entries, resetting the customer’s credit exposure, and updating the billing due list by removing the delivery, so all the listed statements are correct."
   },
   "8": {
-    "hint": "Under C-group Incoterms (CFR, CIF, CPT, CIP), the seller pays for freight but does not bear the risk during the main carriage — what does the seller not assume?",
-    "explanation": "Under the C-group Incoterms (e.g., CFR, CIF, CPT, CIP), the seller arranges and pays for the main carriage (freight) to the destination, but the risk of loss or damage transfers to the buyer once the goods are handed over to the carrier. The seller does not assume the risks of the goods during transit — risk passes at the point of shipment, not destination."
+    "hint": "In C-group Incoterms, the seller pays for transport but risk transfers to the buyer during transit — what does the seller not bear?",
+    "explanation": "Under C-group Incoterms (such as CFR, CIF, CPT, CIP), the seller arranges and pays for the main carriage, but the risk of loss or damage transfers to the buyer once the goods are handed over to the carrier, so the seller does not assume the risks during transit."
   },
   "9": {
-    "hint": "This contract type is defined by a fixed total quantity to be delivered in multiple partial shipments over time — which contract type fits?",
-    "explanation": "A Quantity Contract in SAP SD is an agreement where the customer commits to purchasing a specific total quantity of a material, with deliveries made in partial quantities over the contract period. A Value Contract is based on a monetary target value. A Service Contract covers services. A Master Contract groups other contracts. Quantity contracts are specifically defined by a quantity commitment."
+    "hint": "Look for a contract based on a fixed total quantity delivered in parts over time",
+    "explanation": "In SAP SD, a Quantity Contract is an agreement where a customer commits to purchasing a fixed total quantity of materials, which are delivered in multiple partial deliveries over a period of time, unlike value contracts that are based on monetary value or service contracts that cover services."
   },
   "10": {
     "hint": "A trial balance lists all account balances — which source already has all accounts summarized with their running totals?",

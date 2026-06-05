@@ -209,7 +209,7 @@
     "id": 21,
     "question": "What are the types of value contracts in SAP?",
     "options": [
-      "Standard Materials",
+      "Standard, Materials",
       "Low value, High value",
       "No value, Full value",
       "None of the above"
